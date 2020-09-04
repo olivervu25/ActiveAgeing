@@ -214,7 +214,7 @@ h6 {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
+  background: #f5f8fd url("../image/intro-bg.jpg") center top no-repeat;
   background-size: cover;
 }
 
@@ -575,6 +575,125 @@ h6 {
   background-color: #ebf1fa;
   transition: .5s;
 }
+/* Team Section
+--------------------------------*/
+
+#team {
+  padding: 60px 0;
+}
+
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#team .member .member-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+  padding: 15px 0;
+  background: rgba(29, 28, 41, 0.6);
+}
+
+#team .member .member-info-content {
+  transition: margin 0.2s;
+  height: 40px;
+  transition: height 0.4s;
+}
+
+#team .member:hover .member-info {
+  transition: 0.4s;
+}
+
+#team .member:hover .member-info-content {
+  height: 80px;
+}
+
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+#team .member .social {
+  margin-top: 15px;
+}
+
+#team .member .social a {
+  transition: none;
+  color: #fff;
+}
+
+#team .member .social a:hover {
+  color: #1bb1dc;
+}
+
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+/* Find Section
+--------------------------------*/
+
+#find {
+  padding: 80px 0;
+}
+
+#find h4 {
+  font-weight: 600;
+  font-size: 24px;
+}
+/* Du Edit text like template */
+.find-university h2{
+  font-size: 31px;
+    color: #413e66;
+    text-align: left;
+    font-weight: 700;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+}
+.find-university h3{
+  color: #696592;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* Du Edit btn like template : background blue and color white */
+.blue-btn{
+ background:  #1bb1dc;
+ color: white;
+}
+.blue-btn:hover{
+  background: #0a98c0;
+  color: white;
+}
+
 
 /* Services Section
 --------------------------------*/
@@ -726,17 +845,6 @@ h6 {
   border: 3px solid #1bb1dc;
 }
 
-/* Features Section
---------------------------------*/
-
-#features {
-  padding: 80px 0;
-}
-
-#features h4 {
-  font-weight: 600;
-  font-size: 24px;
-}
 
 /* Portfolio Section
 --------------------------------*/
@@ -937,87 +1045,7 @@ h6 {
   background-color: #1bb1dc;
 }
 
-/* Team Section
---------------------------------*/
 
-#team {
-  padding: 60px 0;
-}
-
-#team .member {
-  text-align: center;
-  margin-bottom: 20px;
-  position: relative;
-  overflow: hidden;
-}
-
-#team .member .member-info {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: 0.2s;
-  padding: 15px 0;
-  background: rgba(29, 28, 41, 0.6);
-}
-
-#team .member .member-info-content {
-  transition: margin 0.2s;
-  height: 40px;
-  transition: height 0.4s;
-}
-
-#team .member:hover .member-info {
-  transition: 0.4s;
-}
-
-#team .member:hover .member-info-content {
-  height: 80px;
-}
-
-#team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-  color: #fff;
-}
-
-#team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-  color: #fff;
-}
-
-#team .member .social {
-  margin-top: 15px;
-}
-
-#team .member .social a {
-  transition: none;
-  color: #fff;
-}
-
-#team .member .social a:hover {
-  color: #1bb1dc;
-}
-
-#team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
 
 /* Clients Section
 --------------------------------*/
