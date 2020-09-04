@@ -26,7 +26,7 @@ Header
 
     <nav class="main-nav float-right d-none d-lg-block">
       <ul>
-        <li class="active"><a href="#intro">Home</a></li>
+        <li class="active"><a id='home' href="#intro">Home</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a id='university' href="#">Universities</a></li>
         <li><a href="#find">Find</a></li>
@@ -358,7 +358,7 @@ Header
 <!-- Uncomment below i you want to use a preloader -->
 <!-- <div id="preloader"></div> -->
 `;
-components.univesityScreen = `
+components.universityScreen = `
 <!--==========================
 Header
 ============================-->
@@ -385,7 +385,7 @@ Header
 
     <nav class="main-nav float-right d-none d-lg-block">
       <ul>
-        <li class="active"><a href="#intro">Home</a></li>
+        <li class="active"><a id='home' href="#intro">Home</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#portfolio">Universities</a></li>
         <li><a href="#find">Find</a></li>
