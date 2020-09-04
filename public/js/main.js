@@ -1,3 +1,4 @@
+console.log('main.js');
 (function ($) {
   "use strict";
   // Preloader (if the #preloader div exists)
@@ -126,6 +127,5 @@
     responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 }
     }
   });
-
 })(jQuery);
 

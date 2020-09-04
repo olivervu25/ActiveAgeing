@@ -28,7 +28,7 @@ Header
       <ul>
         <li class="active"><a href="#intro">Home</a></li>
         <li><a href="#about">About Us</a></li>
-        <li><a href="#">Universities</a></li>
+        <li><a id='university' href="#">Universities</a></li>
         <li><a href="#find">Find</a></li>
         <li><a href="#">Scholarship</a></li>
         <li class="drop-down"><a href="#">Student's Life</a>
@@ -204,25 +204,23 @@ Header
   ============================-->
   <section id="find" class="section-bg">
     <div class="container">
-
-      
-
       <div class="row feature-item mt-5 pt-5">
         <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
           <img src="public/image/features-2.svg" class="img-fluid" alt="">
         </div>
-
-        <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-          <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4>
-          <p>
-           Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt. 
-          </p>
-          <p>
-            Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
-          </p>
-          <p>
-            Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
-          </p>
+        
+        
+         
+        <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1 find-university">
+          <h2>Find University</h2>
+          <h3>Type your University here for more information</h3>
+          <!-- Du Search box and Find Button -->
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="University's name">
+            <div class="input-group-append">
+              <button class="btn blue-btn" type="submit">Find</button>
+            </div>
+          </div>
         </div>
         
       </div>
@@ -352,6 +350,266 @@ Header
   </footer><!-- #footer -->
   
 
+</main>
+
+
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<!-- Uncomment below i you want to use a preloader -->
+<!-- <div id="preloader"></div> -->
+`;
+components.univesityScreen = `
+<!--==========================
+Header
+============================-->
+<header id="header">
+
+  <div id="topbar">
+    <div class="container">
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="logo float-left">
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <h1 class="text-light"><a href="#intro" class="scrollto"><span>Russia</span></a></h1>
+      <!-- <a href="#header" class="scrollto"><img src="public/image/logo.png" alt="" class="img-fluid"></a> -->
+    </div>
+
+    <nav class="main-nav float-right d-none d-lg-block">
+      <ul>
+        <li class="active"><a href="#intro">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#portfolio">Universities</a></li>
+        <li><a href="#find">Find</a></li>
+        <li><a href="#team">Scholarship</a></li>
+        <li class="drop-down"><a href="">Student's Life</a>
+        <!-- <ul>
+        <li><a href="#">Drop Down 1</a></li>
+        <li class="drop-down"><a href="#">Drop Down 2</a>
+          <ul>
+            <li><a href="#">Deep Drop Down 1</a></li>
+            <li><a href="#">Deep Drop Down 2</a></li>
+            <li><a href="#">Deep Drop Down 3</a></li>
+            <li><a href="#">Deep Drop Down 4</a></li>
+            <li><a href="#">Deep Drop Down 5</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Drop Down 3</a></li>
+        <li><a href="#">Drop Down 4</a></li>
+        <li><a href="#">Drop Down 5</a></li>
+      </ul> -->
+        </li>
+        <li><a href="#footer">Contact Us</a></li>
+      </ul>
+    </nav><!-- .main-nav -->
+    
+  </div>
+</header><!-- #header -->
+
+<!--==========================
+  Intro Section
+============================-->
+<section id="intro" class="clearfix">
+  <div class="container d-flex h-100">
+    <div class="row justify-content-center align-self-center">
+      <div class="col-md-6 intro-info order-md-first order-last">
+        <h2>Rapid Solutions<br>for Your <span>Business!</span></h2>
+        <div>
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 intro-img order-md-last order-first">
+        <img src="public/image/intro-img.svg" alt="" class="img-fluid">
+      </div>
+    </div>
+
+  </div>
+</section><!-- #intro -->
+
+<main id='main'>
+  <!--==========================
+    University Section
+  ============================-->
+  <section id="portfolio" class="section-bg">
+    <div class="container">
+
+      <header class="section-header">
+        <h3 class="section-title">Our Portfolio</h3>
+      </header>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-card">Card</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="public/image/portfolio/app1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4><a href="#">App 1</a></h4>
+              <p>App</p>
+              <div>
+                <a href="public/image/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+          <div class="portfolio-wrap">
+            <img src="public/image/portfolio/web3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4><a href="#">Web 3</a></h4>
+              <p>Web</p>
+              <div>
+                <a href="public/image/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <img src="public/image/portfolio/app2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4><a href="#">App 2</a></h4>
+              <p>App</p>
+              <div>
+                <a href="public/image/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="public/image/portfolio/card2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4><a href="#">Card 2</a></h4>
+              <p>Card</p>
+              <div>
+                <a href="public/image/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+          <div class="portfolio-wrap">
+            <img src="public/image/portfolio/web2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4><a href="#">Web 2</a></h4>
+              <p>Web</p>
+              <div>
+                <a href="public/image/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <img src="public/image/portfolio/app3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4><a href="#">App 3</a></h4>
+              <p>App</p>
+              <div>
+                <a href="public/image/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="public/image/portfolio/card1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4><a href="#">Card 1</a></h4>
+              <p>Card</p>
+              <div>
+                <a href="public/image/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+          <div class="portfolio-wrap">
+            <img src="public/image/portfolio/card3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4><a href="#">Card 3</a></h4>
+              <p>Card</p>
+              <div>
+                <a href="public/image/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+          <div class="portfolio-wrap">
+            <img src="public/image/portfolio/web1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4><a href="#">Web 1</a></h4>
+              <p>Web</p>
+              <div>
+                <a href="public/image/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- #portfolio -->
+
+   <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="section-bg">
+    
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
 </main>
 
 
