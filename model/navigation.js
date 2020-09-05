@@ -1,3 +1,4 @@
+
 // Du navigation page 
     // home page
     $('#home').on('click',function(){
@@ -9,15 +10,17 @@
 
 
     $('#scholarship').on('click',function(){
-        view.setActiveScreen('scholarshipScreen')
+        view.setActiveScreen('scholarshipScreen');
+        JsScholarship();
     });
 
     $('#university').on('click',function(){
         console.log('Change to university page');
         view.setActiveScreen('universityScreen');
+        JsPorfolio();
     });
 
-    $('#about').on('click',function(){
+    $('#about-us').on('click',function(){
         view.setActiveScreen('welcomeScreen');
-        document.getElementById("about-section").scrollIntoView();
+        document.getElementById("about").scrollIntoView();
     })

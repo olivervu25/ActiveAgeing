@@ -27,7 +27,7 @@ Header
     <nav class="main-nav float-right d-none d-lg-block">
       <ul>
         <li class="active"><a id='home' href="#intro">Home</a></li>
-        <li><a href="#about-section">About Us</a></li>
+        <li><a href="#about">About Us</a></li>
         <li><a id='university' href="#">Universities</a></li>
         <li><a href="#find">Find</a></li>
         <li><a id='scholarship' href="#">Scholarship</a></li>
@@ -81,7 +81,7 @@ Header
   <!--==========================
     About Us Section
   ============================-->
-  <section id="about-section">
+  <section id="about">
 
     <div class="container">
       <div class="row">
@@ -130,10 +130,10 @@ Header
                 <h4>Walter White</h4>
                 <span>Chief Executive Officer</span>
                 <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -148,10 +148,10 @@ Header
                 <h4>Sarah Jhonson</h4>
                 <span>Product Manager</span>
                 <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -166,10 +166,10 @@ Header
                 <h4>William Anderson</h4>
                 <span>CTO</span>
                 <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -184,10 +184,10 @@ Header
                 <h4>Amanda Jepson</h4>
                 <span>Accountant</span>
                 <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -386,11 +386,11 @@ Header
     <nav class="main-nav float-right d-none d-lg-block">
       <ul>
         <li class="active"><a id='home' href="#intro">Home</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Universities</a></li>
-        <li><a href="">Find</a></li>
+        <li><a href="#" id='about-us'>About Us</a></li>
+        <li><a href="#portfolio" id='university'>Universities</a></li>
+        <li><a href="#">Find</a></li>
         <li><a href="#" id='scholarship'>Scholarship</a></li>
-        <li class="drop-down"><a href="">Student Life</a>
+        <li class="drop-down"><a href="#">Student Life</a>
         <!-- <ul>
         <li><a href="#">Drop Down 1</a></li>
         <li class="drop-down"><a href="#">Drop Down 2</a>
@@ -649,8 +649,8 @@ components.scholarshipScreen = `
               <li><a href="#about">About Us</a></li>
               <li><a href='#' id='university'>Universities</a></li>
               <li><a href="#find">Find</a></li>
-              <li><a href='#' id='scholarship'>Scholarship</a></li>
-              <li class="drop-down"><a href="">Student Life</a>
+              <li><a href='#why-us' id='scholarship'>Scholarship</a></li>
+              <li class="drop-down"><a href="#">Student Life</a>
               <!-- <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="drop-down"><a href="#">Drop Down 2</a>
@@ -919,7 +919,7 @@ components.scholarshipScreen = `
                </div>
      
                <div class="testimonial-item">
-                 <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
+                 <img src="public/image/testimonial-2.jpg" class="testimonial-img" alt="">
                  <h3>Nguyễn Chiếm Dự</h3>
                  <h4>NUST MISIS</h4>
                  <p>
@@ -928,7 +928,7 @@ components.scholarshipScreen = `
                </div>
      
                <div class="testimonial-item">
-                 <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
+                 <img src="public/image/testimonial-3.jpg" class="testimonial-img" alt="">
                  <h3>Jena Karlis</h3>
                  <h4>Store Owner</h4>
                  <p>
@@ -937,7 +937,7 @@ components.scholarshipScreen = `
                </div>
      
                <div class="testimonial-item">
-                 <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
+                 <img src="public/image/testimonial-4.jpg" class="testimonial-img" alt="">
                  <h3>Matt Brandon</h3>
                  <h4>Freelancer</h4>
                  <p>
