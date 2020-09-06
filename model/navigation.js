@@ -14,10 +14,12 @@
         JsScholarship();
     });
 
-    $('#university').on('click',function(){
+    $('#university').on('click',function(event){
+        event.preventDefault();
         console.log('Change to university page');
         view.setActiveScreen('universityScreen');
-        // JsPorfolio();
+         JsPorfolio();
+         document.getElementById('app').scrollIntoView()
     });
 
 //These lines of code below help us to commute from another page to div in home page
