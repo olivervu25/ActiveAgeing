@@ -385,10 +385,10 @@ Header
 
     <nav class="main-nav float-right d-none d-lg-block">
       <ul>
-        <li class="active"><a id='home' href="#intro">Home</a></li>
+        <li class="active"><a id='home' href="#">Home</a></li>
         <li><a href="#" id='about-us'>About Us</a></li>
-        <li><a href="#portfolio" id='university'>Universities</a></li>
-        <li><a href="#">Find</a></li>
+        <li><a href="#portfolio">Universities</a></li>
+        <li><a href="#" id='find-uni'>Find</a></li>
         <li><a href="#" id='scholarship'>Scholarship</a></li>
         <li class="drop-down"><a href="#">Student Life</a>
         <!-- <ul>
@@ -407,7 +407,7 @@ Header
         <li><a href="#">Drop Down 5</a></li>
       </ul> -->
         </li>
-        <li><a href="#" id= 'contact'>Contact Us</a></li>
+        <li><a href="#" id= 'contact-us'>Contact Us</a></li>
       </ul>
     </nav><!-- .main-nav -->
     
@@ -646,10 +646,10 @@ components.scholarshipScreen = `
           <nav class="main-nav float-right d-none d-lg-block">
             <ul>
               <li class="active"><a id='home' href="#intro">Home</a></li>
-              <li><a href="#about">About Us</a></li>
+              <li><a href="#" id='about-us'>About Us</a></li>
               <li><a href='#' id='university'>Universities</a></li>
-              <li><a href="#find">Find</a></li>
-              <li><a href='#why-us' id='scholarship'>Scholarship</a></li>
+              <li><a href="#" id='find-uni'>Find</a></li>
+              <li><a href='#intro'>Scholarship</a></li>
               <li class="drop-down"><a href="#">Student Life</a>
               <!-- <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -667,7 +667,7 @@ components.scholarshipScreen = `
               <li><a href="#">Drop Down 5</a></li>
             </ul> -->
               </li>
-              <li><a href="#footer">Contact Us</a></li>
+              <li><a href="#" id='contact-us'>Contact Us</a></li>
             </ul>
           </nav><!-- .main-nav -->
           

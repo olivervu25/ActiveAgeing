@@ -17,10 +17,22 @@
     $('#university').on('click',function(){
         console.log('Change to university page');
         view.setActiveScreen('universityScreen');
-        JsPorfolio();
+        // JsPorfolio();
     });
 
-    $('#about-us').on('click',function(){
+//These lines of code below help us to commute from another page to div in home page
+    $('#about-us').on('click',function(event){
         view.setActiveScreen('welcomeScreen');
-        document.getElementById("about").scrollIntoView();
+        event.preventDefault()
+        document.getElementById('about').scrollIntoView()
+    })
+    $('#contact-us').on('click',function(event){
+        view.setActiveScreen('welcomeScreen');
+        event.preventDefault()
+        document.getElementById('footer').scrollIntoView()
+    })
+    $('#find-uni').on('click',function(event){
+        view.setActiveScreen('welcomeScreen');
+        event.preventDefault()
+        document.getElementById('find').scrollIntoView()
     })
