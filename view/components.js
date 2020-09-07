@@ -31,16 +31,7 @@ Header
         <li><a id='university' href="#">Universities</a></li>
         <li><a href="#find">Find</a></li>
         <li><a id='scholarship' href="#">Scholarship</a></li>
-        <li class="drop-down"><a href="#" id='life'>Student Life</a>
-              <ul>
-              <li><a href="#" id = 'student-life'>Accommodation</a></li>
-              <li><a href="#" id = 'student-life'>International Friendship</a></li>
-              <li><a href="#" id= 'student-life'>Sport Activities</a></li>
-              <li><a href="#" id= 'student-life'>Living Expenses</a></li>
-              <li><a href="#" id= 'student-life'>Opportunities</a></li>
-              <li><a href="#" id='student-life'>Handbook</a></li>
-          </ul>
-        </li>
+        <li><a href="#" id='life'>Student Life</a></li>
         <li><a href="#footer">Contact Us</a></li>
       </ul>
     </nav><!-- .main-nav -->
@@ -383,16 +374,7 @@ Header
         <li><a href="#portfolio" id="university">Universities</a></li>
         <li><a href="#" id='find-uni'>Find</a></li>
         <li><a href="#" id='scholarship'>Scholarship</a></li>
-        <li class="drop-down"><a href="#" id='life'>Student Life</a>
-              <ul>
-              <li><a href="#" id = 'student-life'>Accommodation</a></li>
-              <li><a href="#" id = 'student-life-1'>International Friendship</a></li>
-              <li><a href="#" id = 'student-life-2'>Sport Activities</a></li>
-              <li><a href="#" id = 'student-life-3'>Living Expenses</a></li>
-              <li><a href="#" id = 'student-life-4'>Opportunities</a></li>
-              <li><a href="#" id = 'student-life-5'>Handbook</a></li>
-              </ul>
-        </li>
+        <li><a href="#" id='life'>Student Life</a></li>
         <li><a href="#" id= 'contact-us'>Contact Us</a></li>
       </ul>
     </nav><!-- .main-nav -->
@@ -636,16 +618,7 @@ components.scholarshipScreen = `
               <li><a href='#' id='university'>Universities</a></li>
               <li><a href="#" id='find-uni'>Find</a></li>
               <li><a href='#intro'>Scholarship</a></li>
-              <li class="drop-down"><a href="#" id='life'>Student Life</a>
-              <ul>
-              <li><a href="#" id= 'student-life'>Accommodation</a></li>
-              <li><a href="#" id= 'student-life'>International Friendship</a></li>
-              <li><a href="#" id= 'student-life'>Sport Activities</a></li>
-              <li><a href="#" id= 'student-life'>Living Expenses</a></li>
-              <li><a href="#" id= 'student-life'>Opportunities</a></li>
-              <li><a href="#" id= 'student-life'>Handbook</a></li>
-          </ul>
-              </li>
+              <li><a href="#" id='life'>Student Life</a></li>
               <li><a href="#" id='contact-us'>Contact Us</a></li>
             </ul>
           </nav><!-- .main-nav -->
@@ -1033,7 +1006,6 @@ components.scholarshipScreen = `
     </div>
 `
 components.studentLifeScreen = `
-<div id='app'>
         <!--==========================
         Header
         ============================-->
@@ -1065,15 +1037,7 @@ components.studentLifeScreen = `
                 <li><a href="#" id='university'>Universities</a></li>
                 <li><a href="#" id='find-uni'>Find</a></li>
                 <li><a href="#" id='scholarship'>Scholarship</a></li>
-                <li class="drop-down"><a href="#life">Student Life</a>
-                    <ul>
-                        <li><a href="#portfolio">Accommodation</a></li>
-                        <li><a href="#portfolio">International Friendship</a></li>
-                        <li><a href="#portfolio">Sport Activities</a></li>
-                        <li><a href="#portfolio">Living Expenses</a></li>
-                        <li><a href="#portfolio">Opportunities</a></li>
-                        <li><a href="#portfolio">Handbook</a></li>
-                    </ul>
+                <li><a href='#portfolio' id="life">Student Life</a>
                 </li>
                 <li><a href="#" id='contact-us'>Contact Us</a></li>
               </ul>
@@ -1085,7 +1049,7 @@ components.studentLifeScreen = `
      <!--==========================
         Intro Section
       ============================-->
-      <section id="life" class="clearfix">
+      <section id="intro" class="clearfix intro">
         <div class="container d-flex h-100">
           <div class="row justify-content-center align-self-center">
             <div class="col-md-6 intro-info order-md-first order-last">
@@ -1117,7 +1081,7 @@ components.studentLifeScreen = `
                 <div class="col-lg-12">
                   <ul id="portfolio-flters">
                     <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-accommodation">Accommodation</li>
+                    <li data-filter=".filter-accommodation" id='accommodation'>Accommodation</li>
                     <li data-filter=".filter-friendship">International Friendship</li>
                     <li data-filter=".filter-sport">Sport Activities</li>
                     <li data-filter=".filter-expenses">Living Expenses</li>
@@ -1149,7 +1113,7 @@ components.studentLifeScreen = `
                       <h4><a href="#">International Friendship</a></h4>
                       <p>Friendship</p>
                       <div>
-                        <a href="public/image/portfolio/friendship.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="public/image/friendship.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
                         <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                       </div>
                     </div>
@@ -1288,5 +1252,5 @@ components.studentLifeScreen = `
         <!-- Uncomment below i you want to use a preloader -->
         <!-- <div id="preloader"></div> -->
   
-    </div>
+  
 `

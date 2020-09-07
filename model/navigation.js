@@ -21,13 +21,21 @@
          JsPorfolio();
          document.getElementById('app').scrollIntoView()
     });
-    $('#life').on('click',function(){
+
+    // student life page
+    $('#life').on('click',function(event){
+        event.preventDefault();
         view.setActiveScreen('studentLifeScreen');
+        JsPorfolio();
+        document.getElementById('app').scrollIntoView();
     })
     $('#student-life').on('click',function(){
         view.setActiveScreen('studentLifeScreen');
-        event.preventDefault()
-        document.getElementById('portfolio').scrollIntoView()
+        event.preventDefault();
+        JsPorfolio();
+        document.getElementById('portfolio').scrollIntoView();
+        
+        
     })
     $('#student-life-1').on('click',function(){
         view.setActiveScreen('studentLifeScreen');
