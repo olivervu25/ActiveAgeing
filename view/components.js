@@ -1075,7 +1075,7 @@ components.studentLifeScreen = `
                         <li><a href="#portfolio">Handbook</a></li>
                     </ul>
                 </li>
-                <li><a href="#footer">Contact Us</a></li>
+                <li><a href="#" id='contact-us'>Contact Us</a></li>
               </ul>
             </nav><!-- .main-nav -->
             
