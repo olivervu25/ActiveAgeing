@@ -14,10 +14,12 @@
         JsScholarship();
     });
 
-    $('#university').on('click',function(){
+    $('#university').on('click',function(event){
+        event.preventDefault();
         console.log('Change to university page');
         view.setActiveScreen('universityScreen');
-        // JsPorfolio();
+         JsPorfolio();
+         document.getElementById('app').scrollIntoView()
     });
     $('#life').on('click',function(){
         view.setActiveScreen('studentLifeScreen');

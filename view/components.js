@@ -380,7 +380,7 @@ Header
       <ul>
         <li class="active"><a id='home' href="#">Home</a></li>
         <li><a href="#" id='about-us'>About Us</a></li>
-        <li><a href="#portfolio">Universities</a></li>
+        <li><a href="#portfolio" id="university">Universities</a></li>
         <li><a href="#" id='find-uni'>Find</a></li>
         <li><a href="#" id='scholarship'>Scholarship</a></li>
         <li class="drop-down"><a href="#" id='life'>Student Life</a>
