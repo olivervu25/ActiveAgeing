@@ -75,9 +75,20 @@
         event.preventDefault()
         document.getElementById('footer').scrollIntoView()
     })
+    //find page
     $('#find-uni').on('click',function(event){
-        view.setActiveScreen('welcomeScreen');
-        event.preventDefault()
-        document.getElementById('find').scrollIntoView()
+        event.preventDefault();
+        view.setActiveScreen('findScreen');
+        document.getElementById('intro').scrollIntoView()
+        $.getScript( "public/js/findPage.js");
+    });
+    
+    $('#find-btn').on('click',function(event){
+        event.preventDefault();
+        console.log('chuyen sang find page');
+        view.setActiveScreen('findScreen');
+        document.getElementById('intro').scrollIntoView()
+        $.getScript( "public/js/findPage.js");
+        
     })
 
