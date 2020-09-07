@@ -31,22 +31,15 @@ Header
         <li><a id='university' href="#">Universities</a></li>
         <li><a href="#find">Find</a></li>
         <li><a id='scholarship' href="#">Scholarship</a></li>
-        <li class="drop-down"><a href="#">Student Life</a>
-        <!-- <ul>
-        <li><a href="#">Drop Down 1</a></li>
-        <li class="drop-down"><a href="#">Drop Down 2</a>
-          <ul>
-            <li><a href="#">Deep Drop Down 1</a></li>
-            <li><a href="#">Deep Drop Down 2</a></li>
-            <li><a href="#">Deep Drop Down 3</a></li>
-            <li><a href="#">Deep Drop Down 4</a></li>
-            <li><a href="#">Deep Drop Down 5</a></li>
+        <li class="drop-down"><a href="#" id='life'>Student Life</a>
+              <ul>
+              <li><a href="#" id = 'student-life'>Accommodation</a></li>
+              <li><a href="#" id = 'student-life'>International Friendship</a></li>
+              <li><a href="#" id= 'student-life'>Sport Activities</a></li>
+              <li><a href="#" id= 'student-life'>Living Expenses</a></li>
+              <li><a href="#" id= 'student-life'>Opportunities</a></li>
+              <li><a href="#" id='student-life'>Handbook</a></li>
           </ul>
-        </li>
-        <li><a href="#">Drop Down 3</a></li>
-        <li><a href="#">Drop Down 4</a></li>
-        <li><a href="#">Drop Down 5</a></li>
-      </ul> -->
         </li>
         <li><a href="#footer">Contact Us</a></li>
       </ul>
@@ -390,22 +383,15 @@ Header
         <li><a href="#portfolio">Universities</a></li>
         <li><a href="#" id='find-uni'>Find</a></li>
         <li><a href="#" id='scholarship'>Scholarship</a></li>
-        <li class="drop-down"><a href="#">Student Life</a>
-        <!-- <ul>
-        <li><a href="#">Drop Down 1</a></li>
-        <li class="drop-down"><a href="#">Drop Down 2</a>
-          <ul>
-            <li><a href="#">Deep Drop Down 1</a></li>
-            <li><a href="#">Deep Drop Down 2</a></li>
-            <li><a href="#">Deep Drop Down 3</a></li>
-            <li><a href="#">Deep Drop Down 4</a></li>
-            <li><a href="#">Deep Drop Down 5</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Drop Down 3</a></li>
-        <li><a href="#">Drop Down 4</a></li>
-        <li><a href="#">Drop Down 5</a></li>
-      </ul> -->
+        <li class="drop-down"><a href="#" id='life'>Student Life</a>
+              <ul>
+              <li><a href="#" id = 'student-life'>Accommodation</a></li>
+              <li><a href="#" id = 'student-life-1'>International Friendship</a></li>
+              <li><a href="#" id = 'student-life-2'>Sport Activities</a></li>
+              <li><a href="#" id = 'student-life-3'>Living Expenses</a></li>
+              <li><a href="#" id = 'student-life-4'>Opportunities</a></li>
+              <li><a href="#" id = 'student-life-5'>Handbook</a></li>
+              </ul>
         </li>
         <li><a href="#" id= 'contact-us'>Contact Us</a></li>
       </ul>
@@ -650,22 +636,15 @@ components.scholarshipScreen = `
               <li><a href='#' id='university'>Universities</a></li>
               <li><a href="#" id='find-uni'>Find</a></li>
               <li><a href='#intro'>Scholarship</a></li>
-              <li class="drop-down"><a href="#">Student Life</a>
-              <!-- <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul> -->
+              <li class="drop-down"><a href="#" id='life'>Student Life</a>
+              <ul>
+              <li><a href="#" id= 'student-life'>Accommodation</a></li>
+              <li><a href="#" id= 'student-life'>International Friendship</a></li>
+              <li><a href="#" id= 'student-life'>Sport Activities</a></li>
+              <li><a href="#" id= 'student-life'>Living Expenses</a></li>
+              <li><a href="#" id= 'student-life'>Opportunities</a></li>
+              <li><a href="#" id= 'student-life'>Handbook</a></li>
+          </ul>
               </li>
               <li><a href="#" id='contact-us'>Contact Us</a></li>
             </ul>
@@ -1026,6 +1005,264 @@ components.scholarshipScreen = `
       </section><!-- #faq -->
     </main>
    <!--==========================
+          Footer
+        ============================-->
+        <footer id="footer" class="section-bg">
+          
+            <div class="container">
+              <div class="copyright">
+                &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+                -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              </div>
+            </div>
+          </footer><!-- #footer -->
+  
+  
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <!-- Uncomment below i you want to use a preloader -->
+        <!-- <div id="preloader"></div> -->
+  
+    </div>
+`
+components.studentLifeScreen = `
+<div id='app'>
+        <!--==========================
+        Header
+        ============================-->
+        <header id="header">
+  
+          <div id="topbar">
+            <div class="container">
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="container">
+  
+            <div class="logo float-left">
+              <!-- Uncomment below if you prefer to use an image logo -->
+              <h1 class="text-light"><a href="#intro" class="scrollto"><span>Russia</span></a></h1>
+              <!-- <a href="#header" class="scrollto"><img src="public/image/logo.png" alt="" class="img-fluid"></a> -->
+            </div>
+  
+            <nav class="main-nav float-right d-none d-lg-block">
+              <ul>
+                <li class="active"><a id='home' href="#">Home</a></li>
+                <li><a href="#" id='about-us'>About Us</a></li>
+                <li><a href="#" id='university'>Universities</a></li>
+                <li><a href="#" id='find-uni'>Find</a></li>
+                <li><a href="#" id='scholarship'>Scholarship</a></li>
+                <li class="drop-down"><a href="#life">Student Life</a>
+                    <ul>
+                        <li><a href="#portfolio">Accommodation</a></li>
+                        <li><a href="#portfolio">International Friendship</a></li>
+                        <li><a href="#portfolio">Sport Activities</a></li>
+                        <li><a href="#portfolio">Living Expenses</a></li>
+                        <li><a href="#portfolio">Opportunities</a></li>
+                        <li><a href="#portfolio">Handbook</a></li>
+                    </ul>
+                </li>
+                <li><a href="#footer">Contact Us</a></li>
+              </ul>
+            </nav><!-- .main-nav -->
+            
+          </div>
+          
+        </header><!-- #header -->
+     <!--==========================
+        Intro Section
+      ============================-->
+      <section id="life" class="clearfix">
+        <div class="container d-flex h-100">
+          <div class="row justify-content-center align-self-center">
+            <div class="col-md-6 intro-info order-md-first order-last">
+              <h2>Rapid Solutions<br>for Your <span>Business!</span></h2>
+              <div>
+                <a href="#about" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 intro-img order-md-last order-first">
+              <img src="public/image/intro-img.svg" alt="" class="img-fluid">
+            </div>
+          </div>
+
+        </div>
+      </section><!-- #intro -->
+        <main>
+            <!--==========================
+          University Section
+        ============================-->
+        <section id="portfolio" class="section-bg">
+            <div class="container">
+  
+              <header class="section-header">
+                <h3 class="section-title">Student Life</h3>
+              </header>
+  
+              <div class="row">
+                <div class="col-lg-12">
+                  <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-accommodation">Accommodation</li>
+                    <li data-filter=".filter-friendship">International Friendship</li>
+                    <li data-filter=".filter-sport">Sport Activities</li>
+                    <li data-filter=".filter-expenses">Living Expenses</li>
+                    <li data-filter=".filter-opportunities">Opportunities</li>
+                    <li data-filter=".filter-handbook">Handbook</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row portfolio-container">
+  
+                <div class="col-lg-4 col-md-6 portfolio-item filter-accommodation">
+                  <div class="portfolio-wrap">
+                    <img src="public/image/accommodation.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4><a href="#">Accommodation</a></h4>
+                      <p>Accommodation in Moscow</p>
+                      <div>
+                        <a href="public/image/accommodation.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-lg-4 col-md-6 portfolio-item filter-friendship" data-wow-delay="0.1s">
+                  <div class="portfolio-wrap">
+                    <img src="public/image/friendship.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4><a href="#">International Friendship</a></h4>
+                      <p>Friendship</p>
+                      <div>
+                        <a href="public/image/portfolio/friendship.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-lg-4 col-md-6 portfolio-item filter-accommodation" data-wow-delay="0.2s">
+                  <div class="portfolio-wrap">
+                    <img src="public/image/accommodation-1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4><a href="#">Accommodation</a></h4>
+                      <p>Accommodation in Saint Petersburg</p>
+                      <div>
+                        <a href="public/image/accommodation-1.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-lg-4 col-md-6 portfolio-item filter-expenses">
+                  <div class="portfolio-wrap">
+                    <img src="public/image/rub-1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4><a href="#">Living expenses</a></h4>
+                      <p>Prices in the rural area</p>
+                      <div>
+                        <a href="public/image/rub-1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-lg-4 col-md-6 portfolio-item filter-expenses" data-wow-delay="0.1s">
+                  <div class="portfolio-wrap">
+                    <img src="public/image/rub.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4><a href="#">Living Expenses</a></h4>
+                      <p>Prices in the urban area</p>
+                      <div>
+                        <a href="public/image/rub.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-lg-4 col-md-6 portfolio-item filter-opportunities" data-wow-delay="0.2s">
+                  <div class="portfolio-wrap">
+                    <img src="public/image/activities.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4><a href="#">Opportunities</a></h4>
+                      <p>Opportunities for students</p>
+                      <div>
+                        <a href="public/image/activities.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-lg-4 col-md-6 portfolio-item filter-opportunities">
+                  <div class="portfolio-wrap">
+                    <img src="public/image/graduate.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4><a href="#">Opportunities</a></h4>
+                      <p>Opportunities for graduates</p>
+                      <div>
+                        <a href="public/image/graduate.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-lg-4 col-md-6 portfolio-item filter-accommodation" data-wow-delay="0.1s">
+                  <div class="portfolio-wrap">
+                    <img src="public/image/accommodation-2.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4><a href="#">Accommodation</a></h4>
+                      <p>Accommodation in another cities</p>
+                      <div>
+                        <a href="public/image/accommodation-2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-lg-4 col-md-6 portfolio-item filter-sport" data-wow-delay="0.2s">
+                  <div class="portfolio-wrap">
+                    <img src="public/image/sport.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <h4><a href="#">Sport</a></h4>
+                      <p>Sport Activities</p>
+                      <div>
+                        <a href="public/image/sport.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+  
+            </div>
+          </section><!-- #portfolio -->
+   
+        </main>
+
+   
+      <!--==========================
           Footer
         ============================-->
         <footer id="footer" class="section-bg">
