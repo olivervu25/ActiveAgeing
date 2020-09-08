@@ -37,7 +37,7 @@
 </head>
 <body>
   <div id='app'>
-      <!--==========================
+          <!--==========================
       Header
       ============================-->
       <header id="header">
@@ -63,29 +63,13 @@
 
           <nav class="main-nav float-right d-none d-lg-block">
             <ul>
-              <li class="active"><a href="#intro">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#portfolio">Universities</a></li>
-              <li><a href="#find">Find</a></li>
-              <li><a href="#team">Scholarship</a></li>
-              <li class="drop-down"><a href="">Student Life</a>
-              <!-- <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul> -->
-              </li>
-              <li><a href="#footer">Contact Us</a></li>
+              <li class="active"><a id='home' href="#intro">Home</a></li>
+              <li><a href="#" id='about-us'>About Us</a></li>
+              <li><a href='#' id='university'>Universities</a></li>
+              <li><a href="#" id='find-uni'>Find</a></li>
+              <li><a href='#intro'>Scholarship</a></li>
+              <li><a href="#" id='life'>Student Life</a></li>
+              <li><a href="#" id='contact-us'>Contact Us</a></li>
             </ul>
           </nav><!-- .main-nav -->
           
@@ -312,65 +296,67 @@
  
        </div>
      </section><!-- #about -->
-    <!--==========================
-      Success Story Section
-    ============================-->
-    <section id="testimonials">
-        <div class="container success">
-  
-          <header class="section-header">
-            <h3>Câu chuyện thành công</h3>
-          </header>
-  
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-  
-              <div class="owl-carousel testimonials-carousel wow fadeInUp">
-      
-                <div class="testimonial-item">
-                  <img src="./public/image/vu thanh long.jpg" class="testimonial-img" alt="">
-                  <h3>Vũ Thành Long</h3>
-                  <h4>NUST MISIS</h4>
-                  <p>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  </p>
-                </div>
-      
-                <div class="testimonial-item">
-                  <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
-                  <h3>Nguyễn Chiếm Dự</h3>
-                  <h4>NUST MISIS</h4>
-                  <p>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  </p>
-                </div>
-      
-                <div class="testimonial-item">
-                  <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <p>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  </p>
-                </div>
-      
-                <div class="testimonial-item">
-                  <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <p>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  </p>
-                </div>
-  
-              </div>
-  
-            </div>
-          </div>
-  
-  
-        </div>
-      </section><!-- #testimonials -->
+     <!--==========================
+     Success Story Section
+   ============================-->
+   <section id="testimonials">
+       <div class="container">
+ 
+         <header class="section-header">
+           <h3>Câu chuyện thành công</h3>
+         </header>
+ 
+         <div class="row justify-content-center">
+           <div class="col-lg-8">
+ 
+             <div class="owl-carousel testimonials-carousel wow fadeInUp">
+     
+               <div class="testimonial-item">
+                 <img src="./public/image/vu thanh long.jpg" class="testimonial-img" alt="">
+                 <h3>Vũ Thành Long</h3>
+                 <h4>NUST MISIS</h4>
+                 <p>
+                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                 </p>
+               </div>
+     
+               <div class="testimonial-item">
+                 <img src="public/image/testimonial-2.jpg" class="testimonial-img" alt="">
+                 <h3>Nguyễn Chiếm Dự</h3>
+                 <h4>NUST MISIS</h4>
+                 <p>
+                   Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                 </p>
+               </div>
+     
+               <div class="testimonial-item">
+                 <img src="public/image/testimonial-3.jpg" class="testimonial-img" alt="">
+                 <h3>Jena Karlis</h3>
+                 <h4>Store Owner</h4>
+                 <p>
+                   Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                 </p>
+               </div>
+     
+               <div class="testimonial-item">
+                 <img src="public/image/testimonial-4.jpg" class="testimonial-img" alt="">
+                 <h3>Matt Brandon</h3>
+                 <h4>Freelancer</h4>
+                 <p>
+                   Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                 </p>
+               </div>
+ 
+             </div>
+ 
+           </div>
+         </div>
+ 
+ 
+       </div>
+     </section><!-- #testimonials -->
+     <br>
+     <br>
       <!--==========================
       Frequently Asked Questions Section
     ============================-->
@@ -381,7 +367,7 @@
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
           </header>
   
-          <ul id="faq-list" class="wow fadeInUp">
+          <!-- <ul id="faq-list" class="wow fadeInUp">
             <li>
               <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="ion-android-remove"></i></a>
               <div id="faq1" class="collapse" data-parent="#faq-list">
@@ -436,8 +422,12 @@
               </div>
             </li>
   
-          </ul>
-  
+          </ul> -->
+          <div class="row justify-content-center">
+            <div id='listQuestion' class="list-group col-lg-8">
+          </div>
+          
+          
         </div>
       </section><!-- #faq -->
     </main>
@@ -468,7 +458,7 @@
         <!-- <div id="preloader"></div> -->
   
     </div>
-  
+  </div>
     <!-- JavaScript Libraries -->
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/jquery/jquery-migrate.min.js"></script>
@@ -486,6 +476,7 @@
   
     <!-- Template Main Javascript File -->
     <script src="public/js/main.js"></script>
+    <script src='public/js/FAQs.js'></script>
   
   </body>
   </html>

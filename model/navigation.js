@@ -12,6 +12,7 @@
     $('#scholarship').on('click',function(){
         view.setActiveScreen('scholarshipScreen');
         JsScholarship();
+        $.getScript('public/js/FAQs.js');
     });
 
     $('#university').on('click',function(event){
