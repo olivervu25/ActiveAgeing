@@ -917,11 +917,11 @@ components.scholarshipScreen = `
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
           </header>
   
-          <div class="row justify-content-center">
-            <div id='listQuestion' class="list-group col-lg-8">
-          </div>
+          
+            <div id='faq-list' class="list-group">
+            </div>
   
-        </div>
+        
       </section><!-- #faq -->
     </main>
    <!--==========================

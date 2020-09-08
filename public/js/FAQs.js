@@ -1,6 +1,6 @@
 var FAQsList = [
     {id : 1,
-     question :'HOT BOY MOSKVA ĐẠT ĐIỂM TUYỆT ĐỐI TRONG KỲ THI TỐT NGHIỆP PHỔ THÔNG!',
+     question :'Hot boy Moskva đạt điểm tuyệt đối trong kỳ thi tốt nghiệp trung học phổ thông',
      answer : `
      <img class="img-thumbnail mb-5" src='public/image/thu-khoa-nga.png'/>
      <p>Dmitry Savichev đến từ Trường Kỹ thuật Bauman №1580 (Moscow) đạt tối đa 100 điểm cả bốn môn học (tổng 400đ). Năm 2020 này toàn Liên bang Nga chỉ có hai thí sinh đạt điểm tối đa như vậy.</p>
@@ -16,7 +16,7 @@ var FAQsList = [
      `
     },
     {id : 2,
-     question :'HOT BOY MOSKVA ĐẠT ĐIỂM TUYỆT ĐỐI TRONG KỲ THI TỐT NGHIỆP PHỔ THÔNG!',
+     question :'Hot boy Moskva đạt điểm tuyệt đối trong kỳ thi tốt nghiệp trung học phổ thông',
      answer : `
      <img class="img-thumbnail mb-5" src='public/image/thu-khoa-nga.png'/>
      <p>Dmitry Savichev đến từ Trường Kỹ thuật Bauman №1580 (Moscow) đạt tối đa 100 điểm cả bốn môn học (tổng 400đ). Năm 2020 này toàn Liên bang Nga chỉ có hai thí sinh đạt điểm tối đa như vậy.</p>
@@ -32,7 +32,7 @@ var FAQsList = [
      `
     },
     {id : 3,
-     question :'HOT BOY MOSKVA ĐẠT ĐIỂM TUYỆT ĐỐI TRONG KỲ THI TỐT NGHIỆP PHỔ THÔNG!',
+     question :'Hot boy Moskva đạt điểm tuyệt đối trong kỳ thi tốt nghiệp trung học phổ thông',
      answer : `
      <img class="img-thumbnail mb-5" src='public/image/thu-khoa-nga.png'/>
      <p>Dmitry Savichev đến từ Trường Kỹ thuật Bauman №1580 (Moscow) đạt tối đa 100 điểm cả bốn môn học (tổng 400đ). Năm 2020 này toàn Liên bang Nga chỉ có hai thí sinh đạt điểm tối đa như vậy.</p>
@@ -48,7 +48,7 @@ var FAQsList = [
      `
     },
     {id: 4,
-     question :'HOT BOY MOSKVA ĐẠT ĐIỂM TUYỆT ĐỐI TRONG KỲ THI TỐT NGHIỆP PHỔ THÔNG!',
+     question :'Hot boy Moskva đạt điểm tuyệt đối trong kỳ thi tốt nghiệp trung học phổ thông',
      answer : `
      <img class="img-thumbnail mb-5" src='public/image/thu-khoa-nga.png'/>
      <p>Dmitry Savichev đến từ Trường Kỹ thuật Bauman №1580 (Moscow) đạt tối đa 100 điểm cả bốn môn học (tổng 400đ). Năm 2020 này toàn Liên bang Nga chỉ có hai thí sinh đạt điểm tối đa như vậy.</p>
@@ -69,7 +69,7 @@ var FAQsList = [
 var htmlFAQsList = FAQsList.map(value=>{
     return(
         `
-        <button type="button" data-toggle="modal" data-target="#question${value.id}" class="list-group-item list-group-item-action">${value.question}</button>
+        <a type="button" data-toggle="modal" data-target="#question${value.id}" class="list-group-item list-group-item-action pl-3">${value.question}<button class='close'>+</button></a>
             <div id='question${value.id}' class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 
@@ -93,4 +93,4 @@ var htmlFAQsList = FAQsList.map(value=>{
 
 var tmp ='';
 htmlFAQsList.forEach(value=>{tmp= tmp+value});
-document.getElementById('listQuestion').innerHTML=tmp;
+document.getElementById('faq-list').innerHTML=tmp;
