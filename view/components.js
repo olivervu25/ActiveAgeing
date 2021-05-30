@@ -6,7 +6,12 @@ Header
 <header id="header">
 
   <div id="topbar">
+  
     <div class="container">
+    
+    <div class="logo float-left">
+      <a href="#header" class=""><img src="public/image/logo.png" alt="" class="logo"></a>
+    </div>
       <div class="social-links">
         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -18,21 +23,16 @@ Header
 
   <div class="container">
 
-    <div class="logo float-left">
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <h1 class="text-light"><a href="#intro" class="scrollto"><span>Russia</span></a></h1>
-      <!-- <a href="#header" class="scrollto"><img src="public/image/logo.png" alt="" class="img-fluid"></a> -->
-    </div>
 
     <nav class="main-nav float-right d-none d-lg-block">
       <ul>
-        <li class="active"><a id='home' href="#intro">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a id='university' href="#">Universities</a></li>
-        <li><a id='find-uni' href="#">Find</a></li>
-        <li><a id='scholarship' href="#">Scholarship</a></li>
-        <li><a href="#" id='life'>Student Life</a></li>
-        <li><a href="#footer">Contact Us</a></li>
+        <li class="active"><a id='home' href="#intro">Trang Chủ</a></li>
+        <li><a href="#about">Về chúng tôi</a></li>
+        <li><a id='university' href="#">Vấn đề xã hội</a></li>
+        <li><a id='find-uni' href="#">Lập kế hoạch về hưu</a></li>
+        <li><a id='scholarship' href="#">Thông tin</a></li>
+        <li><a href="#" id='life'>Đăng ký thành viên</a></li>
+        <li><a href="#footer">Liên hệ</a></li>
       </ul>
     </nav><!-- .main-nav -->
     
@@ -42,23 +42,70 @@ Header
 <!--==========================
   Intro Section
 ============================-->
-<section id="intro" class="clearfix">
-  <div class="container d-flex h-100">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <section id="intro" class="clearfix">
+
+    <div class="container d-flex h-100">
     <div class="row justify-content-center align-self-center">
       <div class="col-md-6 intro-info order-md-first order-last">
-        <h2>Rapid Solutions<br>for Your <span>Business!</span></h2>
+        <h2>Vì một tuổi <span>"xế chiều"</span> thịnh vượng, khỏe mạnh, an vui.</h2>
         <div>
-          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="#about" class="btn-get-started scrollto">Lên kế hoạch về hưu ngay</a>
         </div>
       </div>
+    
+      <div class="col-md-6 intro-img order-md-last order-first">
+        <img src="public/image/header/header1.png" alt="" class="img-fluid">
+      </div>
+    
+    </div>
+    </div>
+    </section><!-- #intro -->    </div>
+    <div class="carousel-item">
+    <section id="intro" class="clearfix">
 
+    <div class="container d-flex h-100">
+    <div class="row justify-content-center align-self-center">
+      <div class="col-md-6 intro-info order-md-first order-last">
+        <h2>Active Ageing là dự án kinh doanh xã hội giúp mọi người chuẩn bị cho tuổi già một cách chủ động và kỹ càng.</h2>
+      </div>
+    
       <div class="col-md-6 intro-img order-md-last order-first">
         <img src="public/image/intro-img.svg" alt="" class="img-fluid">
       </div>
+    
     </div>
+    </div>
+    </section><!-- #intro -->     </div>
+    <div class="carousel-item">
+    <section id="intro" class="clearfix">
 
+    <div class="container d-flex h-100">
+    <div class="row justify-content-center align-self-center">
+      <div class="col-md-6 intro-info order-md-first order-last">
+        <h2>Già hoá dân số không chỉ là một vấn đề vĩ mô mà còn tác động đến mỗi cá nhân, mỗi gia đình</h2>
+      </div>
+    
+      <div class="col-md-6 intro-img order-md-last order-first">
+        <img src="public/image/intro-img.svg" alt="" class="img-fluid">
+      </div>
+    
+    </div>
+    </div>
+    </section><!-- #intro -->     </div>
   </div>
-</section><!-- #intro -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
 
 <main id="main">
 
@@ -66,29 +113,27 @@ Header
     About Us Section
   ============================-->
   <section id="about">
-
     <div class="container">
       <div class="row">
 
         <div class="col-lg-5 col-md-6">
           <div class="about-img">
-            <img src="public/image/about-img.jpg" alt="">
+            <img src="public/image/story.jpg" alt="">
           </div>
         </div>
 
         <div class="col-lg-7 col-md-6">
           <div class="about-content">
-            <h2>About Us</h2>
-            <h3>Odio sed id eos et laboriosam consequatur eos earum soluta.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Aut dolor id. Sint aliquam consequatur ex ex labore. Et quis qui dolor nulla dolores neque. Aspernatur consectetur omnis numquam quaerat. Sed fugiat nisi. Officiis veniam molestiae. Et vel ut quidem alias veritatis repudiandae ut fugit. Est ut eligendi aspernatur nulla voluptates veniam iusto vel quisquam. Fugit ut maxime incidunt accusantium totam repellendus eum error. Et repudiandae eum iste qui et ut ab alias.</p>
-            <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
+            <h2>Câu chuyện của Active Ageing Vietnam</h2>
+            <p>Dự án Active Ageing được ra đời với nỗi trăn trở về một vấn đề mà Việt Nam và các nước trong khu vực đang và sẽ phải đối mặt trong tương lai gần, đó chính là già hoá dân số và những hệ luỵ có liên quan.<br><br>Chúng tôi tin rằng việc đồng hành cùng mỗi cá nhân nâng cao sự chủ động trong quản lý tài chính và bảo vệ sức khoẻ sẽ tạo ra những ảnh hưởng tích cực cho cộng đồng, góp phần kiến tạo một tương lai bền vững hơn. Những giải pháp mà Active Ageing đang phát triển sẽ giúp tất cả mọi người, ở mọi lứa tuổi, có được sự hiểu biết và có thể bắt đầu chuẩn bị cho tuổi già về tài chính và sức khoẻ ngay từ hôm nay.</p>
+            <div>
+            <a href="#"><h4>Tìm hiểu thêm những giải pháp từ Active Ageing Vietnam →</h4></a>
+            </div>
           </div>
+            
         </div>
+
+
       </div>
     </div>
 
@@ -98,85 +143,119 @@ Header
     Team Section
   ============================-->
   <section id="team" class="section-bg">
+  
     <div class="container">
       <div class="section-header">
-        <h3>Team</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        <h3>Chúng tôi</h3>
+        <p>Những người trẻ cùng chung nỗi trăn trở</p>
       </div>
 
       <div class="row">
 
         <div class="col-lg-3 col-md-6 wow fadeInUp">
           <div class="member">
-            <img src="public/image/team-1.jpg" class="img-fluid" alt="">
+            <img src="public/image/team/quynh.jpg" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <div class="social">
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-google-plus"></i></a>
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
-                </div>
+                <h4>Nguyễn Lê Như Quỳnh</h4>
+                <span>Project Leader</span>
+                <span>Đại học Ngoại Thương CS2. TPHCM</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
           <div class="member">
-            <img src="public/image/team-2.jpg" class="img-fluid" alt="">
+            <img src="public/image/team/nhu.jpg" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <div class="social">
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-google-plus"></i></a>
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
-                </div>
+                <h4>Lâm Tố Như</h4>
+                <span>External Relations Executive</span>
+                <span>Đại học Ngoại Thương CS2. TPHCM</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
           <div class="member">
-            <img src="public/image/team-3.jpg" class="img-fluid" alt="">
+            <img src="public/image/team/thu.jpg" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <div class="social">
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-google-plus"></i></a>
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
-                </div>
+                <h4>Trần Minh Thư</h4>
+                <span>Project Development Executive</span>
+                <span>Đại học Ngoại Thương CS2. TPHCM</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
           <div class="member">
-            <img src="public/image/team-4.jpg" class="img-fluid" alt="">
+            <img src="public/image/team/long.jpg" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <div class="social">
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-google-plus"></i></a>
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
-                </div>
+                <h4>Vũ Thành Long</h4>
+                <span>Technical Leader</span>
+                <span>Đại học Khoa Học và Công Nghệ, Nga</span>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/du.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Nguyễn Chiếm Dự</h4>
+                <span>Engineering Executive</span>
+                <span>Đại học Khoa Học và Công Nghệ, Nga</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/vy.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Hồ Phan Thanh Vy</h4>
+                <span>Finance Executive</span>
+                <span>Đại học Ngoại Thương CS2 TP.Hồ Chí Minh</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/vy.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Nguyễn Quốc Tuấn</h4>
+                <span>Marketing Executive</span>
+                <span>Đại học Ngoại Thương CS2 TP.Hồ Chí Minh</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/vy.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Nguyễn Huyền Trang</h4>
+                <span>Marketing Executive</span>
+                <span>Đại học Ngoại Thương, Hà Nội</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
       </div>
 
@@ -190,20 +269,14 @@ Header
     <div class="container">
       <div class="row feature-item mt-5 pt-5">
         <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-          <img src="public/image/features-2.svg" class="img-fluid" alt="">
+          <img src="public/image/survey.png" class="img-fluid" alt="">
         </div>
-        
-        
-         
         <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1 find-university">
-          <h2>Find University</h2>
-          <h3>Type your University here for more information</h3>
+          <h2>Chúng tôi cần bạn!</h2>
+          <h3>Ý kiến của bạn sẽ giúp chúng tôi hoàn thiện giải pháp hơn.</h3>
           <!-- Du Search box and Find Button -->
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="University's name">
-            <div class="input-group-append">
-              <button id='find-btn' class="btn blue-btn" type="submit">Find</button>
-            </div>
+          <div>
+          <a href="https://bitly.com.vn/5fnd50" target="_blank" class="btn-survey scrollto">Ý KIẾN CỦA BẠN</a>
           </div>
         </div>
         
@@ -228,17 +301,8 @@ Header
   
                   <div class="footer-info">
                     <h3>Rapid</h3>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                    <p>Dự án Active Ageing được ra đời với nỗi trăn trở về một vấn đề mà Việt Nam và các nước trong khu vực đang và sẽ phải đối mặt trong tương lai gần, đó chính là già hoá dân số và những hệ luỵ có liên quan. Chúng tôi tin rằng việc đồng hành cùng mỗi cá nhân nâng cao sự chủ động trong quản lý tài chính và bảo vệ sức khoẻ sẽ tạo ra những ảnh hưởng tích cực cho cộng đồng, góp phần kiến tạo một tương lai bền vững hơn.</p>
                   </div>
-  
-                  <div class="footer-newsletter">
-                    <h4>Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem.</p>
-                    <form action="" method="post">
-                      <input type="email" name="email"><input type="submit"  value="Subscribe">
-                    </form>
-                  </div>
-  
                 </div>
   
                 <div class="col-sm-6">
@@ -254,13 +318,12 @@ Header
                   </div>
   
                   <div class="footer-links">
-                    <h4>Contact Us</h4>
+                    <h4>Liên hệ</h4>
                     <p>
-                      A108 Adam Street <br>
-                      New York, NY 535022<br>
-                      United States <br>
-                      <strong>Phone:</strong> +1 5589 55488 55<br>
-                      <strong>Email:</strong> info@example.com<br>
+                      (Ms.) Lâm Tố Như<br>
+                      External Relations Executive<br>
+                      <strong>Phone:</strong> +84 914864707<br>
+                      <strong>Email:</strong> lamtonhu1801015046@ftu.edu.vn<br>
                     </p>
                   </div>
   
@@ -347,7 +410,6 @@ components.universityScreen = `
 Header
 ============================-->
 <header id="header">
-
   <div id="topbar">
     <div class="container">
       <div class="social-links">
@@ -360,7 +422,6 @@ Header
   </div>
 
   <div class="container">
-
     <div class="logo float-left">
       <!-- Uncomment below if you prefer to use an image logo -->
       <h1 class="text-light"><a href="#intro" class="scrollto"><span>Russia</span></a></h1>
@@ -369,13 +430,13 @@ Header
 
     <nav class="main-nav float-right d-none d-lg-block">
       <ul>
-        <li class="active"><a id='home' href="#">Home</a></li>
-        <li><a href="#" id='about-us'>About Us</a></li>
-        <li><a href="#portfolio" id="university">Universities</a></li>
-        <li><a href="#" id='find-uni'>Find</a></li>
-        <li><a href="#" id='scholarship'>Scholarship</a></li>
-        <li><a href="#" id='life'>Student Life</a></li>
-        <li><a href="#" id= 'contact-us'>Contact Us</a></li>
+      <li class="active"><a id='home' href="#intro">Trang Chủ</a></li>
+      <li><a href="#about">Về chúng tôi</a></li>
+      <li><a href="#portfolio">Vấn đề xã hội</a></li>
+      <li><a id='find-uni' href="#">Lập kế hoạch về hưu</a></li>
+      <li><a id='scholarship' href="#">Thông tin</a></li>
+      <li><a href="#" id='life'>Đăng ký thành viên</a></li>
+      <li><a href="#footer">Liên hệ</a></li>
       </ul>
     </nav><!-- .main-nav -->
     
@@ -405,154 +466,26 @@ Header
 
 <main id='main'>
   <!--==========================
-    University Section
+    Vấn đề xã hội
   ============================-->
   <section id="portfolio" class="section-bg">
     <div class="container">
 
       <header class="section-header">
-        <h3 class="section-title">Our Portfolio</h3>
+        <h3 class="section-title">Vấn đề xã hội</h3>
       </header>
-
-      <div class="row">
-        <div class="col-lg-12">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="public/image/portfolio/app1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4><a href="#">App 1</a></h4>
-              <p>App</p>
-              <div>
-                <a href="public/image/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-          <div class="portfolio-wrap">
-            <img src="public/image/portfolio/web3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4><a href="#">Web 3</a></h4>
-              <p>Web</p>
-              <div>
-                <a href="public/image/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-          <div class="portfolio-wrap">
-            <img src="public/image/portfolio/app2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4><a href="#">App 2</a></h4>
-              <p>App</p>
-              <div>
-                <a href="public/image/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="public/image/portfolio/card2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4><a href="#">Card 2</a></h4>
-              <p>Card</p>
-              <div>
-                <a href="public/image/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-          <div class="portfolio-wrap">
-            <img src="public/image/portfolio/web2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4><a href="#">Web 2</a></h4>
-              <p>Web</p>
-              <div>
-                <a href="public/image/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-          <div class="portfolio-wrap">
-            <img src="public/image/portfolio/app3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4><a href="#">App 3</a></h4>
-              <p>App</p>
-              <div>
-                <a href="public/image/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="public/image/portfolio/card1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4><a href="#">Card 1</a></h4>
-              <p>Card</p>
-              <div>
-                <a href="public/image/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
-          <div class="portfolio-wrap">
-            <img src="public/image/portfolio/card3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4><a href="#">Card 3</a></h4>
-              <p>Card</p>
-              <div>
-                <a href="public/image/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
-          <div class="portfolio-wrap">
-            <img src="public/image/portfolio/web1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4><a href="#">Web 1</a></h4>
-              <p>Web</p>
-              <div>
-                <a href="public/image/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div class="content-issue">
+      <p>Theo Vụ Liên Hiệp Quốc về vấn đề Kinh tế và Xã hội, tốc độ già hoá dân số tại các quốc gia Đông Nam Á hiện nay rất nhanh. Theo báo cáo năm 2019 của Ủy ban Quốc gia về Người cao tuổi Việt Nam, khoảng 1/5 người Việt Nam sẽ từ 60 tuổi trở lên vào năm 2035, đưa Việt Nam trở thành một trong ba nước ASEAN duy nhất có tỷ lệ người cao tuổi trên 20%.</p>
+      <p>Trước thực tế đó, sự chuẩn bị cho giai đoạn già hoá dân số là vô cùng cấp thiết. Nếu không nắm bắt được giai đoạn vàng lúc này, 15 năm tới, Việt Nam sẽ rơi vào bẫy thu nhập trung bình và người dân sẽ ngày càng có nguy cơ “già trước khi giàu”.</p>
+      <p class="quote">“Getting old before getting rich” - khái niệm vĩ mô, tác động cá nhân.</p>
+      <p>Báo cáo “Vietnam as an Ageing Society” mới đây đã chỉ ra rằng có đến 16% người Việt Nam trên 60 tuổi rơi vào nhóm nghèo. Trong khi đó, chỉ có 23,5% người trên 60 tuổi được hưởng lương hưu hoặc trợ cấp bảo hiểm xã hội hàng tháng. Thu nhập của người cao tuổi sau về hưu phụ thuộc lớn vào trợ cấp từ con cái. Mô hình gia đình truyền thống nhiều thế hệ cùng chung sống dưới một mái nhà đang chuyển dần sang mô hình gia đình hạt nhân. Khi đó, người cao tuổi phải sống xa con cái và có khả năng sống một mình. Ngoài ra, hệ thống chăm sóc sức khỏe còn hạn chế ở Việt Nam, cùng với chi phí khám chữa bệnh ngày càng tăng đã ảnh hưởng tiêu cực đến sự hưởng thụ sau khi về hưu của người cao tuổi. 
+      </p>
+      <p>Nếu không có thái độ tích cực chuẩn bị cho độ tuổi trên 60, người cao tuổi sẽ phải đối mặt với những hậu quả nghiêm trọng như hạn chế tài chính và hạn chế tiếp cận các dịch vụ chăm sóc sức khỏe.</p>
+      <p class="quote">"Những vấn đề trên sẽ trở nên càng trầm trọng hơn khi 15 năm tới đây, số người cao tuổi sẽ tăng"</p>
+      <p>Nhìn thấy những vấn đề trên sẽ trở nên càng trầm trọng hơn khi 15 năm tới đây, số người cao tuổi sẽ tăng và chiếm hơn ⅕ dân số, Active Ageing Vietnam mong muốn có thể cộng hưởng đến những thay đổi hiện có để giúp mỗi người có sự chuẩn bị cho tuổi già tốt hơn, sớm hơn. Cùng với những thay đổi chính sách của Chính phủ, Active Ageing là một giải pháp tối ưu trong việc.</p>
+      <p class="quote">"Thúc đẩy tư duy tích cực hướng tới chuẩn bị an toàn tài chính và tiếp cận chăm sóc sức khỏe là vô cùng cần thiết"</p>
+      <p>chuẩn bị cho một Việt Nam sẽ là một quốc gia có già hóa dân số vào năm 2035.</p>
+      <p>Trong giai đoạn đầu, đối tượng mục tiêu của chúng tôi là những người lao động có thu nhập trung bình ít nhất 15 năm trước khi nghỉ hưu.</p>
       </div>
 
     </div>
@@ -612,15 +545,15 @@ components.scholarshipScreen = `
           </div>
 
           <nav class="main-nav float-right d-none d-lg-block">
-            <ul>
-              <li class="active"><a id='home' href="#intro">Home</a></li>
-              <li><a href="#" id='about-us'>About Us</a></li>
-              <li><a href='#' id='university'>Universities</a></li>
-              <li><a href="#" id='find-uni'>Find</a></li>
-              <li><a href='#intro'>Scholarship</a></li>
-              <li><a href="#" id='life'>Student Life</a></li>
-              <li><a href="#" id='contact-us'>Contact Us</a></li>
-            </ul>
+          <ul>
+          <li class="active"><a id='home' href="#intro">Trang Chủ</a></li>
+          <li><a href="#about">Về chúng tôi</a></li>
+          <li><a id='university' href="#">Vấn đề xã hội</a></li>
+          <li><a id='find-uni' href="#">Lập kế hoạch về hưu</a></li>
+          <li><a id='scholarship' href="#">Thông tin</a></li>
+          <li><a href="#" id='life'>Đăng ký thành viên</a></li>
+          <li><a href="#footer">Liên hệ</a></li>
+        </ul>
           </nav><!-- .main-nav -->
           
         </div>
@@ -979,16 +912,15 @@ components.studentLifeScreen = `
             </div>
   
             <nav class="main-nav float-right d-none d-lg-block">
-              <ul>
-                <li class="active"><a id='home' href="#">Home</a></li>
-                <li><a href="#" id='about-us'>About Us</a></li>
-                <li><a href="#" id='university'>Universities</a></li>
-                <li><a href="#" id='find-uni'>Find</a></li>
-                <li><a href="#" id='scholarship'>Scholarship</a></li>
-                <li><a href='#portfolio' id="life">Student Life</a>
-                </li>
-                <li><a href="#" id='contact-us'>Contact Us</a></li>
-              </ul>
+            <ul>
+            <li class="active"><a id='home' href="#intro">Trang Chủ</a></li>
+            <li><a href="#about">Về chúng tôi</a></li>
+            <li><a id='university' href="#">Vấn đề xã hội</a></li>
+            <li><a id='find-uni' href="#">Lập kế hoạch về hưu</a></li>
+            <li><a id='scholarship' href="#">Thông tin</a></li>
+            <li><a href="#" id='life'>Đăng ký thành viên</a></li>
+            <li><a href="#footer">Liên hệ</a></li>
+          </ul>
             </nav><!-- .main-nav -->
             
           </div>
@@ -1224,15 +1156,15 @@ components.findScreen = `
         </div>
 
         <nav class="main-nav float-right d-none d-lg-block">
-          <ul>
-              <li class="active"><a id='home' href="#intro">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a id='university' href="#">Universities</a></li>
-              <li><a id='find-uni'href="#find">Find</a></li>
-              <li><a id='scholarship' href="#">Scholarship</a></li>
-              <li><a href="#">Student Life</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
+        <ul>
+        <li class="active"><a id='home' href="#intro">Trang Chủ</a></li>
+        <li><a href="#about">Về chúng tôi</a></li>
+        <li><a id='university' href="#">Vấn đề xã hội</a></li>
+        <li><a id='find-uni' href="#">Lập kế hoạch về hưu</a></li>
+        <li><a id='scholarship' href="#">Thông tin</a></li>
+        <li><a href="#" id='life'>Đăng ký thành viên</a></li>
+        <li><a href="#footer">Liên hệ</a></li>
+      </ul>
         </nav><!-- .main-nav -->
         
       </div>

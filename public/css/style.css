@@ -9,6 +9,7 @@
 # General
 --------------------------------------------------------------*/
 
+
 body {
   background: #fff;
   color: #444;
@@ -180,7 +181,7 @@ h6 {
   display: none;
 }
 
-#header .logo h1 {
+/* #header .logo h1 {
   font-size: 36px;
   margin: 0;
   padding: 0;
@@ -194,12 +195,12 @@ h6 {
 #header .logo h1 a:hover {
   color: #413e66;
   text-decoration: none;
-}
+} */
 
 #header .logo img {
   padding: 0;
-  margin: 7px 0;
-  max-height: 26px;
+  height: 100px;
+  width: 100px;
 }
 
 .main-pages {
@@ -491,9 +492,39 @@ h6 {
 
 /* Section with background
 --------------------------------*/
+.content-issue .quote{
+  font-size: 35px;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  color: #413e66;
+
+}
+
+.content-issue p{
+  font-family: "Montserrat", sans-serif;
+  color: #696592;
+  text-align: justify;
+}
+
 
 .section-bg {
   background: #f5f8fd;
+}
+
+.section-bg .btn-survey{
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1bb1dc;
+  color: #fff;
+  margin-top: 30px;
 }
 
 /* About Us Section
@@ -507,10 +538,29 @@ h6 {
   padding-top: 40px;
 }
 
+#about .about-content p{
+  padding-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #696592;
+  font-weight: 400;
+  text-align: justify;
+}
+
 #about .about-content h2 {
   color: #413e66;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 650;
+  font-size: 30px;
+}
+
+#about .about-content h4 {
+  padding-top: 20px;
+  color: #1bb1dc;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  text-align: end;
+  font-weight: 400;
 }
 
 #about .about-content h3 {
@@ -613,7 +663,7 @@ h6 {
 
 #team .member .member-info-content {
   transition: margin 0.2s;
-  height: 40px;
+  height: 50px;
   transition: height 0.4s;
 }
 
@@ -1273,6 +1323,7 @@ h6 {
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 0;
+  text-align: justify;
   font-family: "Montserrat", sans-serif;
   color: #535074;
 }
