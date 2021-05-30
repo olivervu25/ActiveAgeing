@@ -187,7 +187,7 @@ Header
 
         <div class="col-lg-3 col-md-6 wow fadeInUp">
           <div class="member">
-            <img src="public/image/team/thu.jpg" class="img-fluid" alt="">
+            <img src="public/image/team/thu2.jpg" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
                 <h4>Trần Minh Thư</h4>
