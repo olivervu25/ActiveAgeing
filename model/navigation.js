@@ -7,8 +7,6 @@
     });
     
     //  univesity page
-
-
     $('#scholarship').on('click',function(){
         view.setActiveScreen('scholarshipScreen');
         JsScholarship();
@@ -93,3 +91,7 @@
         
     })
 
+    // new code for active ageing
+    $('#learn_more_about').on('click',function(){
+        view.setActiveScreen('aboutScreen');
+    })

@@ -4,7 +4,10 @@
   Author: BootstrapMade.com
   License: https://bootstrapmade.com/license/
 */
-
+/* Additionnal config */
+#about .box{
+  min-height:  331px;
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -748,11 +751,11 @@ h6 {
 /* Services Section
 --------------------------------*/
 
-#services {
+#about {
   padding: 60px 0 40px 0;
 }
 
-#services .box {
+#about .box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -764,12 +767,12 @@ h6 {
   text-align: center;
 }
 
-#services .box:hover {
+#about .box:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-#services .icon {
+#about .icon {
   margin: 0 auto 15px auto;
   padding-top: 12px;
   display: inline-block;
@@ -779,26 +782,26 @@ h6 {
   height: 60px;
 }
 
-#services .icon i {
+#about .icon i {
   font-size: 36px;
   line-height: 1;
 }
 
-#services .title {
+#about .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-#services .title a {
+#about .title a {
   color: #111;
 }
 
-#services .box:hover .title a {
+#about .box:hover .title a {
   color: #1bb1dc;
 }
 
-#services .description {
+#about .description {
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 0;
