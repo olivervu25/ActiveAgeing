@@ -496,7 +496,7 @@ h6 {
 /* Section with background
 --------------------------------*/
 .content-issue .quote{
-  font-size: 35px;
+  font-size: 33px;
   font-family: 'Lobster', cursive;
   text-align: center;
   color: #413e66;
@@ -858,7 +858,40 @@ h6 {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #8a87b6;
+
 }
+
+#portfolio .counters {
+  padding-top: 0px;
+  padding-bottom: 15px;
+}
+
+#portfolio .counters span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  display: block;
+  color: #413e66;
+}
+
+#portfolio .counters p {
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #8a87b6;
+  
+}
+
+#portfolio .space-need{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#portfolio .space-need-1{
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
 
 /* Call To Action Section
 --------------------------------*/
@@ -980,7 +1013,7 @@ h6 {
 }
 
 #portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 {
-  font-size: 22px;
+  font-size: 25px;
   line-height: 1px;
   font-weight: 700;
   margin-bottom: 14px;

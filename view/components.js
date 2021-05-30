@@ -440,7 +440,7 @@ Header
     <nav class="main-nav float-right d-none d-lg-block">
       <ul>
           <li class="active"><a id='home' href="#intro">Trang Chủ</a></li>
-          <li><a href="#about">Về chúng tôi</a></li>
+          <li><a id="learn_more_about" href="#">Về chúng tôi</a></li>
           <li><a id='university' href="#">Vấn đề xã hội</a></li>
           <li><a id='find-uni' href="#">Lập kế hoạch về hưu</a></li>
           <li class="drop-down"><a id='scholarship' href="#">Thông tin</a>
@@ -466,14 +466,14 @@ Header
   <div class="container d-flex h-100">
     <div class="row justify-content-center align-self-center">
       <div class="col-md-6 intro-info order-md-first order-last">
-        <h2>Rapid Solutions<br>for Your <span>Business!</span></h2>
+        <h2>Getting old before<br><span>Getting rich...</span></h2>
         <div>
-          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="#portfolio" class="btn-get-started">Chi tiết vấn đề</a>
         </div>
       </div>
 
       <div class="col-md-6 intro-img order-md-last order-first">
-        <img src="public/image/intro-img.svg" alt="" class="img-fluid">
+        <img src="public/image/issue.png" alt="" class="img-fluid">
       </div>
     </div>
 
@@ -484,7 +484,7 @@ Header
   <!--==========================
     Vấn đề xã hội
   ============================-->
-  <section id="portfolio" class="section-bg">
+  <section id="portfolio" class="section-bg fadeIn">
     <div class="container">
 
       <header class="section-header">
@@ -494,15 +494,52 @@ Header
       <p>Theo Vụ Liên Hiệp Quốc về vấn đề Kinh tế và Xã hội, tốc độ già hoá dân số tại các quốc gia Đông Nam Á hiện nay rất nhanh. Theo báo cáo năm 2019 của Ủy ban Quốc gia về Người cao tuổi Việt Nam, khoảng 1/5 người Việt Nam sẽ từ 60 tuổi trở lên vào năm 2035, đưa Việt Nam trở thành một trong ba nước ASEAN duy nhất có tỷ lệ người cao tuổi trên 20%.</p>
       <p>Trước thực tế đó, sự chuẩn bị cho giai đoạn già hoá dân số là vô cùng cấp thiết. Nếu không nắm bắt được giai đoạn vàng lúc này, 15 năm tới, Việt Nam sẽ rơi vào bẫy thu nhập trung bình và người dân sẽ ngày càng có nguy cơ “già trước khi giàu”.</p>
       <p class="quote">“Getting old before getting rich” - khái niệm vĩ mô, tác động cá nhân.</p>
-      <p>Báo cáo “Vietnam as an Ageing Society” mới đây đã chỉ ra rằng có đến 16% người Việt Nam trên 60 tuổi rơi vào nhóm nghèo. Trong khi đó, chỉ có 23,5% người trên 60 tuổi được hưởng lương hưu hoặc trợ cấp bảo hiểm xã hội hàng tháng. Thu nhập của người cao tuổi sau về hưu phụ thuộc lớn vào trợ cấp từ con cái. Mô hình gia đình truyền thống nhiều thế hệ cùng chung sống dưới một mái nhà đang chuyển dần sang mô hình gia đình hạt nhân. Khi đó, người cao tuổi phải sống xa con cái và có khả năng sống một mình. Ngoài ra, hệ thống chăm sóc sức khỏe còn hạn chế ở Việt Nam, cùng với chi phí khám chữa bệnh ngày càng tăng đã ảnh hưởng tiêu cực đến sự hưởng thụ sau khi về hưu của người cao tuổi. 
+      <p>Báo cáo “Vietnam as an Ageing Society” mới đây đã chỉ ra rằng có đến 16% người Việt Nam trên 60 tuổi rơi vào nhóm nghèo. Trong khi đó, chỉ có 23,5% người trên 60 tuổi được hưởng lương hưu hoặc trợ cấp bảo hiểm xã hội hàng tháng. Thu nhập của người cao tuổi sau về hưu phụ thuộc lớn vào trợ cấp từ con cái. Mô hình gia đình truyền thống nhiều thế hệ cùng chung sống dưới một mái nhà đang chuyển dần sang mô hình gia đình hạt nhân. Khi đó, người cao tuổi phải sống xa con cái và có khả năng sống một mình. Ngoài ra, hệ thống chăm sóc sức khỏe còn hạn chế ở Việt Nam, cùng với chi phí khám chữa bệnh ngày càng tăng đã ảnh hưởng tiêu cực đến sự hưởng thụ sau khi về hưu của người cao tuổi.  
       </p>
-      <p>Nếu không có thái độ tích cực chuẩn bị cho độ tuổi trên 60, người cao tuổi sẽ phải đối mặt với những hậu quả nghiêm trọng như hạn chế tài chính và hạn chế tiếp cận các dịch vụ chăm sóc sức khỏe.</p>
-      <p class="quote">"Những vấn đề trên sẽ trở nên càng trầm trọng hơn khi 15 năm tới đây, số người cao tuổi sẽ tăng"</p>
-      <p>Nhìn thấy những vấn đề trên sẽ trở nên càng trầm trọng hơn khi 15 năm tới đây, số người cao tuổi sẽ tăng và chiếm hơn ⅕ dân số, Active Ageing Vietnam mong muốn có thể cộng hưởng đến những thay đổi hiện có để giúp mỗi người có sự chuẩn bị cho tuổi già tốt hơn, sớm hơn. Cùng với những thay đổi chính sách của Chính phủ, Active Ageing là một giải pháp tối ưu trong việc.</p>
-      <p class="quote">"Thúc đẩy tư duy tích cực hướng tới chuẩn bị an toàn tài chính và tiếp cận chăm sóc sức khỏe là vô cùng cần thiết"</p>
+      <div class="container">
+          <div class="row counters">
+  
+            <div class="col-lg-4 col-6 text-center">
+              <span data-toggle="counter-up">20%</span>
+              <p>Người trên 60 tuổi vào năm 2035</p>
+            </div>
+  
+            <div class="col-lg-4 col-6 text-center">
+              <span data-toggle="counter-up">16%</span>
+              <p>Người trên 60 tuổi vào nhóm nghèo</p>
+            </div>
+  
+            <div class="col-lg-4 col-6 text-center">
+              <span data-toggle="counter-up">23.5%</span>
+              <p>Người trên 60 tuổi có lương hưu</p>
+            </div>
+          </div>
+    </div>
+      <div class = "row space-need">
+        <div class="col-lg-6">
+          <div class="scholarship-img">
+            <img src="./public/image/old.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class ="col-lg-6">
+          <p>Nếu không có thái độ tích cực chuẩn bị cho độ tuổi trên 60, người cao tuổi sẽ phải đối mặt với những hậu quả nghiêm trọng như hạn chế tài chính và hạn chế tiếp cận các dịch vụ chăm sóc sức khỏe.</p>
+          <p class="quote">"Những vấn đề trên sẽ trở nên càng trầm trọng hơn khi 15 năm tới đây, số người cao tuổi sẽ tăng"</p>
+        </div>
+      </div>
+
+      <div class= "row space-need-1">
+        <div class="col-lg-6">
+          <p>Nhìn thấy những vấn đề trên sẽ trở nên càng trầm trọng hơn khi 15 năm tới đây, số người cao tuổi sẽ tăng và chiếm hơn ⅕ dân số, Active Ageing Vietnam mong muốn có thể cộng hưởng đến những thay đổi hiện có để giúp mỗi người có sự chuẩn bị cho tuổi già tốt hơn, sớm hơn. Cùng với những thay đổi chính sách của Chính phủ, Active Ageing là một giải pháp tối ưu trong việc.</p>
+          <p class="quote">"Thúc đẩy tư duy tích cực hướng tới chuẩn bị an toàn tài chính và tiếp cận chăm sóc sức khỏe là vô cùng cần thiết"</p>
+        </div>
+
+        <div class="col-lg-6">
+          <img src="./public/image/active ageing.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+
       <p>chuẩn bị cho một Việt Nam sẽ là một quốc gia có già hóa dân số vào năm 2035.</p>
       <p>Trong giai đoạn đầu, đối tượng mục tiêu của chúng tôi là những người lao động có thu nhập trung bình ít nhất 15 năm trước khi nghỉ hưu.</p>
-      </div>
 
     </div>
   </section><!-- #portfolio -->
