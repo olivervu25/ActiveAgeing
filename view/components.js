@@ -1408,7 +1408,7 @@ Header
         </div>
       </div>
 
-      <div class="col-md-6 intro-img order-md-last order-first">
+      <div class="col-md-6 intro-img order-md-last order-first" style ="text-align: center">
         <img src="public/image/12309cropped.png" style="max-width : 60%" alt="" class="img-fluid">
       </div>
     </div>
@@ -1427,7 +1427,7 @@ Header
           <div class="col-lg-6 wow fadeInUp">
             <img src="img/features-1.svg" class="img-fluid" alt="">
           </div>
-          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0" style = "text-align: justify;">
             <h4>Active Ageing Viet Nam</h4>
             <p>
               Active Ageing là dự án được ra đời với nỗi trăn trở về một vấn đề mà Việt Nam và một số nước trong khu vực đang và sẽ phải đối mặt trong tương lai gần, đó chính là già hoá dân số và những hệ luỵ có liên quan.
@@ -1442,7 +1442,7 @@ Header
             <img src="img/features-2.svg" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" style = "text-align: justify;">
             <!-- <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4> -->
             <p>
               Góp phần cộng hưởng những nỗ lực để đối phó với các thách thức mà cả xã hội đang gặp phải, dự án tiến hành thực hiện “Gói các giải pháp hỗ trợ người cao tuổi quản lý tài chính và tiếp cận dịch vụ chăm sóc sức khỏe chuẩn bị cho tuổi già”. Chúng tôi tin rằng việc nâng cao sự chủ động trong tài chính và sức khoẻ không chỉ ích cho riêng một cá nhân mà còn tạo ra những ảnh hưởng tích cực cho cộng đồng, góp phần vào việc phát triển kinh tế-xã hội, hướng đến một tương lai bền vững hơn.
