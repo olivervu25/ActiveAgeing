@@ -633,7 +633,9 @@ h6 {
 }
 /* Team Section
 --------------------------------*/
-
+#team .leader {
+  text-align: center;
+}
 #team {
   padding: 60px 0;
 }

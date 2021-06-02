@@ -76,11 +76,11 @@ Header
     <div class="container d-flex h-100">
     <div class="row justify-content-center align-self-center">
       <div class="col-md-6 intro-info order-md-first order-last">
-        <h2>Active Ageing là dự án kinh doanh xã hội giúp mọi người chuẩn bị cho tuổi già một cách chủ động và kỹ càng.</h2>
+        <h2>Active Ageing là dự án kinh doanh xã hội giúp mọi người chuẩn bị cho tuổi già một cách chủ động.</h2>
       </div>
     
       <div class="col-md-6 intro-img order-md-last order-first">
-        <img src="public/image/intro-img.svg" alt="" class="img-fluid">
+        <img src="public/image/prepare.png" alt="" class="img-fluid">
       </div>
     
     </div>
@@ -96,7 +96,7 @@ Header
       </div>
     
       <div class="col-md-6 intro-img order-md-last order-first">
-        <img src="public/image/intro-img.svg" alt="" class="img-fluid">
+        <img src="public/image/ageing-problem.png" alt="" class="img-fluid">
       </div>
     
     </div>
@@ -156,10 +156,32 @@ Header
         <h3>Chúng tôi</h3>
         <p>Những người trẻ cùng chung nỗi trăn trở</p>
       </div>
-
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6 wow fadeInUp">
+      <div class = "row justify-content-md-center">
+      <div class="col-lg-3 col-md-9 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/co-chat" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Trần Nguyên chất (PhD)</h4>
+                <span>Project Mentor</span>
+                <span>Đại học Ngoại Thương CS2. TPHCM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-9 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/thay-quang.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Mr. Ngô Ngọc Quang (PhD)</h4>
+                <span>Project Mentor</span>
+                <span>Đại học Ngoại Thương CS2. TPHCM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-9 wow fadeInUp">
           <div class="member">
             <img src="public/image/team/quynh.jpg" class="img-fluid" alt="">
             <div class="member-info">
@@ -167,6 +189,23 @@ Header
                 <h4>Nguyễn Lê Như Quỳnh</h4>
                 <span>Project Leader</span>
                 <span>Đại học Ngoại Thương CS2. TPHCM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        
+      </div>
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/quang.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Lưu Vũ Quang</h4>
+                <span>App Designer</span>
+                <span>Đại học Ngoại Thương Hà Nội</span>
               </div>
             </div>
           </div>
@@ -239,7 +278,7 @@ Header
 
         <div class="col-lg-3 col-md-6 wow fadeInUp">
           <div class="member">
-            <img src="public/image/team/vy.jpg" class="img-fluid" alt="">
+            <img src="public/image/team/tuan" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
                 <h4>Nguyễn Quốc Tuấn</h4>
@@ -252,7 +291,7 @@ Header
 
         <div class="col-lg-3 col-md-6 wow fadeInUp">
           <div class="member">
-            <img src="public/image/team/vy.jpg" class="img-fluid" alt="">
+            <img src="public/image/team/trang" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
                 <h4>Nguyễn Huyền Trang</h4>
