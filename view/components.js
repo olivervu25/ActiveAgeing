@@ -639,6 +639,7 @@ components.scholarshipScreen = `
         </div>
       </section><!-- #intro -->
        
+        <div style = "display: none">
         <main>
             <!--==========================
       Why Us Section
@@ -916,6 +917,7 @@ components.scholarshipScreen = `
         
       </section><!-- #faq -->
     </main>
+        </div>
    <!--==========================
           Footer
         ============================-->
@@ -1011,6 +1013,7 @@ components.studentLifeScreen = `
 
         </div>
       </section><!-- #intro -->
+        <div style = "display : none">
         <main>
             <!--==========================
           University Section
@@ -1169,6 +1172,7 @@ components.studentLifeScreen = `
           </section><!-- #portfolio -->
    
         </main>
+        </div> 
 
    
       <!--==========================
@@ -1260,94 +1264,96 @@ components.findScreen = `
 
       </div>
       </section><!-- #intro -->
+      <div style = "display : none">
       <section id="call-to-action" class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-9 text-center text-lg-left">
-              <h3 class="cta-title">Call To Action</h3>
-              <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="col-lg-3 cta-btn-container text-center">
-              <a class="cta-btn align-middle" href="#">Call To Action</a>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Call To Action</h3>
+            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
         </div>
-      </section>
 
-      <section id="find" class="section-bg">
-          <div class="container">
-            <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1 find-university" style="visibility: visible; animation-name: fadeInUp;">
-              <h2>Find University</h2>
-              <h3>Type your University here for more information</h3>
+      </div>
+    </section>
+
+    <section id="find" class="section-bg">
+        <div class="container">
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1 find-university" style="visibility: visible; animation-name: fadeInUp;">
+            <h2>Find University</h2>
+            <h3>Type your University here for more information</h3>
+            <!-- Du Search box and Find Button -->
+          </div>
               <!-- Du Search box and Find Button -->
-            </div>
-                <!-- Du Search box and Find Button -->
-                <div class=""> 
-                  <div class="input-group mt-3 mb-3 col-lg-7" >
-                      <input type="text" class="form-control rounded" placeholder="University's name">
-                      <div class="input-group-append">
-                      <button class="btn blue-btn" type="submit">Search</button>
-                      </div>
+              <div class=""> 
+                <div class="input-group mt-3 mb-3 col-lg-7" >
+                    <input type="text" class="form-control rounded" placeholder="University's name">
+                    <div class="input-group-append">
+                    <button class="btn blue-btn" type="submit">Search</button>
+                    </div>
+                </div>
+              </div>
+              <div class="">
+                <div class="input-group mb-3 col-lg-5">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text blue-btn" for="inputGroupCity">City</label>
+                  </div>
+                  <select class="custom-select" id="inputGroupCity">
+                    <option selected>Choose...</option>
+                    <option value="Saint">Saint</option>
+                    <option value="Moscow">Moscow</option>
+                    <option value="Tuala">Tuala</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <div id='listCity' class="col row">
                   </div>
                 </div>
-                <div class="">
+                
+                
+              
+
                   <div class="input-group mb-3 col-lg-5">
                     <div class="input-group-prepend">
-                      <label class="input-group-text blue-btn" for="inputGroupCity">City</label>
+                      <label class="input-group-text blue-btn" for="inputGroupMajor">Major</label>
                     </div>
-                    <select class="custom-select" id="inputGroupCity">
+                    <select class="custom-select" id="inputGroupMajor">
                       <option selected>Choose...</option>
-                      <option value="Saint">Saint</option>
-                      <option value="Moscow">Moscow</option>
-                      <option value="Tuala">Tuala</option>
+                      <option value="Information Technology" onclick="console.log('da click')">Information Technology</option>
+                      <option value="Computer Science">Computer Science</option>
+                      <option value="Business Administration">Business Administration</option>
                     </select>
                   </div>
                   <div class="col">
-                    <div id='listCity' class="col row">
+                    <div id='listMajor' class="col row">
                     </div>
                   </div>
-                  
-                  
-                
 
-                    <div class="input-group mb-3 col-lg-5">
-                      <div class="input-group-prepend">
-                        <label class="input-group-text blue-btn" for="inputGroupMajor">Major</label>
-                      </div>
-                      <select class="custom-select" id="inputGroupMajor">
-                        <option selected>Choose...</option>
-                        <option value="Information Technology" onclick="console.log('da click')">Information Technology</option>
-                        <option value="Computer Science">Computer Science</option>
-                        <option value="Business Administration">Business Administration</option>
-                      </select>
-                    </div>
-                    <div class="col">
-                      <div id='listMajor' class="col row">
-                      </div>
-                    </div>
-
-                    <!-- <div class="col-lg-7"><button class="btn btn-block blue-btn" type="submit">Apply</button></div> -->
-                    <div id='listResult' class="row feature-item mt-5 pt-2 border  border-white background-white">
-                            <!-- <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" style="visibility: visible; animation-name: fadeInUp;">
-                            <img src="public/image/features-2.svg" class="img-fluid" alt="">
-                          </div>
-                
-                          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" style="visibility: visible; animation-name: fadeInUp;">
-                            <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4>
-                            <p>
-                            Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt. 
-                            </p>
-                            <p>
-                              Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
-                            </p>
-                            <p>
-                              Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
-                            </p>
-                          </div> -->
-                    </div>
+                  <!-- <div class="col-lg-7"><button class="btn btn-block blue-btn" type="submit">Apply</button></div> -->
+                  <div id='listResult' class="row feature-item mt-5 pt-2 border  border-white background-white">
+                          <!-- <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" style="visibility: visible; animation-name: fadeInUp;">
+                          <img src="public/image/features-2.svg" class="img-fluid" alt="">
+                        </div>
+              
+                        <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" style="visibility: visible; animation-name: fadeInUp;">
+                          <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4>
+                          <p>
+                          Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt. 
+                          </p>
+                          <p>
+                            Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
+                          </p>
+                          <p>
+                            Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
+                          </p>
+                        </div> -->
                   </div>
-      </section> 
+                </div>
+    </section>
+      </div> 
 `
 components.aboutScreen = `<!--==========================
 Header
