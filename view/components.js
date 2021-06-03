@@ -162,7 +162,7 @@ Header
             <img src="public/image/team/co-chat.jpg" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
-                <h4>Trần Nguyên chất (PhD)</h4>
+                <h4>Trần Nguyên Chất (PhD)</h4>
                 <span>Project Mentor</span>
                 <span>Đại học Ngoại Thương CS2. TPHCM</span>
               </div>
@@ -174,7 +174,7 @@ Header
             <img src="public/image/team/thay-quang.png" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
-                <h4>Mr. Ngô Ngọc Quang (PhD)</h4>
+                <h4>Ngô Ngọc Quang (PhD)</h4>
                 <span>Project Mentor</span>
                 <span>Đại học Ngoại Thương CS2. TPHCM</span>
               </div>
@@ -595,7 +595,8 @@ Header
                       (Ms.) Lâm Tố Như<br>
                       External Relations Executive<br>
                       <strong>Phone:</strong> +84 914864707<br>
-                      <strong>Email:</strong> lamtonhu1801015046@ftu.edu.vn<br>
+                      <strong>Email:</strong> activeageing.ftu2@gmail.com
+                      <br>
                     </p>
                   </div>
   
