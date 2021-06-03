@@ -159,7 +159,7 @@ Header
       <div class = "row justify-content-md-center">
       <div class="col-lg-3 col-md-9 wow fadeInUp">
           <div class="member">
-            <img src="public/image/team/co-chat" class="img-fluid" alt="">
+            <img src="public/image/team/co-chat.jpg" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
                 <h4>Trần Nguyên chất (PhD)</h4>
@@ -278,7 +278,7 @@ Header
 
         <div class="col-lg-3 col-md-6 wow fadeInUp">
           <div class="member">
-            <img src="public/image/team/tuan" class="img-fluid" alt="">
+            <img src="public/image/team/tuan.jpg" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
                 <h4>Nguyễn Quốc Tuấn</h4>
@@ -291,7 +291,7 @@ Header
 
         <div class="col-lg-3 col-md-6 wow fadeInUp">
           <div class="member">
-            <img src="public/image/team/trang" class="img-fluid" alt="">
+            <img src="public/image/team/trang.jpg" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
                 <h4>Nguyễn Huyền Trang</h4>
@@ -571,7 +571,82 @@ Header
     Footer
   ============================-->
   <footer id="footer" class="section-bg">
-    
+    <div class="footer-top">
+      <div class="container">
+  
+        <div class="row">
+  
+          <div class="col-lg-6">
+  
+            <div class="row">
+  
+                <div class="col-sm-6">
+  
+                  <div class="footer-info">
+                    <h4>Active Ageing Vietnam</h4>
+                    <p>Dự án Active Ageing được ra đời với nỗi trăn trở về một vấn đề mà Việt Nam và các nước trong khu vực đang và sẽ phải đối mặt trong tương lai gần, đó chính là già hoá dân số và những hệ luỵ có liên quan. Chúng tôi tin rằng việc đồng hành cùng mỗi cá nhân nâng cao sự chủ động trong quản lý tài chính và bảo vệ sức khoẻ sẽ tạo ra những ảnh hưởng tích cực cho cộng đồng, góp phần kiến tạo một tương lai bền vững hơn.</p>
+                  </div>
+                </div>
+  
+                <div class="col-sm-6">
+                  <div class="footer-links">
+                    <h4>Liên hệ</h4>
+                    <p>
+                      (Ms.) Lâm Tố Như<br>
+                      External Relations Executive<br>
+                      <strong>Phone:</strong> +84 914864707<br>
+                      <strong>Email:</strong> lamtonhu1801015046@ftu.edu.vn<br>
+                    </p>
+                  </div>
+  
+              
+  
+                </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-6">
+  
+            <div class="form">
+              
+              <h4>Đặt câu hỏi cho chúng tôi</h4>
+              <p>Chúng tôi sẵn sàng lắng nghe mọi câu hỏi, băn khoăn từ bạn!</p>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Tên của bạn" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Chủ đề" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Nội dung"></textarea>
+                  <div class="validation"></div>
+                </div>
+  
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+  
+                <div class="text-center"><button type="submit" title="Send Message">Gửi câu hỏi</button></div>
+              </form>
+            </div>
+  
+          </div>
+  
+          
+  
+        </div>
+  
+      </div>
+    </div>
+  
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
@@ -648,10 +723,8 @@ components.scholarshipScreen = `
         <div class="container d-flex h-100">
           <div class="row justify-content-center align-self-center">
             <div class="col-md-6 intro-info order-md-first order-last">
-              <h2>Rapid Solutions<br>for Your <span>Business!</span></h2>
-              <div>
-                <a href="#about" class="btn-get-started scrollto">Get Started</a>
-              </div>
+              <h2>Active Ageing <br> <span>Vietnam</span></h2>
+              
             </div>
 
             <div class="col-md-6 intro-img order-md-last order-first">
@@ -1023,10 +1096,8 @@ components.studentLifeScreen = `
         <div class="container d-flex h-100">
           <div class="row justify-content-center align-self-center">
             <div class="col-md-6 intro-info order-md-first order-last">
-              <h2>Rapid Solutions<br>for Your <span>Business!</span></h2>
-              <div>
-                <a href="#about" class="btn-get-started scrollto">Get Started</a>
-              </div>
+              <h2>Active Ageing <br><span>Vietnam</span></h2>
+              
             </div>
 
             <div class="col-md-6 intro-img order-md-last order-first">
@@ -1274,10 +1345,8 @@ components.findScreen = `
       <div class="container d-flex h-100">
         <div class="row justify-content-center align-self-center">
           <div class="col-md-6 intro-info order-md-first order-last">
-            <h2>Rapid Solutions<br>for Your <span>Business!</span></h2>
-            <div>
-              <a href="#about" class="btn-get-started scrollto">Get Started</a>
-            </div>
+          <h2>Active Ageing <br><span>Vietnam</span></h2>
+          
           </div>
 
           <div class="col-md-6 intro-img order-md-last order-first">
@@ -1424,27 +1493,22 @@ Header
   </div>
 </header><!-- #header -->
 
-<!--==========================
-  Intro Section
-============================-->
 <section id="intro" class="clearfix">
-  <div class="container d-flex h-100">
+
+    <div class="container d-flex h-100">
     <div class="row justify-content-center align-self-center">
       <div class="col-md-6 intro-info order-md-first order-last">
-        <h2>Active Ageing </br><span>Vietnam</span></h2>
-        <div>
-          <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        </div>
+        <h2>Active Ageing <span>Vietnam</span></h2>
+        
       </div>
-
-      <div class="col-md-6 intro-img order-md-last order-first" style ="text-align: center">
-        <img src="public/image/12309cropped.png" style="max-width : 60%" alt="" class="img-fluid">
+    
+      <div class="col-md-6 intro-img order-md-last order-first" style = "text-align: center">
+        <img src="public/image/12309cropped.png" alt="" class="img-fluid">
       </div>
+    
     </div>
-
-  </div>
-</section><!-- #intro -->
-
+    </div>
+  </section><!-- #intro -->
 <main id="main">
   <!--==========================
     Features Section
@@ -1454,26 +1518,26 @@ Header
 
         <div class="row feature-item">
           <div class="col-lg-6 wow fadeInUp">
-            <img src="img/features-1.svg" class="img-fluid" alt="">
+            <img src="./public/image/about us 1.jpeg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0" style = "text-align: justify;">
-            <h4>Active Ageing Viet Nam</h4>
-            <p>
+            <h2 style = "color: #413e66;font-weight: 650;"">Active Ageing Vietnam</h2>
+            <p style ="color : #696592">
               Active Ageing là dự án được ra đời với nỗi trăn trở về một vấn đề mà Việt Nam và một số nước trong khu vực đang và sẽ phải đối mặt trong tương lai gần, đó chính là già hoá dân số và những hệ luỵ có liên quan.
             </p>
-            <p>
+            <p style ="color : #696592">
               Khi Việt Nam đang trên đà phát triển từ nhóm nước có thu nhập thấp sang nhóm có mức thu nhập trung bình, những vấn đề về an sinh xã hội lại được quan tâm và chú ý hơn bao giờ hết. Một trong những vấn đề nhức nhối hiện nay chính là tình trạng già hoá dân số dẫn đến những gánh nặng nhất định cho cá nhân và cả cộng đồng. Theo Vụ Liên Hiệp Quốc về vấn đề Kinh tế và Xã hội, tốc độ già hoá dân số tại các quốc gia Đông Nam Á hiện nay rất nhanh. Vào năm 2030, có 5/11 quốc gia ASEAN sẽ đối mặt với già hóa dân số, bao gồm Việt Nam. Trước bối cảnh đó, sự chuẩn bị cho giai đoạn già hoá dân số là vô cùng cấp thiết, đặc biệt là ở góc độ cá nhân.
             </p>
           </div>
         </div>
-        <div class="row feature-item mt-5 pt-5">
+        <div class="row feature-item mt-5 pt-5" style = " margin-top: 0! important; padding-top: 1rem! important; ">
           <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-            <img src="img/features-2.svg" class="img-fluid" alt="">
+            <img src="./public/image/about us 3.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" style = "text-align: justify;">
             <!-- <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4> -->
-            <p>
+            <p style ="color : #696592">
               Góp phần cộng hưởng những nỗ lực để đối phó với các thách thức mà cả xã hội đang gặp phải, dự án tiến hành thực hiện “Gói các giải pháp hỗ trợ người cao tuổi quản lý tài chính và tiếp cận dịch vụ chăm sóc sức khỏe chuẩn bị cho tuổi già”. Chúng tôi tin rằng việc nâng cao sự chủ động trong tài chính và sức khoẻ không chỉ ích cho riêng một cá nhân mà còn tạo ra những ảnh hưởng tích cực cho cộng đồng, góp phần vào việc phát triển kinh tế-xã hội, hướng đến một tương lai bền vững hơn.
            </p>
           </div>
@@ -1498,14 +1562,14 @@ Header
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              
               <p class="description">Thúc đẩy tiết kiệm cá nhân qua việc cung cấp các công cụ quản lý chi tiêu, quản lý tiết kiệm dễ sử dụng</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+             
               <p class="description">Giúp người dùng thiết lập kế hoạch quản lý tài chính chuẩn bị cho giai đoạn sau về hưu và cung cấp cơ hội kết nối với các chuyên gia tài chính qua các gói tư vấn cá nhân 1-1</p>
             </div>
           </div>
@@ -1513,7 +1577,7 @@ Header
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon" style="background: #e6fdfc;"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <!-- <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>  -->
               <p class="description"> Cung cấp thông tin về dịch vụ chăm sóc sức khỏe, bảo hiểm y tế, du lịch, giải trí và các hoạt động khác.</p>
             </div>
           </div>
@@ -1551,123 +1615,97 @@ Header
   Footer
 ============================-->
 <footer id="footer" class="section-bg">
-  <div class="footer-top">
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-lg-6">
-
-          <div class="row">
-
-              <div class="col-sm-6">
-
-                <div class="footer-info">
-                  <h3>Rapid</h3>
-                  <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+    <div class="footer-top">
+      <div class="container">
+  
+        <div class="row">
+  
+          <div class="col-lg-6">
+  
+            <div class="row">
+  
+                <div class="col-sm-6">
+  
+                  <div class="footer-info">
+                    <h4>Active Ageing Vietnam</h4>
+                    <p>Dự án Active Ageing được ra đời với nỗi trăn trở về một vấn đề mà Việt Nam và các nước trong khu vực đang và sẽ phải đối mặt trong tương lai gần, đó chính là già hoá dân số và những hệ luỵ có liên quan. Chúng tôi tin rằng việc đồng hành cùng mỗi cá nhân nâng cao sự chủ động trong quản lý tài chính và bảo vệ sức khoẻ sẽ tạo ra những ảnh hưởng tích cực cho cộng đồng, góp phần kiến tạo một tương lai bền vững hơn.</p>
+                  </div>
                 </div>
-
-                <div class="footer-newsletter">
-                  <h4>Our Newsletter</h4>
-                  <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem.</p>
-                  <form action="" method="post">
-                    <input type="email" name="email"><input type="submit"  value="Subscribe">
-                  </form>
+  
+                <div class="col-sm-6">
+                  <div class="footer-links">
+                    <h4>Liên hệ</h4>
+                    <p>
+                      (Ms.) Lâm Tố Như<br>
+                      External Relations Executive<br>
+                      <strong>Phone:</strong> +84 914864707<br>
+                      <strong>Email:</strong> lamtonhu1801015046@ftu.edu.vn<br>
+                    </p>
+                  </div>
+  
+              
+  
                 </div>
-
-              </div>
-
-              <div class="col-sm-6">
-                <div class="footer-links">
-                  <h4>Useful Links</h4>
-                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                  </ul>
-                </div>
-
-                <div class="footer-links">
-                  <h4>Contact Us</h4>
-                  <p>
-                    A108 Adam Street <br>
-                    New York, NY 535022<br>
-                    United States <br>
-                    <strong>Phone:</strong> +1 5589 55488 55<br>
-                    <strong>Email:</strong> info@example.com<br>
-                  </p>
-                </div>
-
-                <div class="social-links">
-                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                </div>
-
-              </div>
-
+  
+            </div>
+  
           </div>
-
-        </div>
-
-        <div class="col-lg-6">
-
-          <div class="form">
-            
-            <h4>Send us a message</h4>
-            <p>Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique commodi harum aut temporibus.</p>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
-              </div>
-
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-
-              <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-            </form>
+  
+          <div class="col-lg-6">
+  
+            <div class="form">
+              
+              <h4>Đặt câu hỏi cho chúng tôi</h4>
+              <p>Chúng tôi sẵn sàng lắng nghe mọi câu hỏi, băn khoăn từ bạn!</p>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Tên của bạn" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Chủ đề" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Nội dung"></textarea>
+                  <div class="validation"></div>
+                </div>
+  
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+  
+                <div class="text-center"><button type="submit" title="Send Message">Gửi câu hỏi</button></div>
+              </form>
+            </div>
+  
           </div>
-
+  
+          
+  
         </div>
-
-        
-
+  
       </div>
-
     </div>
-  </div>
-
-  <div class="container">
-    <div class="copyright">
-      &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
+  
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
     </div>
-    <div class="credits">
-      <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
-      -->
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-    </div>
-  </div>
-</footer><!-- #footer -->
+  </footer><!-- #footer -->
 
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 <!-- Uncomment below i you want to use a preloader -->
