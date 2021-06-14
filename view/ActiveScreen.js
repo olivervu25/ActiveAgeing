@@ -1,6 +1,7 @@
 // this code to rerun js file
 const reCallJsFiles = ()=>{
       $.getScript( "model/navigation.js");
+      $.getScript( "model/translate.js");
     // $.getScript("lib/mobile-nav/mobile-nav.js");
     // $.getScript("contactform/contactform.js");
       //$.getScript("public/js/main.js");
@@ -44,6 +45,8 @@ const  NavigationActive = ()=>{
 const view = {}
 view.setActiveScreen = (screenName) => {
     document.getElementById('app').innerHTML = components[screenName];
+    console.log(language);
+    if (language == "english") changeToEnglish();
     NavigationActive();
     reCallJsFiles();
     
