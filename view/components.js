@@ -1304,17 +1304,24 @@ components.studentLifeScreen = `
         <!-- <div id="preloader"></div> -->`
 components.findScreen = `
 <header id="header">
+    <div id="topbar">
+    <div class="container">
+    <div class="dropdown" style="text-align : right;">
+    <button class="btn dropdown-toggle" style = "background: #1bb1dc;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+    <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+    <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+    </svg>
+    </button>
 
-<div id="topbar">
-  <div class="container">
-    <div class="social-links">
-      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-      <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
+      <a id ="engsub" class="dropdown-item" href="#">English</a>
+      <a id ="vietsub" class="dropdown-item" href="#">Vietnamese</a>
     </div>
-  </div>
-</div>
+    </div>
+    </div>
+    </div>
+
 
 <div class="container">
 
@@ -1353,7 +1360,7 @@ components.findScreen = `
       <div class="container d-flex h-100">
         <div class="row justify-content-center align-self-center">
           <div class="col-md-6 intro-info order-md-first order-last">
-          <h2>Active Ageing <br><span>Vietnam</span></h2>
+          <h2>Hãy để <br><span>Active Ageing Vietnam</span> giúp bạn lên kế hoạch về hưu ngay hôm nay.</h2>
           
           </div>
 
@@ -1362,98 +1369,121 @@ components.findScreen = `
           </div>
         </div>
 
+
       </div>
       </section><!-- #intro -->
-      <div style = "display : none">
-      <section id="call-to-action" class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      
+      <div class = "container">
+      <div class="container-fluid">
+          <br><br>
+          <header class="section-header">
+            <h3>RETIREMENT PLANNING</h3>
+            <p>Bạn đang tìm kiếm một kế hoạch về hưu mà không biết bắt đầu như thế nào? Ngay đây chúng tôi sẽ giúp bạn. Thiết lập tầm nhìn kế hoạch về hưu của cá nhân bạn chỉ bằng việc trả lời một số câu hỏi. Bắt đầu thôi!</p>
+          </header>
+          <div class = "retirement">
+          <div class="form">
+          <div class="row">
+          <div class="col-lg-6">
+            <h4>Thông tin cơ bản</h4>
           </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          <div class="col-lg-6">
+            <h4>Thông tin tài chính</h4>
+          </div>
+          </div>
+            <p></p>
+            <form action="" method="post" role="form" class="contactForm">
+            <div class = "row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Tên của bạn">
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="address" id="address" placeholder="Nơi ở" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input class="form-control" name="currentAge" id="currentAge" placeholder="Tuổi hiện tại" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input class="form-control" name="retirementAge" id="retirementAge" placeholder="Tuổi nghỉ hưu dự đoán" />
+                <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Độ tuổi bạn dự định nghỉ hưu. Chúng tôi giả định rằng bạn không đóng góp thêm vào quỹ tiết kiệm hưu trí của mình trong năm này. Ví dụ, nếu bạn nghỉ hưu ở tuổi 60, khoản đóng góp cuối cùng của bạn xảy ra khi bạn 59 tuổi. Chúng tôi giả định rằng bạn thực hiện toàn bộ khoản đóng góp của mình vào cuối mỗi năm."></span>
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input  class="form-control" name="income" id="income" placeholder="Thu nhập hàng năm của hộ gia đình hiện tại (VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tổng thu nhập của bạn trong năm hiện tại."></span>
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input  class="form-control" name="increase" id="increase" placeholder="Tăng trưởng thu nhập ước tính hằng năm (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ lệ thu nhập ước tính tăng hàng năm cho đến năm nghỉ hưu dự kiến của bạn."></span>
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input class="form-control" name="saving" id="saving" placeholder="Số dư khoản tiết kiệm về hưu hiện tại (VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Số dư tài khoản tiết kiệm về hưu hiện tại của bạn."></span>
+                <div class="validation"></div>
+              </div>
+              </div>
+
+
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input  class="form-control" name="yearsRetirement" id="yearsRetirement" placeholder="Số năm sử dụng thu nhập sau về hưu" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tổng số năm bạn dự định sử dụng quỹ tiết kiệm hưu trí của mình."></span>
+                  <div class="validation"></div>
+                </div>
+
+              <div class="form-group">
+              <input name="annualSaving" class="form-control" id="annualSaving" placeholder="Khoản tiết kiệm về hưu hàng năm (Theo phần trăm thu nhập)" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ lệ thu nhập ước tính tăng hàng năm cho đến năm nghỉ hưu dự kiến của bạn"></span>
+              <div class="validation"></div>
+            </div>
+            <script>
+            $(function () {
+              $('[data-toggle="tooltip"]').tooltip()
+            })
+            </script>
+            <div class="form-group">
+              <input class="form-control" name="retirementPay" id="retirementPay" placeholder="Thu nhập yêu cầu khi về hưu (%)" data-rule="email" data-msg="Please enter a valid email" />
+              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ lệ phần trăm thu nhập hộ gia đình sau khi nghỉ hưu mà bạn nghĩ rằng bạn sẽ cần để trang trải các chi phí của mình khi nghỉ hưu. Số tiền này dựa trên thu nhập hộ gia đình trong năm làm việc cuối cùng của bạn (năm ngay trước khi bạn nghỉ hưu)."></span>
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="rateBefore" id="rateBefore" placeholder="Lợi suất ước tính trước khi về hưu (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ suất lợi nhuận kỳ vọng hàng năm trên quỹ tiết kiệm hưu trí của bạn trước khi nghỉ hưu."></span>
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="rateAfter" id="rateAfter" placeholder="Lợi suất ước tính trong quá trình về hưu (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ suất lợi nhuận kỳ vọng hàng năm trên quỹ tiết kiệm hưu trí của bạn sau khi nghỉ hưu."></span>
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="pension" id="pension" placeholder="Lương hưu và thu nhập sau về hưu khác" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Thu nhập dự kiến từ lương hưu hoặc các nguồn khác."></span>
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="inflation" id="inflation" placeholder="Mức lạm phát dự đoán (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Trong những năm gần đây, tỷ lệ lạm phát Việt Nam đang ở mức dao động từ 3%-4%."></span>
+              <div class="validation"></div>
+            </div>
+            
+            </div>
+            </div>
+            <br><br>
+              <div class="text-center"><button type="submit" title="Send Message">TÍNH TOÁN KẾ HOẠCH VỀ HƯU</button></div>
+            </form>
           </div>
         </div>
 
+        </div>
       </div>
     </section>
-
-    <section id="find" class="section-bg">
-        <div class="container">
-          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1 find-university" style="visibility: visible; animation-name: fadeInUp;">
-            <h2>Find University</h2>
-            <h3>Type your University here for more information</h3>
-            <!-- Du Search box and Find Button -->
-          </div>
-              <!-- Du Search box and Find Button -->
-              <div class=""> 
-                <div class="input-group mt-3 mb-3 col-lg-7" >
-                    <input type="text" class="form-control rounded" placeholder="University's name">
-                    <div class="input-group-append">
-                    <button class="btn blue-btn" type="submit">Search</button>
-                    </div>
-                </div>
-              </div>
-              <div class="">
-                <div class="input-group mb-3 col-lg-5">
-                  <div class="input-group-prepend">
-                    <label class="input-group-text blue-btn" for="inputGroupCity">City</label>
-                  </div>
-                  <select class="custom-select" id="inputGroupCity">
-                    <option selected>Choose...</option>
-                    <option value="Saint">Saint</option>
-                    <option value="Moscow">Moscow</option>
-                    <option value="Tuala">Tuala</option>
-                  </select>
-                </div>
-                <div class="col">
-                  <div id='listCity' class="col row">
-                  </div>
-                </div>
-                
-                
-              
-
-                  <div class="input-group mb-3 col-lg-5">
-                    <div class="input-group-prepend">
-                      <label class="input-group-text blue-btn" for="inputGroupMajor">Major</label>
-                    </div>
-                    <select class="custom-select" id="inputGroupMajor">
-                      <option selected>Choose...</option>
-                      <option value="Information Technology" onclick="console.log('da click')">Information Technology</option>
-                      <option value="Computer Science">Computer Science</option>
-                      <option value="Business Administration">Business Administration</option>
-                    </select>
-                  </div>
-                  <div class="col">
-                    <div id='listMajor' class="col row">
-                    </div>
-                  </div>
-
-                  <!-- <div class="col-lg-7"><button class="btn btn-block blue-btn" type="submit">Apply</button></div> -->
-                  <div id='listResult' class="row feature-item mt-5 pt-2 border  border-white background-white">
-                          <!-- <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" style="visibility: visible; animation-name: fadeInUp;">
-                          <img src="public/image/features-2.svg" class="img-fluid" alt="">
-                        </div>
-              
-                        <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" style="visibility: visible; animation-name: fadeInUp;">
-                          <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4>
-                          <p>
-                          Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt. 
-                          </p>
-                          <p>
-                            Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
-                          </p>
-                          <p>
-                            Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
-                          </p>
-                        </div> -->
-                  </div>
-                </div>
-    </section>
-      </div> 
+  </div> 
 `
 components.aboutScreen = `<!--==========================
 Header
