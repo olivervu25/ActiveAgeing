@@ -1475,14 +1475,124 @@ components.findScreen = `
             </div>
             </div>
             <br><br>
-              <div class="text-center"><button type="submit" title="Send Message">TÍNH TOÁN KẾ HOẠCH VỀ HƯU</button></div>
+              <div id="submit_btn" class="text-center"><button type="submit" title="Send Message">TÍNH TOÁN KẾ HOẠCH VỀ HƯU</button></div>
             </form>
           </div>
         </div>
+        <div class ="row">
+          <div class="col-md-2">
+          </div>    
+          <div class="col-md-8 mt-5" id="result">
+          </div>
+        </div>
+        <div class ="row mt-5"> 
+          <div class="col-md-12">
+          <canvas id="line-chart"></canvas>
+          </div>
+        </div>
 
+        <div class="mt-5"  id="table">
+        </div>
+        
         </div>
       </div>
     </section>
+    <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+  
+        <div class="row">
+  
+          <div class="col-lg-6">
+  
+            <div class="row">
+  
+                <div class="col-sm-6">
+  
+                  <div class="footer-info">
+                    <h4>Active Ageing Vietnam</h4>
+                    <p>Dự án Active Ageing được ra đời với nỗi trăn trở về một vấn đề mà Việt Nam và các nước trong khu vực đang và sẽ phải đối mặt trong tương lai gần, đó chính là già hoá dân số và những hệ luỵ có liên quan. Chúng tôi tin rằng việc đồng hành cùng mỗi cá nhân nâng cao sự chủ động trong quản lý tài chính và bảo vệ sức khoẻ sẽ tạo ra những ảnh hưởng tích cực cho cộng đồng, góp phần kiến tạo một tương lai bền vững hơn.</p>
+                  </div>
+                </div>
+  
+                <div class="col-sm-6">
+                  <div class="footer-links">
+                    <h4>Liên hệ</h4>
+                    <p>
+                      (Ms.) Lâm Tố Như<br>
+                      External Relations Executive<br>
+                      <strong>Phone:</strong> +84 914864707<br>
+                      <strong>Email:</strong> lamtonhu1801015046@ftu.edu.vn<br>
+                    </p>
+                  </div>
+  
+              
+  
+                </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-6">
+  
+            <div class="form">
+              
+              <h4>Đặt câu hỏi cho chúng tôi</h4>
+              <p>Chúng tôi sẵn sàng lắng nghe mọi câu hỏi, băn khoăn từ bạn!</p>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Tên của bạn" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Chủ đề" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Nội dung"></textarea>
+                  <div class="validation"></div>
+                </div>
+  
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+  
+                <div class="text-center"><button type="submit" title="Send Message">Gửi câu hỏi</button></div>
+              </form>
+            </div>
+  
+          </div>
+  
+          
+  
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<!-- Uncomment below i you want to use a preloader -->
+<!-- <div id="preloader"></div> -->
   </div> 
 `
 components.aboutScreen = `<!--==========================

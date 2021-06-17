@@ -79,7 +79,8 @@
         event.preventDefault();
         view.setActiveScreen('findScreen');
         document.getElementById('intro').scrollIntoView()
-        $.getScript( "public/js/findPage.js");
+        //$.getScript( "public/js/findPage.js");
+        $.getScript( "model/retirement_planing.js");
     });
     
     $('#find-btn').on('click',function(event){
