@@ -15,7 +15,7 @@ $("#submit_btn").on('click',function(event){
     user.lastYearIncome = user.income*Math.pow(1+user.increase/100,user.year-1);
     var retirementPaymentMoney = user.lastYearIncome*user.retirementPay/100;
     
-    //console.log(user);
+    console.log(user);
 
     var beginningRetirementBalance = [];
     var investmentGrowth = [];
@@ -37,7 +37,7 @@ $("#submit_btn").on('click',function(event){
 
     var i = parseInt(user.currentAge)+2;
     check = beginningRetirementBalance[0]; 
-    while ( check > 0 ){
+    while ( check > 0 || i== parseInt(user.currentAge)+2){
         beginningRetirementBalance.push(LastValue(endingRetirementBalance));
         var rate;
         if (i < user.retirementAge) rate = user.rateBefore;
