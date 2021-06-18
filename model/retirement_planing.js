@@ -9,7 +9,7 @@ $("#submit_btn").on('click',function(event){
     for (var i = 0;i< listInput.length;i++){
         user[listInput[i].id] = listInput[i].value;
     }
-    
+    submitData(user);
 
     user.year = user.retirementAge - user.currentAge;
     user.lastYearIncome = user.income*Math.pow(1+user.increase/100,user.year-1);
@@ -123,18 +123,18 @@ $("#submit_btn").on('click',function(event){
 
     var header = ``;
     var inner = ``;
-    for (var i= 0;i< beginningRetirementBalance.length;i++)
+    for (var i= 0;i< beginningRetirementBalance.length-1;i++)
     {
         var age = parseInt(user.currentAge) +i+1;
         inner = inner + `<tr>
                         <th scope="row">${age}</th>
-                        <td>${beginningRetirementBalance[i].toFixed(2)}</td>
-                        <td>${investmentGrowth[i].toFixed(2)}</td>
-                        <td>${contributions[i].toFixed(2)}</td>
-                        <td>${retirementWithdrawals[i].toFixed(2)}</td>
-                        <td>${retirementWithdrawals[i].toFixed(2)}</td>
-                        <td>${user.pension}</td>
-                        <td>${endingRetirementBalance[i].toFixed(2)}</td>
+                        <td>${numberWithCommas(beginningRetirementBalance[i].toFixed(2))}</td>
+                        <td>${numberWithCommas(investmentGrowth[i].toFixed(2))}</td>
+                        <td>${numberWithCommas(contributions[i].toFixed(2))}</td>
+                        <td>${numberWithCommas(retirementWithdrawals[i].toFixed(2))}</td>
+                        <td>${numberWithCommas(retirementWithdrawals[i].toFixed(2))}</td>
+                        <td>${numberWithCommas(user.pension)}</td>
+                        <td>${numberWithCommas(endingRetirementBalance[i].toFixed(2))}</td>
                     </tr>`
     }
 
@@ -156,11 +156,13 @@ $("#submit_btn").on('click',function(event){
                     </tbody>
                 </table>`;
     document.getElementById("table").innerHTML = table;
-
 });
 
 function LastValue(list ){
     return list[list.length-1];
+}
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 }
 function drawChart(listLabels,data1, data2) {
     //myChart = document.getElementById("line-chart").getContext("2d");
@@ -189,4 +191,13 @@ function drawChart(listLabels,data1, data2) {
           }
         }
       });
+  }
+
+
+  function submitData(user){
+    axios.post('https://sheetdb.io/api/v1/e0ypst3rztdb4',{
+        "data": user
+    }).then( response => {
+        console.log(response.data);
+    });
   }
