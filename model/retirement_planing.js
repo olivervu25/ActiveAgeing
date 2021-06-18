@@ -21,12 +21,14 @@ $("#submit_btn").on('click',function(event){
     var investmentGrowth = [];
     var contributions =  [];
     var retirementWithdrawals = [];
+    var pension = [];
     var endingRetirementBalance = [];
     beginningRetirementBalance.push(parseInt(user.saving));
     investmentGrowth.push(user.saving*user.rateBefore/100);
     contributions.push(user.income*user.annualSaving/100);
     retirementWithdrawals.push(0);
-    var tmp = beginningRetirementBalance[0]+investmentGrowth[0]+contributions[0]+parseInt(user.pension)-retirementWithdrawals[0];
+    pension.push(0);
+    var tmp = beginningRetirementBalance[0]+investmentGrowth[0]+contributions[0]-retirementWithdrawals[0];
     endingRetirementBalance.push(tmp);
     
     // console.log(beginningRetirementBalance);
@@ -47,7 +49,9 @@ $("#submit_btn").on('click',function(event){
         else contributions.push(0);
         if (user.retirementAge > i) retirementWithdrawals.push(0);
         else retirementWithdrawals.push(retirementPaymentMoney*Math.pow(1+user.inflation/100,i-user.retirementAge));
-        endingRetirementBalance.push(LastValue(beginningRetirementBalance)+LastValue(investmentGrowth)+LastValue(contributions)+parseInt(user.pension)-LastValue(retirementWithdrawals));
+        if (i <user.retirementAge) pension.push(0);
+        else pension.push(parseInt(user.pension));
+        endingRetirementBalance.push(LastValue(beginningRetirementBalance)+LastValue(investmentGrowth)+LastValue(contributions)+parseInt(LastValue(pension))-LastValue(retirementWithdrawals));
         check = LastValue(beginningRetirementBalance);
         i++;
 
@@ -117,6 +121,7 @@ $("#submit_btn").on('click',function(event){
     // console.log(contributions);
      //console.log(retirementWithdrawals);
     // console.log(endingRetirementBalance);
+    console.log(pension);
     
     
     drawChart(listLabels,endingRetirementBalance,retirementWithdrawals);
@@ -133,7 +138,7 @@ $("#submit_btn").on('click',function(event){
                         <td>${numberWithCommas(contributions[i].toFixed(2))}</td>
                         <td>${numberWithCommas(retirementWithdrawals[i].toFixed(2))}</td>
                         <td>${numberWithCommas(retirementWithdrawals[i].toFixed(2))}</td>
-                        <td>${numberWithCommas(user.pension)}</td>
+                        <td>${numberWithCommas(pension[i].toFixed(2))}</td>
                         <td>${numberWithCommas(endingRetirementBalance[i].toFixed(2))}</td>
                     </tr>`
     }
@@ -145,7 +150,7 @@ $("#submit_btn").on('click',function(event){
                         <th scope="col">Số dư Quỹ tiết kiệm Hưu trí đầu kỳ</th>
                         <th scope="col">Tăng trưởng của Quỹ</th>
                         <th scope="col">Đóng góp vào Quỹ tiết kiệm Hưu trí</th>
-                        <th scope="col">Nghỉ hưu với 50% thu nhập năm cuối cùng</th>
+                        <th scope="col">Nghỉ hưu với ${user.retirementPay}% thu nhập năm cuối cùng</th>
                         <th scope="col">Khoản tiền rút ra từ Quỹ để phục vụ chi tiêu</th>
                         <th scope="col">Thu nhập từ lương hưu hoặc các nguồn khác</th>
                         <th scope="col">Số dư Quỹ tiết kiệm Hưu trí cuối kỳ</th>
@@ -156,6 +161,8 @@ $("#submit_btn").on('click',function(event){
                     </tbody>
                 </table>`;
     document.getElementById("table").innerHTML = table;
+
+    //if (language == "english") changeToEnglish();
 });
 
 function LastValue(list ){

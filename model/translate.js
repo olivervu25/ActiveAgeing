@@ -28,6 +28,7 @@ function changeToEnglish(){
     }
     obj.innerHTML = inner;
     reCallJsFiles();
+    $.getScript( "model/retirement_planing.js");
 }
 function changeToVietnamese(){
     var obj = document.getElementById("app");
@@ -41,5 +42,6 @@ function changeToVietnamese(){
     }
     obj.innerHTML = inner;
     reCallJsFiles();
+    $.getScript( "model/retirement_planing.js");
 }
 
