@@ -58,10 +58,59 @@ $("#submit_btn").on('click',function(event){
     var end = parseInt(user.retirementAge)+parseInt(user.yearsRetirement);
     end = i-2;
 
-    var notification = `Bạn sẽ nghỉ hưu vào ${user.year} năm tới. Với mức tăng thu nhập hằng năm là ${user.increase}%, thu nhập vào năm cuối cùng trước khi về hưu của bạn sẽ là ${user.lastYearIncome.toFixed(2)} VND. ${user.retirementPay}% thu nhập năm cuối cùng trước khi về hưu của bạn sẽ được ước tính là chi tiêu hằng năm trong giai đoạn hưu trí của bạn tương ứng ${retirementPaymentMoney.toFixed(2)} VND. Giá trị này sẽ tăng theo tỷ lệ lạm phát sau đó.Tuy nhiên, có thể bạn cần phải điều chỉnh kế hoạch về hưu của mình đôi chút vì quỹ tiết kiệm về hưu của bạn sẽ cạn kiệt vào năm bạn ${end} tuổi. Xem biểu đồ minh hoạ bên dưới.`
+    var notification = `Bạn sẽ nghỉ hưu vào ${user.year} năm tới. Với mức tăng thu nhập hằng năm là ${user.increase}%, thu nhập vào năm cuối cùng trước khi về hưu của bạn sẽ là ${user.lastYearIncome.toFixed(2)} VND. ${user.retirementPay}% thu nhập năm cuối cùng trước khi về hưu của bạn sẽ được ước tính là chi tiêu hằng năm trong giai đoạn hưu trí của bạn tương ứng ${retirementPaymentMoney.toFixed(2)} VND. Giá trị này sẽ tăng theo tỷ lệ lạm phát sau đó. Tuy nhiên, có thể bạn cần phải điều chỉnh kế hoạch về hưu của mình đôi chút vì quỹ tiết kiệm về hưu của bạn sẽ cạn kiệt vào năm bạn ${end} tuổi. Xem biểu đồ minh hoạ bên dưới.`
     document.getElementById("result").innerHTML = `<p style="color : #696592; text-align : justify">${notification}</p>`;
     var listLabels = [];
     for (var i = start;i<= end;i++) listLabels.push(i);
+
+    function savingAdvice(saving,rateBefore,income,increase,annualSaving,retirementAge,currentAge,yearsRetirement,rateAfter,inflation,retirementPay){
+      for (let i = currentAge;i<retirementAge-1;i++){
+        saving += saving*rateBefore/100 + income*annualSaving/100;
+        income += income * increase/100; 
+      }
+      var incomeAfter = income * retirementPay/100;
+      for (let i = 1; i<=yearsRetirement;i++){
+        saving += saving*rateAfter/100;
+        saving -= incomeAfter;
+        incomeAfter += incomeAfter*inflation/100;
+      }
+      return saving; 
+    }
+    // var check = parseFloat(user.annualSaving);
+    // money = savingAdvice(parseFloat(user.saving),parseFloat(user.rateBefore),
+    // parseFloat(user.income),parseFloat(user.increase),
+    // parseFloat(user.annualSaving),parseFloat(user.retirementAge),
+    // parseFloat(user.currentAge),parseFloat(user.yearsRetirement),
+    // parseFloat(user.rateAfter),parseFloat(user.inflation), parseFloat(user.retirementPay));
+    // console.log(money);
+    // while (money<0){
+    //   check += 0.0001;
+    //   money = savingAdvice(parseFloat(user.saving),parseFloat(user.rateBefore),
+    //   parseFloat(user.income),parseFloat(user.increase),
+    //   parseFloat(user.annualSaving),parseFloat(user.retirementAge),
+    //   parseFloat(user.currentAge),parseFloat(user.yearsRetirement),
+    //   parseFloat(user.rateAfter),parseFloat(user.inflation), parseFloat(user.retirementPay));
+    //   console.log("hello"); 
+    // }
+    if ((parseInt(user.yearsRetirement))  > beginningRetirementBalance.length - (parseInt(user.retirementAge)-parseInt(user.currentAge))){
+      console.log(beginningRetirementBalance.length);
+      var outcome = `<h3>Kế hoạch nghỉ hưu này chưa hợp lý rồi!</h3><img src="public/image/fail.png" alt="" class="img-fluid">`;
+    } else {
+      console.log(beginningRetirementBalance.length);
+      console.log(parseInt(user.yearsRetirement))
+      var outcome = `<h3>Bạn đã có một kế hoạch về hưu tuyệt vời!</h3><img src="public/image/success.png" alt="" class="img-fluid">`;
+    }
+    document.getElementById('firstOutcome').innerHTML = `<p style="color : #696592; text-align : justify">${outcome}</p>`;
+
+    var advice = `Để đạt được các mục tiêu nghỉ hưu, chúng tôi có những đề xuất dành cho bạn như sau, hãy thử một trong những đề xuất này nhé:<br>
+    <ul class="bullet">
+      <li>Tăng mức đóng góp cho khoản tiết kiệm hưu trí hàng năm lên.</li>
+      <li>Tăng tỷ suất lợi nhuận của bạn trước khi nghỉ hưu lên.</li>
+      <li>Giảm thu nhập yêu cầu của bạn khi nghỉ hưu xuống thấp hơn so với mức hiện tại.</li>
+      <li>Trì hoãn việc nghỉ hưu của bạn một vài năm nữa.</li>
+      <li>Tăng lương hưu / thu nhập khác của bạn sau khi nghỉ hưu lên.</li>
+    </ul>`;
+    document.getElementById('advice').innerHTML = `<p style="color : #696592; text-align : justify">${advice}</p>`;
 
     // console.log(beginningRetirementBalance);
     // console.log(investmentGrowth);

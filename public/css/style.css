@@ -1442,6 +1442,22 @@ h6 {
   width: 65%;
   border: 1px solid #d9dde6;
 }
+#firstOutcome h3{
+  font-size: 20px;
+  font-weight: bold;
+  color: #413e66;
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#advice ul{
+  font-family: "Montserrat", sans-serif;
+  color: #696592;
+  font-weight: 450;
+  text-align: justify;
+  font-size: 13px;
+}
 
 #footer .footer-top .footer-newsletter input[type="submit"] {
   background: #1bb1dc;

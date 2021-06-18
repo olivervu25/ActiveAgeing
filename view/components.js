@@ -1438,7 +1438,7 @@ components.findScreen = `
 
               <div class="form-group">
               <input name="annualSaving" class="form-control" id="annualSaving" placeholder="Khoản tiết kiệm về hưu hàng năm (Theo phần trăm thu nhập)" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ lệ thu nhập ước tính tăng hàng năm cho đến năm nghỉ hưu dự kiến của bạn"></span>
+              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Phần trăm thu nhập hàng năm sẽ được đóng góp vào quỹ tiết kiệm hưu trí của bạn mỗi năm. Nếu thu nhập hàng năm của bạn là 150.000.000 đồng và tiết kiệm hưu trí hàng năm của bạn là 8%, thì mức đóng góp là 150.000.000 x 8% = 12.000.000 đồng mỗi năm."></span>
               <div class="validation"></div>
             </div>
             <script>
@@ -1482,6 +1482,12 @@ components.findScreen = `
         <div class ="row">
           <div class="col-md-2">
           </div>    
+          <div class="col-md-8 mt-5" id="firstOutcome">
+          </div>
+        </div>
+        <div class ="row">
+          <div class="col-md-2">
+          </div>    
           <div class="col-md-8 mt-5" id="result">
           </div>
         </div>
@@ -1490,6 +1496,14 @@ components.findScreen = `
           <canvas id="line-chart"></canvas>
           </div>
         </div>
+
+        <div class ="row">
+          <div class="col-md-2">
+          </div>    
+          <div class="col-md-8 mt-5" id="advice">
+          </div>
+        </div>
+ 
 
         <div class="mt-5"  id="table">
         </div>
