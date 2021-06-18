@@ -1369,6 +1369,26 @@ h6 {
   color: #535074;
 }
 
+#footer .footer-top .form p {
+  font-size: 13px;
+  line-height: 12px;
+  margin-bottom: 20px;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  color: #535074;
+}
+
+
+#footer .footer-top .footer-contact p {
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 0;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  color: #535074;
+}
+
+
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
@@ -1488,6 +1508,19 @@ h6 {
   margin-bottom: 15px;
 }
 
+#footer .form button[type="submit"] {
+  background: #1bb1dc;
+  border: 0;
+  border-radius: 3px;
+  padding: 8px 30px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#footer .form button[type="submit"]:hover {
+  background: #0a98c0;
+  cursor: pointer;
+}
 
 #footer .footer-top .form #sendmessage.show,
 #footer .footer-top .form #errormessage.show,

@@ -359,13 +359,13 @@ Header
                 </div>
   
                 <div class="col-sm-6">
-                  <div class="footer-links">
+                  <div class="footer-contact">
                     <h4>Liên hệ</h4>
                     <p>
                       (Ms.) Lâm Tố Như<br>
                       External Relations Executive<br>
                       <strong>Phone:</strong> +84 914864707<br>
-                      <strong>Email:</strong> lamtonhu1801015046@ftu.edu.vn<br>
+                      <strong>Email:</strong> activeageing.ftu2@gmail.com<br>
                     </p>
                   </div>
   
@@ -417,20 +417,6 @@ Header
       </div>
     </div>
   
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
   </footer><!-- #footer -->
   
 
@@ -654,21 +640,7 @@ Header
   
       </div>
     </div>
-  
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
+
   </footer><!-- #footer -->
 </main>
 
@@ -1027,20 +999,7 @@ components.scholarshipScreen = `
         ============================-->
         <footer id="footer" class="section-bg">
           
-            <div class="container">
-              <div class="copyright">
-                &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
-              </div>
-              <div class="credits">
-                <!--
-                  All the links in the footer should remain intact.
-                  You can delete the links only if you purchased the pro version.
-                  Licensing information: https://bootstrapmade.com/license/
-                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
-                -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-              </div>
-            </div>
+            
           </footer><!-- #footer -->
   
   
@@ -1282,20 +1241,7 @@ components.studentLifeScreen = `
         ============================-->
         <footer id="footer" class="section-bg">
           
-            <div class="container">
-              <div class="copyright">
-                &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
-              </div>
-              <div class="credits">
-                <!--
-                  All the links in the footer should remain intact.
-                  You can delete the links only if you purchased the pro version.
-                  Licensing information: https://bootstrapmade.com/license/
-                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
-                -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-              </div>
-            </div>
+            
           </footer><!-- #footer -->
   
   
@@ -1356,16 +1302,19 @@ components.findScreen = `
       <!--==========================
       Intro Section
       ============================-->
+      
       <section id="intro" class="clearfix">
       <div class="container d-flex h-100">
         <div class="row justify-content-center align-self-center">
           <div class="col-md-6 intro-info order-md-first order-last">
-          <h2>Hãy để <br><span>Active Ageing Vietnam</span> giúp bạn lên kế hoạch về hưu ngay hôm nay.</h2>
-          
+          <h2>Để <span>chúng tôi</span> tính toán kế hoạch về hưu giúp bạn.</h2s>
+        
+          <div>
+          <a href="#retirement" class="btn-get-started">BẮT ĐẦU NGAY</a>
           </div>
-
+          </div>
           <div class="col-md-6 intro-img order-md-last order-first">
-            <img src="public/image/intro-img.svg" alt="" class="img-fluid">
+            <img src="public/image/planning.png" alt="" class="img-fluid">
           </div>
         </div>
 
@@ -1373,7 +1322,7 @@ components.findScreen = `
       </div>
       </section><!-- #intro -->
       
-      <div class = "container">
+      <div class = "container" id="retirement">
       <div class="container-fluid">
           <br><br>
           <header class="section-header">
@@ -1536,7 +1485,7 @@ components.findScreen = `
                       (Ms.) Lâm Tố Như<br>
                       External Relations Executive<br>
                       <strong>Phone:</strong> +84 914864707<br>
-                      <strong>Email:</strong> lamtonhu1801015046@ftu.edu.vn<br>
+                      <strong>Email:</strong> activeageing.ftu2@gmail.com<br>
                     </p>
                   </div>
   
@@ -1588,20 +1537,7 @@ components.findScreen = `
       </div>
     </div>
   
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
+    
   </footer><!-- #footer -->
 
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
@@ -1801,7 +1737,7 @@ Header
                       (Ms.) Lâm Tố Như<br>
                       External Relations Executive<br>
                       <strong>Phone:</strong> +84 914864707<br>
-                      <strong>Email:</strong> lamtonhu1801015046@ftu.edu.vn<br>
+                      <strong>Email:</strong> activeageing.ftu2@gmail.com<br>
                     </p>
                   </div>
   
@@ -1853,20 +1789,7 @@ Header
       </div>
     </div>
   
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
+    
   </footer><!-- #footer -->
 
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
