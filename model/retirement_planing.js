@@ -14,8 +14,6 @@ $("#submit_btn").on('click',function(event){
     user.year = user.retirementAge - user.currentAge;
     user.lastYearIncome = user.income*Math.pow(1+user.increase/100,user.year-1);
     var retirementPaymentMoney = user.lastYearIncome*user.retirementPay/100;
-    
-    console.log(user);
 
     var beginningRetirementBalance = [];
     var investmentGrowth = [];
@@ -100,8 +98,6 @@ $("#submit_btn").on('click',function(event){
       console.log(beginningRetirementBalance.length);
       var outcome = `<h3>Kế hoạch nghỉ hưu này chưa hợp lý rồi!</h3><img src="public/image/fail.png" alt="" class="img-fluid">`;
     } else {
-      console.log(beginningRetirementBalance.length);
-      console.log(parseInt(user.yearsRetirement))
       var outcome = `<h3>Bạn đã có một kế hoạch về hưu tuyệt vời!</h3><img src="public/image/success.png" alt="" class="img-fluid">`;
     }
     document.getElementById('firstOutcome').innerHTML = `<p style="color : #696592; text-align : justify">${outcome}</p>`;
@@ -121,10 +117,8 @@ $("#submit_btn").on('click',function(event){
     // console.log(contributions);
      //console.log(retirementWithdrawals);
     // console.log(endingRetirementBalance);
-    console.log(pension);
     
     
-    drawChart(listLabels,endingRetirementBalance,retirementWithdrawals);
 
     var header = ``;
     var inner = ``;
@@ -162,7 +156,18 @@ $("#submit_btn").on('click',function(event){
                 </table>`;
     document.getElementById("table").innerHTML = table;
 
-    //if (language == "english") changeToEnglish();
+    if (language == "english") {
+      var obj = document.getElementById("app");
+    var inner = obj.innerHTML;
+    
+    for (var i = 0;i < diction.length;i++)
+    {
+        var word = diction[i];
+        inner = inner.replace(word["Vietnamese"],word["English"]);
+    }
+    obj.innerHTML = inner;
+    }
+    drawChart(listLabels,endingRetirementBalance,retirementWithdrawals);
 });
 
 function LastValue(list ){
@@ -172,7 +177,6 @@ function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 }
 function drawChart(listLabels,data1, data2) {
-    //myChart = document.getElementById("line-chart").getContext("2d");
     if (myChart != null) myChart.destroy();
     myChart = new Chart(document.getElementById("line-chart"), {
         type: 'line',
@@ -205,6 +209,6 @@ function drawChart(listLabels,data1, data2) {
     axios.post('https://sheetdb.io/api/v1/e0ypst3rztdb4',{
         "data": user
     }).then( response => {
-        console.log(response.data);
+        //console.log(response.data);
     });
   }

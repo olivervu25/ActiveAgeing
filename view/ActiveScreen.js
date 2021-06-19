@@ -45,7 +45,7 @@ const  NavigationActive = ()=>{
 const view = {}
 view.setActiveScreen = (screenName) => {
     document.getElementById('app').innerHTML = components[screenName];
-    console.log(language);
+    // console.log(language);
     if (language == "english") changeToEnglish();
     NavigationActive();
     reCallJsFiles();

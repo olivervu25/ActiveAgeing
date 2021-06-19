@@ -1,4 +1,4 @@
-console.log('main.js');
+// console.log('main.js');
 //js loader : this is js code, which need reruning in navigation.js
 const JsScholarship = () =>{
   $(".testimonials-carousel").owlCarousel({

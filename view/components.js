@@ -277,7 +277,7 @@ Header
               <div class="member-info-content">
                 <h4>Hồ Phan Thanh Vy</h4>
                 <span>Finance Executive</span>
-                <span>Đại học Ngoại Thương CS2 TP.Hồ Chí Minh</span>
+                <span>Đại học Ngoại Thương CS2. TPHCM</span>
               </div>
             </div>
           </div>
@@ -290,7 +290,7 @@ Header
               <div class="member-info-content">
                 <h4>Nguyễn Quốc Tuấn</h4>
                 <span>Marketing Executive</span>
-                <span>Đại học Ngoại Thương CS2 TP.Hồ Chí Minh</span>
+                <span>Đại học Ngoại Thương CS2. TPHCM</span>
               </div>
             </div>
           </div>
@@ -303,7 +303,7 @@ Header
               <div class="member-info-content">
                 <h4>Nguyễn Huyền Trang</h4>
                 <span>Marketing Executive</span>
-                <span>Đại học Ngoại Thương, Hà Nội</span>
+                <span>Đại học Ngoại Thương Hà Nội</span>
               </div>
             </div>
           </div>
@@ -1261,8 +1261,8 @@ components.findScreen = `
     </button>
 
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
-      <a id ="engsubv" class="dropdown-item" href="#">English</a>
-      <a id ="vietsubv" class="dropdown-item" href="#">Vietnamese</a>
+      <a id ="engsub" class="dropdown-item" href="#">English</a>
+      <a id ="vietsub" class="dropdown-item" href="#">Vietnamese</a>
     </div>
     </div>
     </div>

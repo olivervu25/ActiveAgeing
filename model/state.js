@@ -12,9 +12,10 @@ req.onload = function(e) {
   var first_sheet_name = workbook.SheetNames[0];
   var sheet = workbook.Sheets[first_sheet_name];
  diction = XLSX.utils.sheet_to_json(sheet);
-  console.log(diction);
-
   /* DO SOMETHING WITH workbook HERE */
+ //diction = Object.keys(diction).map((key) => {"English": });
+ diction =  Object.values(diction);
+ diction = diction.sort((a,b) => -a["Vietnamese"].length + b["Vietnamese"].length);
 }
 
 req.send();

@@ -1,13 +1,13 @@
 $("#engsub").on('click',function(){
 
-    console.log('Change to English');
+    // console.log('Change to English');
     language = "english";
     changeToEnglish();
 });
 
 $("#vietsub").on('click',function(){
 
-    console.log('Change to Vietnamese');
+    // console.log('Change to Vietnamese');
     language = "vietnamese";
     changeToVietnamese();
 });
@@ -16,15 +16,15 @@ $("#vietsub").on('click',function(){
 
 
 function changeToEnglish(){
-    console.log("doing translate");
     var obj = document.getElementById("app");
     var inner = obj.innerHTML;
-    
     for (var i = 0;i < diction.length;i++)
     {
-        console.log(diction[i]);
+        // console.log(diction[i]);
         var word = diction[i];
-        inner = inner.replace(word["Vietnamese"],word["English"]);
+        while(inner.includes(word["Vietnamese"])){
+            inner = inner.replace(word["Vietnamese"],word["English"]);
+        }
     }
     obj.innerHTML = inner;
     reCallJsFiles();
@@ -35,7 +35,7 @@ function changeToVietnamese(){
     var inner = obj.innerHTML;
     for (var i = 0;i < diction.length;i++)
     {
-        console.log(diction[i]);
+        // console.log(diction[i]);
         var word = diction[i];
         inner = inner.replace(word["English"]
         ,word["Vietnamese"]);
