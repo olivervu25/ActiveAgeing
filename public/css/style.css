@@ -908,25 +908,26 @@ h6 {
 --------------------------------*/
 
 #call-to-action {
-  background: #2d2b46;
+  background: #1bb1dc;
   background-size: cover;
-  padding: 40px 0;
+  padding: 25px 0;
 }
 
 #call-to-action .cta-title {
   color: #fff;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 #call-to-action .cta-text {
   color: #fff;
+  font-size: 14px;
 }
 
 #call-to-action .cta-btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 26px;
@@ -1786,16 +1787,17 @@ h6 {
   color: #a2a0bd;
 }
 
-.membership .form button[type="submit"] {
+.membership button[type="submit"] {
   background: #1bb1dc;
   border: 0;
   border-radius: 3px;
   padding: 8px 30px;
   color: #fff;
   transition: 0.3s;
+  margin-top: 20px;
 }
 
-.membership .form button[type="submit"]:hover {
+.membership button[type="submit"]:hover {
   background: #0a98c0;
   cursor: pointer;
 }

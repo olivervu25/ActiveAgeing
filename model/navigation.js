@@ -92,6 +92,11 @@
     })
 
     // new code for active ageing
+    
     $('#learn_more_about').on('click',function(){
         view.setActiveScreen('aboutScreen');
+    })
+
+    $('#callToAction').on('click', function(){
+        view.setActiveScreen('studentLifeScreen');
     })

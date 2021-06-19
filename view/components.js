@@ -1108,7 +1108,11 @@ components.studentLifeScreen = `
                 <div class="validation"></div>
               </div>
             </div>
+<<<<<<< Updated upstream
             <div class="text-center"><button type="button" class="btn" style = "background : #1bb1dc" id="submit_btn">ĐĂNG KÝ</button></div>
+=======
+            <div id="submit_btn" class="text-center register"><button type="submit" title="Send Message">ĐĂNG KÝ</button></div>
+>>>>>>> Stashed changes
             </form>
             </div>
             </div>
@@ -1367,15 +1371,27 @@ components.findScreen = `
         </div>
 
         <div class ="row">
+        <div class="col-md-2">
+        </div>    
+        <div class="mt-5" id="callToAction">
+        </div>
+        </div>
+
+        <div class ="row">
           <div class="col-md-2">
           </div>    
           <div class="col-md-8 mt-5" id="advice">
           </div>
         </div>
+
+       
  
 
         <div class="mt-5"  id="table">
         </div>
+
+      
+        
         
         </div>
       </div>

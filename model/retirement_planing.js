@@ -95,12 +95,34 @@ var calculate = function(event){
     //   parseFloat(user.rateAfter),parseFloat(user.inflation), parseFloat(user.retirementPay));
     //   console.log("hello"); 
     // }
+
+    //ADVICE
     if ((parseInt(user.yearsRetirement))  > beginningRetirementBalance.length - (parseInt(user.retirementAge)-parseInt(user.currentAge))){
       var outcome = `<h3>Kế hoạch nghỉ hưu này chưa hợp lý rồi!</h3><img src="public/image/fail.png" alt="" class="img-fluid">`;
     } else {
       var outcome = `<h3>Bạn đã có một kế hoạch về hưu tuyệt vời!</h3><img src="public/image/success.png" alt="" class="img-fluid">`;
     }
     document.getElementById('firstOutcome').innerHTML = `<p style="color : #696592; text-align : justify">${outcome}</p>`;
+
+
+    //ĐĂNG KÝ THÀNH VIÊN
+    var callToAction = `<section id="call-to-action" class="call-to-action">
+    <div class="container" data-aos="zoom-out">
+      <div class="row">
+        <div class="col-lg-9 text-center text-lg-start">
+          <h3 class="cta-title">Xây dựng kế hoạch về hưu hợp lý cùng Active Ageing ngay hôm nay!</h3>
+          <p class="cta-text">Hãy sớm trở thành hội viên của Active Ageing Vietnam, để có thể nhận được nhiều quyền lợi đặc biệt và cho chúng tôi cơ hội mang đến cho bạn những trải nghiệm tốt nhất tại đây.</p>
+        </div>
+        <div class="col-lg-3 cta-btn-container text-center">
+          <a class="cta-btn align-middle" id="register" href="#">ĐĂNG KÝ THÀNH VIÊN</a>
+        </div>
+      </div>
+
+    </div>
+  </section>`; 
+
+  document.getElementById('callToAction').innerHTML = `<p style="color : #696592;">${callToAction}</p>`;
+
 
     var advice = `Để đạt được các mục tiêu nghỉ hưu, chúng tôi có những đề xuất dành cho bạn như sau, hãy thử một trong những đề xuất này nhé:<br>
     <ul class="bullet">
