@@ -27,6 +27,7 @@
         view.setActiveScreen('studentLifeScreen');
         JsPorfolio();
         document.getElementById('app').scrollIntoView();
+        $.getScript( "model/sign_up.js");
     })
     $('#student-life').on('click',function(){
         view.setActiveScreen('studentLifeScreen');
