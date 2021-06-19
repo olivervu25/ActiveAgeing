@@ -1,5 +1,6 @@
 var myChart;
-$("#submit_btn").on('click',function(event){
+$("#submit_btn").on('click', calculate);
+var calculate = function(event){
     event.preventDefault();
     //console.log('submitted');
 
@@ -10,7 +11,6 @@ $("#submit_btn").on('click',function(event){
         user[listInput[i].id] = listInput[i].value;
     }
     submitData(user);
-
     user.year = user.retirementAge - user.currentAge;
     user.lastYearIncome = user.income*Math.pow(1+user.increase/100,user.year-1);
     var retirementPaymentMoney = user.lastYearIncome*user.retirementPay/100;
@@ -37,7 +37,7 @@ $("#submit_btn").on('click',function(event){
 
     var i = parseInt(user.currentAge)+2;
     check = beginningRetirementBalance[0]; 
-    while ( check > 0 || i== parseInt(user.currentAge)+2){
+    while ( (check > 0 && i < parseInt(user.retirementAge)+parseInt(user.yearsRetirement)+2) || i== parseInt(user.currentAge)+2 ){
         beginningRetirementBalance.push(LastValue(endingRetirementBalance));
         var rate;
         if (i < user.retirementAge) rate = user.rateBefore;
@@ -60,11 +60,12 @@ $("#submit_btn").on('click',function(event){
     var end = parseInt(user.retirementAge)+parseInt(user.yearsRetirement);
     end = i-2;
 
-    var notification = `Bạn sẽ nghỉ hưu vào ${user.year} năm tới. Với mức tăng thu nhập hằng năm là ${user.increase}%, thu nhập vào năm cuối cùng trước khi về hưu của bạn sẽ là ${user.lastYearIncome.toFixed(2)} VND. ${user.retirementPay}% thu nhập năm cuối cùng trước khi về hưu của bạn sẽ được ước tính là chi tiêu hằng năm trong giai đoạn hưu trí của bạn tương ứng ${retirementPaymentMoney.toFixed(2)} VND. Giá trị này sẽ tăng theo tỷ lệ lạm phát sau đó. Tuy nhiên, có thể bạn cần phải điều chỉnh kế hoạch về hưu của mình đôi chút vì quỹ tiết kiệm về hưu của bạn sẽ cạn kiệt vào năm bạn ${end} tuổi. Xem biểu đồ minh hoạ bên dưới.`
+    var notification = `Bạn sẽ nghỉ hưu vào ${user.year} năm tới. Với mức tăng thu nhập hằng năm là ${user.increase}%, thu nhập vào năm cuối cùng trước khi về hưu của bạn sẽ là ${user.lastYearIncome.toFixed(2)} VND. ${user.retirementPay}% thu nhập năm cuối cùng trước khi về hưu của bạn sẽ được ước tính là chi tiêu hằng năm trong giai đoạn hưu trí của bạn tương ứng ${retirementPaymentMoney.toFixed(2)} VND. Giá trị này sẽ tăng theo tỷ lệ lạm phát sau đó.`;
+    if ((parseInt(user.yearsRetirement))  > beginningRetirementBalance.length - (parseInt(user.retirementAge)-parseInt(user.currentAge))) notification += ` Tuy nhiên, có thể bạn cần phải điều chỉnh kế hoạch về hưu của mình đôi chút vì quỹ tiết kiệm về hưu của bạn sẽ cạn kiệt vào năm bạn ${end} tuổi. Xem biểu đồ minh hoạ bên dưới.`;
+    else notification += ` Kế hoạch Quỹ tiết kiệm về hưu của bạn đang đi đúng hướng. Hãy sử dụng chức năng Quản lý tiết kiệm để dễ dàng theo dõi và quản lý tiến độ của mình nhé!`;
     document.getElementById("result").innerHTML = `<p style="color : #696592; text-align : justify">${notification}</p>`;
     var listLabels = [];
     for (var i = start;i<= end;i++) listLabels.push(i);
-
     function savingAdvice(saving,rateBefore,income,increase,annualSaving,retirementAge,currentAge,yearsRetirement,rateAfter,inflation,retirementPay){
       for (let i = currentAge;i<retirementAge-1;i++){
         saving += saving*rateBefore/100 + income*annualSaving/100;
@@ -95,7 +96,6 @@ $("#submit_btn").on('click',function(event){
     //   console.log("hello"); 
     // }
     if ((parseInt(user.yearsRetirement))  > beginningRetirementBalance.length - (parseInt(user.retirementAge)-parseInt(user.currentAge))){
-      console.log(beginningRetirementBalance.length);
       var outcome = `<h3>Kế hoạch nghỉ hưu này chưa hợp lý rồi!</h3><img src="public/image/fail.png" alt="" class="img-fluid">`;
     } else {
       var outcome = `<h3>Bạn đã có một kế hoạch về hưu tuyệt vời!</h3><img src="public/image/success.png" alt="" class="img-fluid">`;
@@ -111,16 +111,11 @@ $("#submit_btn").on('click',function(event){
       <li>Tăng lương hưu / thu nhập khác của bạn sau khi nghỉ hưu lên.</li>
     </ul>`;
     document.getElementById('advice').innerHTML = `<p style="color : #696592; text-align : justify">${advice}</p>`;
-
     // console.log(beginningRetirementBalance);
     // console.log(investmentGrowth);
     // console.log(contributions);
      //console.log(retirementWithdrawals);
     // console.log(endingRetirementBalance);
-    
-    
-
-    var header = ``;
     var inner = ``;
     for (var i= 0;i< beginningRetirementBalance.length-1;i++)
     {
@@ -168,7 +163,10 @@ $("#submit_btn").on('click',function(event){
     obj.innerHTML = inner;
     }
     drawChart(listLabels,endingRetirementBalance,retirementWithdrawals);
-});
+    
+    $("#submit_btn").on('click', calculate);
+    
+};
 
 function LastValue(list ){
     return list[list.length-1];

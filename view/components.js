@@ -6,19 +6,15 @@ Header
 <header id="header">
 
   <div id="topbar">
-    <div class="container">
-    <div class="dropdown" style="text-align : right;">
-   <button class="btn dropdown-toggle" style = "background: #1bb1dc;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
-   <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
-   <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
-   </svg>
-   </button>
-  
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
-      <a id ="engsub" class="dropdown-item" href="#">English</a>
-      <a id ="vietsub" class="dropdown-item" href="#">Vietnamese</a>
-    </div>
+    <div class="row">
+    <div class="container" style ="text-align : right;">
+      <button id="translate" type="button" class="btn" style="float: right;background: #1bb1dc;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+        </svg>
+        <span id ="status">English</span>
+      </button>
     </div>
     </div>
   </div>
@@ -329,10 +325,9 @@ Header
           <h3>Ý kiến của bạn sẽ giúp chúng tôi hoàn thiện giải pháp hơn.</h3>
           <!-- Du Search box and Find Button -->
           <div>
-          <a href="https://bitly.com.vn/5fnd50" target="_blank" class="btn-survey scrollto">Ý KIẾN CỦA BẠN</a>
+          <a href="" target="_blank" class="btn-survey scrollto">Ý KIẾN CỦA BẠN</a>
           </div>
         </div>
-        
       </div>
 
     </div>
@@ -1251,19 +1246,15 @@ components.studentLifeScreen = `
 components.findScreen = `
 <header id="header">
     <div id="topbar">
-    <div class="container">
-    <div class="dropdown" style="text-align : right;">
-    <button class="btn dropdown-toggle" style = "background: #1bb1dc;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
-    <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
-    <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
-    </svg>
-    </button>
-
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
-      <a id ="engsub" class="dropdown-item" href="#">English</a>
-      <a id ="vietsub" class="dropdown-item" href="#">Vietnamese</a>
-    </div>
+    <div class="row">
+    <div class="container" style ="text-align : right;">
+      <button id="translate" type="button" class="btn" style="float: right;background: #1bb1dc;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+        </svg>
+        <span id ="status">English</span>
+      </button>
     </div>
     </div>
     </div>
@@ -1352,26 +1343,26 @@ components.findScreen = `
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input class="form-control" name="currentAge" id="currentAge" placeholder="Tuổi hiện tại" />
+                <input value = "" class="form-control" name="currentAge" id="currentAge" placeholder="Tuổi hiện tại" />
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input class="form-control" name="retirementAge" id="retirementAge" placeholder="Tuổi nghỉ hưu dự đoán" />
+                <input value = "" class="form-control" name="retirementAge" id="retirementAge" placeholder="Tuổi nghỉ hưu dự đoán" />
                 <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Độ tuổi bạn dự định nghỉ hưu. Chúng tôi giả định rằng bạn không đóng góp thêm vào quỹ tiết kiệm hưu trí của mình trong năm này. Ví dụ, nếu bạn nghỉ hưu ở tuổi 60, khoản đóng góp cuối cùng của bạn xảy ra khi bạn 59 tuổi. Chúng tôi giả định rằng bạn thực hiện toàn bộ khoản đóng góp của mình vào cuối mỗi năm."></span>
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input  class="form-control" name="income" id="income" placeholder="Thu nhập hàng năm của hộ gia đình hiện tại (VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input value = ""  class="form-control" name="income" id="income" placeholder="Thu nhập hàng năm của hộ gia đình hiện tại (VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tổng thu nhập của bạn trong năm hiện tại."></span>
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input  class="form-control" name="increase" id="increase" placeholder="Tăng trưởng thu nhập ước tính hằng năm (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input value = ""  class="form-control" name="increase" id="increase" placeholder="Tăng trưởng thu nhập ước tính hằng năm (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ lệ thu nhập ước tính tăng hàng năm cho đến năm nghỉ hưu dự kiến của bạn."></span>
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input class="form-control" name="saving" id="saving" placeholder="Số dư khoản tiết kiệm về hưu hiện tại (VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input value = "" class="form-control" name="saving" id="saving" placeholder="Số dư khoản tiết kiệm về hưu hiện tại (VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Số dư tài khoản tiết kiệm về hưu hiện tại của bạn."></span>
                 <div class="validation"></div>
               </div>
@@ -1380,13 +1371,13 @@ components.findScreen = `
 
               <div class="col-lg-6">
                 <div class="form-group">
-                  <input  class="form-control" name="yearsRetirement" id="yearsRetirement" placeholder="Số năm sử dụng thu nhập sau về hưu" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input value = ""  class="form-control" name="yearsRetirement" id="yearsRetirement" placeholder="Số năm sử dụng thu nhập sau về hưu" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                   <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tổng số năm bạn dự định sử dụng quỹ tiết kiệm hưu trí của mình."></span>
                   <div class="validation"></div>
                 </div>
 
               <div class="form-group">
-              <input name="annualSaving" class="form-control" id="annualSaving" placeholder="Khoản tiết kiệm về hưu hàng năm (Theo phần trăm thu nhập)" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <input value = "" name="annualSaving" class="form-control" id="annualSaving" placeholder="Khoản tiết kiệm về hưu hàng năm (Theo phần trăm thu nhập)" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
               <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Phần trăm thu nhập hàng năm sẽ được đóng góp vào quỹ tiết kiệm hưu trí của bạn mỗi năm. Nếu thu nhập hàng năm của bạn là 150.000.000 đồng và tiết kiệm hưu trí hàng năm của bạn là 8%, thì mức đóng góp là 150.000.000 x 8% = 12.000.000 đồng mỗi năm."></span>
               <div class="validation"></div>
             </div>
@@ -1396,27 +1387,27 @@ components.findScreen = `
             })
             </script>
             <div class="form-group">
-              <input class="form-control" name="retirementPay" id="retirementPay" placeholder="Thu nhập yêu cầu khi về hưu (%)" data-rule="email" data-msg="Please enter a valid email" />
+              <input value = "" class="form-control" name="retirementPay" id="retirementPay" placeholder="Thu nhập yêu cầu khi về hưu (%)" data-rule="email" data-msg="Please enter a valid email" />
               <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ lệ phần trăm thu nhập hộ gia đình sau khi nghỉ hưu mà bạn nghĩ rằng bạn sẽ cần để trang trải các chi phí của mình khi nghỉ hưu. Số tiền này dựa trên thu nhập hộ gia đình trong năm làm việc cuối cùng của bạn (năm ngay trước khi bạn nghỉ hưu)."></span>
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <input class="form-control" name="rateBefore" id="rateBefore" placeholder="Lợi suất ước tính trước khi về hưu (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input value = "" class="form-control" name="rateBefore" id="rateBefore" placeholder="Lợi suất ước tính trước khi về hưu (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
               <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ suất lợi nhuận kỳ vọng hàng năm trên quỹ tiết kiệm hưu trí của bạn trước khi nghỉ hưu."></span>
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <input class="form-control" name="rateAfter" id="rateAfter" placeholder="Lợi suất ước tính trong quá trình về hưu (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input value = "" class="form-control" name="rateAfter" id="rateAfter" placeholder="Lợi suất ước tính trong quá trình về hưu (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
               <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ suất lợi nhuận kỳ vọng hàng năm trên quỹ tiết kiệm hưu trí của bạn sau khi nghỉ hưu."></span>
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <input class="form-control" name="pension" id="pension" placeholder="Lương hưu và thu nhập sau về hưu khác" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input value = "" class="form-control" name="pension" id="pension" placeholder="Lương hưu và thu nhập sau về hưu khác" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
               <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Thu nhập dự kiến từ lương hưu hoặc các nguồn khác."></span>
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <input class="form-control" name="inflation" id="inflation" placeholder="Mức lạm phát dự đoán (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input value = "" class="form-control" name="inflation" id="inflation" placeholder="Mức lạm phát dự đoán (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
               <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Trong những năm gần đây, tỷ lệ lạm phát Việt Nam đang ở mức dao động từ 3%-4%."></span>
               <div class="validation"></div>
             </div>

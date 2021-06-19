@@ -85,11 +85,9 @@
     
     $('#find-btn').on('click',function(event){
         event.preventDefault();
-        console.log('chuyen sang find page');
         view.setActiveScreen('findScreen');
         document.getElementById('intro').scrollIntoView()
         $.getScript( "public/js/findPage.js");
-        
     })
 
     // new code for active ageing
