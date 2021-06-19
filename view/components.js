@@ -1069,161 +1069,90 @@ components.studentLifeScreen = `
 
         </div>
       </section><!-- #intro -->
-        <div style = "display : none">
-        <main>
+        <div>
+            <main>
             <!--==========================
           University Section
         ============================-->
-        <section id="portfolio" class="section-bg">
             <div class="container">
-  
               <header class="section-header">
-                <h3 class="section-title">Student Life</h3>
+                <br><br>
+                <h3 class="section-title">Đăng ký thành viên</h3>
+                <p>Bạn muốn một kế hoạch về hưu, quản lý tài chính và sức khỏe một cách khoa học, được theo sát và cập nhật điều độ mà không lo dữ liệu bị thất lạc? Hãy sớm trở thành hội viên của Active Ageing Vietnam, để có thể nhận được nhiều quyền lợi đặc biệt và cho chúng tôi cơ hội mang đến cho bạn những trải nghiệm tốt nhất tại đây. Hãy đăng ký ngay!</p>
               </header>
-  
-              <div class="row">
-                <div class="col-lg-12">
-                  <ul id="portfolio-flters">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-accommodation" id='accommodation'>Accommodation</li>
-                    <li data-filter=".filter-friendship">International Friendship</li>
-                    <li data-filter=".filter-sport">Sport Activities</li>
-                    <li data-filter=".filter-expenses">Living Expenses</li>
-                    <li data-filter=".filter-opportunities">Opportunities</li>
-                    <li data-filter=".filter-handbook">Handbook</li>
-                  </ul>
-                </div>
+              </main>
+            </div>
+            <div class = "container">
+            <div class = "container-fluid">
+            <div class = "membership">
+            <form action="" method="post" role="form" class="contactForm">
+            <div class="col-lg-12">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Họ và tên">
+                <div class="validation"></div>
               </div>
-              <div class="row portfolio-container">
-  
-                <div class="col-lg-4 col-md-6 portfolio-item filter-accommodation">
-                  <div class="portfolio-wrap">
-                    <img src="public/image/accommodation.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4><a href="#">Accommodation</a></h4>
-                      <p>Accommodation in Moscow</p>
-                      <div>
-                        <a href="public/image/accommodation.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="col-lg-4 col-md-6 portfolio-item filter-friendship" data-wow-delay="0.1s">
-                  <div class="portfolio-wrap">
-                    <img src="public/image/friendship.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4><a href="#">International Friendship</a></h4>
-                      <p>Friendship</p>
-                      <div>
-                        <a href="public/image/friendship.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="col-lg-4 col-md-6 portfolio-item filter-accommodation" data-wow-delay="0.2s">
-                  <div class="portfolio-wrap">
-                    <img src="public/image/accommodation-1.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4><a href="#">Accommodation</a></h4>
-                      <p>Accommodation in Saint Petersburg</p>
-                      <div>
-                        <a href="public/image/accommodation-1.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="col-lg-4 col-md-6 portfolio-item filter-expenses">
-                  <div class="portfolio-wrap">
-                    <img src="public/image/rub-1.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4><a href="#">Living expenses</a></h4>
-                      <p>Prices in the rural area</p>
-                      <div>
-                        <a href="public/image/rub-1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="col-lg-4 col-md-6 portfolio-item filter-expenses" data-wow-delay="0.1s">
-                  <div class="portfolio-wrap">
-                    <img src="public/image/rub.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4><a href="#">Living Expenses</a></h4>
-                      <p>Prices in the urban area</p>
-                      <div>
-                        <a href="public/image/rub.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="col-lg-4 col-md-6 portfolio-item filter-opportunities" data-wow-delay="0.2s">
-                  <div class="portfolio-wrap">
-                    <img src="public/image/activities.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4><a href="#">Opportunities</a></h4>
-                      <p>Opportunities for students</p>
-                      <div>
-                        <a href="public/image/activities.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="col-lg-4 col-md-6 portfolio-item filter-opportunities">
-                  <div class="portfolio-wrap">
-                    <img src="public/image/graduate.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4><a href="#">Opportunities</a></h4>
-                      <p>Opportunities for graduates</p>
-                      <div>
-                        <a href="public/image/graduate.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="col-lg-4 col-md-6 portfolio-item filter-accommodation" data-wow-delay="0.1s">
-                  <div class="portfolio-wrap">
-                    <img src="public/image/accommodation-2.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4><a href="#">Accommodation</a></h4>
-                      <p>Accommodation in another cities</p>
-                      <div>
-                        <a href="public/image/accommodation-2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="col-lg-4 col-md-6 portfolio-item filter-sport" data-wow-delay="0.2s">
-                  <div class="portfolio-wrap">
-                    <img src="public/image/sport.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4><a href="#">Sport</a></h4>
-                      <p>Sport Activities</p>
-                      <div>
-                        <a href="public/image/sport.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                        <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
+              <div class="form-group">
+                <input type="text" class="form-control" name="email" id="email" placeholder="Địa chỉ email" />
+                <div class="validation"></div>
               </div>
-  
+              <div class="form-group">
+                <input value = "" class="form-control" name="address" id="address" placeholder="Nơi ở hiện tại" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input value = "" class="form-control" name="job" id="job" placeholder="Công việc hiện tại" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input value = ""  class="form-control" name="phone" id="phone" placeholder="Số điện thoại"/>
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div id="submit_btn" class="text-center"><button type="submit" title="Send Message">ĐĂNG KÝ</button></div>
+            </form>
+            </div>
+            </div>
+            </div>
+            </div>
+
+
+              <section id="faq" class="faq">
+              <div class="container" data-aos="fade-up">
+                <header class="section-header">
+                  <h3>Câu hỏi thường gặp</h3>
+                  <p>Những thắc mắc của bạn đều sẽ được giải đáp.</p>
+                </header>
+        
+                <ul class="faq-list" data-aso="fade-up" data-aos-delay="100">
+        
+                  <li>
+                    <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Lý do tôi nên đăng ký hội viên tại Active Ageing Vietnam?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                    <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                      <p>
+                      Tác động xã hội của Active Ageing Vietnam được đo lường một phần dựa trên mức độ quan tâm của khách hàng. Do đó, quý khách hàng khi đăng ký trở thành hội viên không chỉ có thể trải nghiệm dịch vụ tốt hơn, mà còn góp phần cho chúng tôi phát triển dự án hoàn thiện hơn.
+                      </p>
+                    </div>
+                  </li>
+        
+                  <li>
+                    <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Lợi ích mà tôi nhận được khi trở thành hội viên của Active Ageing Vietnam?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                    <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                      <p>
+                      -	Được lưu trữ, theo dõi thường trực kế hoạch về hưu đã lập.<br>
+                      -	Được lưu trữ, theo dõi quá trình tiết kiệm, quản lý tài chính và tình hình sức khỏe.<br>
+                      -	Được hướng dẫn, hỗ trợ lập kế hoạch về hưu.<br>
+                      -	Được kết nối đến một cộng đồng những người có cùng mối quan tâm, sở thích.<br>
+                      -	Được trải nghiệm dịch vụ chăm sóc khách hàng tốt hơn.<br>
+                      -	Được đăng ký gói cao cấp của Active Ageing Vietnam (gói tư vấn cá nhân).<br>
+                      -	Đóng góp ý kiến, chia sẻ trải nghiệm giúp chúng tôi nâng cao chất lượng dịch vụ.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+        
+              </div>
+              </section>
+          
             </div>
           </section><!-- #portfolio -->
    

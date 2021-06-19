@@ -1498,6 +1498,69 @@ h6 {
   margin-bottom: 15px;
 }
 
+#faq {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+#faq .faq-list {
+  padding: 0;
+  list-style: none;
+}
+
+#faq .faq-list li {
+  border-bottom: 1px solid #edecf4;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+#faq .faq-list .question {
+  display: block;
+  position: relative;
+  font-family: #1bb1dc;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-left: 25px;
+  cursor: pointer;
+  color: #158caf;
+  transition: 0.3s;
+}
+
+#faq .faq-list i {
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+#faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 25px;
+}
+
+#faq .faq-list .icon-show {
+  display: none;
+}
+
+#faq .faq-list .collapsed {
+  color: black;
+}
+
+#faq .faq-list .collapsed:hover {
+  color: #1bb1dc;
+}
+
+#faq .faq-list .collapsed .icon-show {
+  display: inline-block;
+  transition: 0.6s;
+}
+
+#faq .faq-list .collapsed .icon-close {
+  display: none;
+  transition: 0.6s;
+}
+
 #footer .footer-top .form #sendmessage {
   color: #fff;
   background: #1bb1dc;
@@ -1696,6 +1759,150 @@ h6 {
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
+
+.membership .form input::-webkit-input-placeholder,
+.membership .form textarea::-webkit-input-placeholder {
+  color: #a2a0bd;
+}
+
+.membership .form input::-moz-placeholder,
+.membership .form textarea::-moz-placeholder {
+  color: #a2a0bd;
+}
+
+.membership .form input:-ms-input-placeholder,
+.membership .form textarea:-ms-input-placeholder {
+  color: #a2a0bd;
+}
+
+.membership .form input::placeholder,
+.membership .form textarea::placeholder {
+  color: #a2a0bd;
+}
+
+.membership .form button[type="submit"] {
+  background: #1bb1dc;
+  border: 0;
+  border-radius: 3px;
+  padding: 8px 30px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.membership .form button[type="submit"]:hover {
+  background: #0a98c0;
+  cursor: pointer;
+}
+
+.membership .form #errormessage {
+  color: #fff;
+  display: none;
+  background: red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.membership .form #sendmessage.show,
+.membership .form #errormessage.show,
+.membership .form .show {
+  display: block;
+}
+
+.membership .form .form-group{
+  position: relative; 
+}
+
+.membership .form .form-group i{
+  position: absolute; 
+}
+
+.errspan {
+        float: right;
+        margin-right: 10px;
+        margin-top: -27px;
+        position: relative;
+        z-index: 2;
+        color: #0a98c0;
+    }
+
+.membership .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.membership .form label {
+  color: #413e66;
+  font-weight: 500;
+}
+
+.membership .form input,
+.membership .form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid #dce1ec;
+  font-size: 14px;
+}
+
+.membership .form input::-webkit-input-placeholder,
+.membership .form textarea::-webkit-input-placeholder {
+  color: #a2a0bd;
+}
+
+.membership .form input::-moz-placeholder,
+.membership .form textarea::-moz-placeholder {
+  color: #a2a0bd;
+}
+
+.membership  .form input:-ms-input-placeholder,
+.membership  .form textarea:-ms-input-placeholder {
+  color: #a2a0bd;
+}
+
+.membership .form input::placeholder,
+.membership .form textarea::placeholder {
+  color: #a2a0bd;
+}
+
+.membership .form button[type="submit"] {
+  background: #1bb1dc;
+  border: 0;
+  border-radius: 3px;
+  padding: 8px 30px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.membership .form button[type="submit"]:hover {
+  background: #0a98c0;
+  cursor: pointer;
+}
+
+.membership .copyright {
+  text-align: center;
+  padding-top: 30px;
+  color: #535074;
+  font-size: 15px;
+}
+
+.membership .credits {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 4px;
+  color: #8582a8;
+}
+
+.membership .credits a {
+  color: #1bb1dc;
+}
+
+.membership .credits a:hover {
+  color: #0a98c0;
+}
 
 @media (min-width: 991px) {
   #call-to-action .cta-btn-container {
