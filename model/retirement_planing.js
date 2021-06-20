@@ -10,6 +10,10 @@ var calculate = function(event){
     for (var i = 0;i< listInput.length;i++){
         user[listInput[i].id] = listInput[i].value;
     }
+    user.yearsRetirement = 80 - parseInt(user.retirementAge);
+    user.inflation = 4;
+    user.income = parseInt(user.income);
+    user.saving = parseInt(user.saving);
     submitData(user);
     user.year = user.retirementAge - user.currentAge;
     user.lastYearIncome = user.income*Math.pow(1+user.increase/100,user.year-1);
@@ -60,7 +64,7 @@ var calculate = function(event){
     var end = parseInt(user.retirementAge)+parseInt(user.yearsRetirement);
     end = i-2;
 
-    var notification = `Bạn sẽ nghỉ hưu vào ${user.year} năm tới. Với mức tăng thu nhập hằng năm là ${user.increase}%, thu nhập vào năm cuối cùng trước khi về hưu của bạn sẽ là ${user.lastYearIncome.toFixed(2)} VND. ${user.retirementPay}% thu nhập năm cuối cùng trước khi về hưu của bạn sẽ được ước tính là chi tiêu hằng năm trong giai đoạn hưu trí của bạn tương ứng ${retirementPaymentMoney.toFixed(2)} VND. Giá trị này sẽ tăng theo tỷ lệ lạm phát sau đó.`;
+    var notification = `Bạn sẽ nghỉ hưu vào ${user.year} năm tới. Với mức tăng thu nhập hằng năm là ${user.increase}%, thu nhập vào năm cuối cùng trước khi về hưu của bạn sẽ là ${numberWithCommas(user.lastYearIncome.toFixed(2))} Triệu VND. ${user.retirementPay}% thu nhập năm cuối cùng trước khi về hưu của bạn sẽ được ước tính là chi tiêu hằng năm trong giai đoạn hưu trí của bạn tương ứng ${numberWithCommas(retirementPaymentMoney.toFixed(2))} Triệu VND. Giá trị này sẽ tăng theo tỷ lệ lạm phát sau đó.`;
     if ((parseInt(user.yearsRetirement))  > beginningRetirementBalance.length - (parseInt(user.retirementAge)-parseInt(user.currentAge))) notification += ` Tuy nhiên, có thể bạn cần phải điều chỉnh kế hoạch về hưu của mình đôi chút vì quỹ tiết kiệm về hưu của bạn sẽ cạn kiệt vào năm bạn ${end} tuổi. Xem biểu đồ minh hoạ bên dưới.`;
     else notification += ` Kế hoạch Quỹ tiết kiệm về hưu của bạn đang đi đúng hướng. Hãy sử dụng chức năng Quản lý tiết kiệm để dễ dàng theo dõi và quản lý tiến độ của mình nhé!`;
     document.getElementById("result").innerHTML = `<p style="color : #696592; text-align : justify">${notification}</p>`;
@@ -216,6 +220,11 @@ function drawChart(listLabels,data1, data2) {
           ]
         },
         options: {
+          tooltips: {
+            callbacks: {
+              label: (item) => `${item.yLabel} GB`,
+            },
+          },
           title: {
             display: true,
             text: 'World population per region (in millions)'

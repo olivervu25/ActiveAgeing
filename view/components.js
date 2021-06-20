@@ -1281,7 +1281,7 @@ components.findScreen = `
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input value = ""  class="form-control" name="income" id="income" placeholder="Thu nhập hàng năm của hộ gia đình hiện tại (VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input value = ""  class="form-control" name="income" id="income" placeholder="Thu nhập hàng năm của hộ gia đình hiện tại ( Triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tổng thu nhập của bạn trong năm hiện tại."></span>
                 <div class="validation"></div>
               </div>
@@ -1290,18 +1290,14 @@ components.findScreen = `
                 <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ lệ thu nhập ước tính tăng hàng năm cho đến năm nghỉ hưu dự kiến của bạn."></span>
                 <div class="validation"></div>
               </div>
-              <div class="form-group">
-                <input value = "" class="form-control" name="saving" id="saving" placeholder="Số dư khoản tiết kiệm về hưu hiện tại (VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Số dư tài khoản tiết kiệm về hưu hiện tại của bạn."></span>
-                <div class="validation"></div>
-              </div>
+              
               </div>
 
 
               <div class="col-lg-6">
                 <div class="form-group">
-                  <input value = ""  class="form-control" name="yearsRetirement" id="yearsRetirement" placeholder="Số năm sử dụng thu nhập sau về hưu" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tổng số năm bạn dự định sử dụng quỹ tiết kiệm hưu trí của mình."></span>
+                  <input value = "" class="form-control" name="saving" id="saving" placeholder="Số dư khoản tiết kiệm về hưu hiện tại ( Triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Số dư tài khoản tiết kiệm về hưu hiện tại của bạn."></span>
                   <div class="validation"></div>
                 </div>
 
@@ -1335,11 +1331,7 @@ components.findScreen = `
               <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Thu nhập dự kiến từ lương hưu hoặc các nguồn khác."></span>
               <div class="validation"></div>
             </div>
-            <div class="form-group">
-              <input value = "" class="form-control" name="inflation" id="inflation" placeholder="Mức lạm phát dự đoán (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Trong những năm gần đây, tỷ lệ lạm phát Việt Nam đang ở mức dao động từ 3%-4%."></span>
-              <div class="validation"></div>
-            </div>
+            
             
             </div>
             </div>
