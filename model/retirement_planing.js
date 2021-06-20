@@ -114,7 +114,7 @@ var calculate = function(event){
           <p class="cta-text">Hãy sớm trở thành hội viên của Active Ageing Vietnam, để có thể nhận được nhiều quyền lợi đặc biệt và cho chúng tôi cơ hội mang đến cho bạn những trải nghiệm tốt nhất tại đây.</p>
         </div>
         <div class="col-lg-3 cta-btn-container text-center">
-          <a class="cta-btn align-middle" id="register" href="#">ĐĂNG KÝ THÀNH VIÊN</a>
+          <a class="cta-btn align-middle" id="register" href="#" style = "text-transform: uppercase;">Đăng ký thành viên</a>
         </div>
       </div>
 

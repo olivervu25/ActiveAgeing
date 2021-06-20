@@ -33,4 +33,4 @@ var submitUserInfor = function (event){
         //swal("Failed", "Request failed with status code 400", "error");
     })
 }
-$("#submit_btn").on('click',submitUserInfor);
+$("#submit_btn button").on('click',submitUserInfor);

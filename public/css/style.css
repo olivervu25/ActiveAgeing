@@ -11,7 +11,7 @@
 #about .row .box  p {
   text-align: justify;
 }
-#submit_btn:hover {
+#submit_btn button :hover {
 background: #028cb3 !important;
 }
 .ok-btn {
