@@ -100,3 +100,7 @@
     $('#callToAction').on('click', function(){
         view.setActiveScreen('studentLifeScreen');
     })
+
+    $('#login').on('click',function(){
+        view.setActiveScreen('loginScreen');
+    })

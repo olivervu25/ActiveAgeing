@@ -42,7 +42,7 @@ Header
                 </ul>
               </li>
           <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-          <li><a href="#footer">Liên hệ</a></li>
+          <li><a href="#" id='login'>ĐĂNG NHẬP</a></li>
       </ul>
     </nav><!-- .main-nav -->
     
@@ -463,7 +463,7 @@ Header
                 </ul>
               </li>
           <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-          <li><a href="#footer">Liên hệ</a></li>
+          <li><a href="#" id="login">ĐĂNG NHẬP</a></li>
       </ul>
     </nav><!-- .main-nav -->
     
@@ -685,7 +685,7 @@ components.scholarshipScreen = `
                 </ul>
               </li>
           <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-          <li><a href="#footer">Liên hệ</a></li>
+          <li><a href="#" id="login">ĐĂNG NHẬP</a></li>
       </ul>
     </nav><!-- .main-nav -->
     
@@ -1045,7 +1045,7 @@ components.studentLifeScreen = `
                     </ul>
                   </li>
               <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-              <li><a href="#footer">Liên hệ</a></li>
+              <li><a href="#" id="login">ĐĂNG NHẬP</a></li>
           </ul>
         </nav><!-- .main-nav -->
         
@@ -1212,7 +1212,7 @@ components.findScreen = `
               </ul>
             </li>
         <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-        <li><a href="#footer">Liên hệ</a></li>
+        <li><a href="#" id="login">ĐĂNG NHẬP</a></li>
     </ul>
   </nav><!-- .main-nav -->
   
@@ -1508,7 +1508,7 @@ Header
                 </ul>
               </li>
           <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-          <li><a href="#footer">Liên hệ</a></li>
+          <li><a href="#" id="login">ĐĂNG NHẬP</a></li>
       </ul>
     </nav><!-- .main-nav -->
     
@@ -1719,3 +1719,80 @@ Header
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 <!-- Uncomment below i you want to use a preloader -->
 <!-- <div id="preloader"></div> -->`
+
+components.loginScreen =`
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-l-50 p-r-50 p-t-77 p-b-30">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-55">
+						ĐĂNG NHẬP
+					</span>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="lnr lnr-envelope"></span>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="lnr lnr-lock"></span>
+						</span>
+					</div>
+
+					<div class="contact100-form-checkbox m-l-4">
+						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+						<label class="label-checkbox100" for="ckb1">
+							Remember me
+						</label>
+					</div>
+					
+					<div class="container-login100-form-btn p-t-25">
+						<button class="login100-form-btn">
+							ĐĂNG NHẬP
+						</button>
+					</div>
+
+					<div class="text-center w-full p-t-42 p-b-22">
+            <a class="txt1 bo1 hov1" href="#" id="home">
+              Quay lại trang chủ							
+            </a>
+					</div>
+
+
+					<div class="text-center w-full p-t-115">
+						<span class="txt1">
+							Chưa có tài khoản?
+						</span>
+
+						<a class="txt1 bo1 hov1" href="#" id="callToAction">
+							Đăng ký ngay.						
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+`
