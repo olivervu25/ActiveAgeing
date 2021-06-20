@@ -494,12 +494,13 @@ h6 {
 }
 
 .section-header p {
+  padding-top: 20px;
   text-align: center;
   margin: auto;
   font-size: 15px;
   padding-bottom: 60px;
   color: #535074;
-  width: 50%;
+  width: 80%;
 }
 
 /* Section with background
@@ -1524,13 +1525,13 @@ h6 {
 #faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #1bb1dc;
-  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #158caf;
+  color: #535074;
   transition: 0.3s;
 }
 
@@ -1761,6 +1762,10 @@ h6 {
 
 .retirement .credits a:hover {
   color: #0a98c0;
+}
+
+.retirement h4{
+  padding-bottom: 25px;
 }
 
 /*--------------------------------------------------------------
@@ -2037,44 +2042,6 @@ h6 {
 
 
 
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
-@font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
-}
-
-@font-face {
-  font-family: Raleway-Regular;
-  src: url('../fonts/raleway/Raleway-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Raleway-Black;
-  src: url('../fonts/raleway/Raleway-Black.ttf'); 
-}
-
-@font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url('../fonts/raleway/Raleway-SemiBold.ttf'); 
-}
-
-@font-face {
-  font-family: Raleway-Bold;
-  src: url('../fonts/raleway/Raleway-Bold.ttf'); 
-}
-
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
@@ -2118,7 +2085,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Poppins-Regular;
+	font-family:  "Montserrat", sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
