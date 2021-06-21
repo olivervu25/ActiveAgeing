@@ -39,15 +39,15 @@ var signUp = function (userInfor) {
     .then((userCredential) => {
         // Signed in 
         console.log(userInfor);
-        pushData(userInfor);
         var user = userCredential.user;
+        pushData(userInfor);
         user.sendEmailVerification()
         .then(() => {
 
             console.log("email sent!");
             swal({
                 title: "Success!",
-                text: `You have successfully registered, email has been sent to ${email}, click on the link to complete the verification process.`,
+                text: `You have successfully registered, email has been sent to ${userInfor.email}, click on the link to complete the verification process.`,
                 icon: "success",
                 buttons: {
                     confirm : {text:'ok',className:'ok-btn'},
@@ -77,7 +77,10 @@ var signUp = function (userInfor) {
 
 var pushData = (user)=>{
     var db = firebase.firestore();
-    db.collection("users").add(user)
+    console.log("current User: ");
+    console.log(firebase.auth().currentUser);
+    var id = firebase.auth().currentUser.uid;
+    db.collection("users").doc(id).set(user)
     .then((docRef) => {
         console.log("Document written with ID: ", docRef.id);
     })
