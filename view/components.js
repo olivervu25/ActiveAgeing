@@ -8,7 +8,7 @@ Header
   <div id="topbar">
     <div class="row">
     <div class="container" style ="text-align : right;">
-      <button id="translate" type="button" class="btn" style="float: right;background: #1bb1dc;">
+      <button id="translate" type="button" class="btn" style="float: right">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
         <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
         <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
@@ -42,8 +42,9 @@ Header
                 </ul>
               </li>
           <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-          <li><a href="#" id='login'>ĐĂNG NHẬP</a></li>
-      </ul>
+          <li id="user">
+          </li>
+        </ul>
     </nav><!-- .main-nav -->
     
   </div>
@@ -463,7 +464,7 @@ Header
                 </ul>
               </li>
           <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-          <li><a href="#" id="login">ĐĂNG NHẬP</a></li>
+          <li id ="user"><a href="#" id="login">ĐĂNG NHẬP</a></li>
       </ul>
     </nav><!-- .main-nav -->
     
@@ -685,7 +686,7 @@ components.scholarshipScreen = `
                 </ul>
               </li>
           <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-          <li><a href="#" id="login">ĐĂNG NHẬP</a></li>
+          <li id ="user"><a href="#" id="login">ĐĂNG NHẬP</a></li>
       </ul>
     </nav><!-- .main-nav -->
     
@@ -1045,7 +1046,7 @@ components.studentLifeScreen = `
                     </ul>
                   </li>
               <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-              <li><a href="#" id="login">ĐĂNG NHẬP</a></li>
+              <li id ="user" ><a href="#" id="login">ĐĂNG NHẬP</a></li>
           </ul>
         </nav><!-- .main-nav -->
         
@@ -1105,6 +1106,10 @@ components.studentLifeScreen = `
               </div>
               <div class="form-group">
                 <input value = ""  class="form-control" name="phone" id="phone" placeholder="Số điện thoại"/>
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input value = ""  class="form-control" name="password" id="password" placeholder="Mật khẩu"/>
                 <div class="validation"></div>
               </div>
             </div>
@@ -1177,7 +1182,7 @@ components.findScreen = `
     <div id="topbar">
     <div class="row">
     <div class="container" style ="text-align : right;">
-      <button id="translate" type="button" class="btn" style="float: right;background: #1bb1dc;">
+    <button id="translate" type="button" class="btn" style="float: right">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
         <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
         <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
@@ -1212,7 +1217,7 @@ components.findScreen = `
               </ul>
             </li>
         <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-        <li><a href="#" id="login">ĐĂNG NHẬP</a></li>
+        <li id ="user"><a href="#" id="login">ĐĂNG NHẬP</a></li>
     </ul>
   </nav><!-- .main-nav -->
   
@@ -1508,7 +1513,7 @@ Header
                 </ul>
               </li>
           <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-          <li><a href="#" id="login">ĐĂNG NHẬP</a></li>
+          <li id ="user" ><a href="#" id="login">ĐĂNG NHẬP</a></li>
       </ul>
     </nav><!-- .main-nav -->
     

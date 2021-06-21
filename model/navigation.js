@@ -103,4 +103,5 @@
 
     $('#login').on('click',function(){
         view.setActiveScreen('loginScreen');
+        $.getScript("public/js/main.js");
     })

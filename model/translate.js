@@ -1,16 +1,4 @@
-$("#engsub").on('click',function(){
-
-    // console.log('Change to English');
-    language = "english";
-    changeToEnglish();
-});
-
-$("#vietsub").on('click',function(){
-
-    // console.log('Change to Vietnamese');
-    language = "vietnamese";
-    changeToVietnamese();
-});
+console.log("translate.js");
 var translate = function(){
     var text = document.getElementById("status");
     if (text.innerHTML == "Vietnamese") {

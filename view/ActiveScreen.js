@@ -1,6 +1,9 @@
 // this code to rerun js file
-const reCallJsFiles = ()=>{
+const reCallJsFiles = (screenName)=>{
       $.getScript( "model/navigation.js");
+      $.getScript("model/firebase_auth.js");
+      if (screenName=="loginScreen") $.getScript("model/log_in.js");
+
       $.getScript( "model/translate.js");
     // $.getScript("lib/mobile-nav/mobile-nav.js");
     // $.getScript("contactform/contactform.js");
@@ -48,6 +51,6 @@ view.setActiveScreen = (screenName) => {
     // console.log(language);
     if (language == "english") changeToEnglish();
     NavigationActive();
-    reCallJsFiles();
+    reCallJsFiles(screenName);
     
 }
