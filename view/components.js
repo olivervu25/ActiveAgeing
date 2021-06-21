@@ -1102,6 +1102,7 @@ components.studentLifeScreen = `
               <option value="Hà Nội">Hà Nội
               <option value="Đà Nẵng">Đà Nẵng
               <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh
+              <option value="Khác">Khác
               </select> 
               </div>
               <div class="form-group">
@@ -1113,7 +1114,7 @@ components.studentLifeScreen = `
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input value = ""  class="form-control" name="password" id="password" placeholder="Mật khẩu"/>
+                <input value = ""  class="form-control" type="password" name="password" id="password" placeholder="Mật khẩu"/>
                 <div class="validation"></div>
               </div>
             </div>
@@ -1255,7 +1256,7 @@ components.findScreen = `
       <div class="container-fluid">
           <br><br>
           <header class="section-header">
-            <h3>RETIREMENT PLANNING</h3>
+            <h3>LẬP KẾ HOẠCH VỀ HƯU</h3>
             <p>Bạn đang tìm kiếm một kế hoạch về hưu mà không biết bắt đầu như thế nào? Ngay đây chúng tôi sẽ giúp bạn. Thiết lập tầm nhìn kế hoạch về hưu của cá nhân bạn chỉ bằng việc trả lời một số câu hỏi. Bắt đầu thôi!</p>
           </header>
           <div class = "retirement">
@@ -1282,6 +1283,7 @@ components.findScreen = `
               <option value="Hà Nội">Hà Nội
               <option value="Đà Nẵng">Đà Nẵng
               <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh
+              <option value="Khác">Khác
               </select>              
               </div>
               <div class="form-group">
@@ -1315,7 +1317,7 @@ components.findScreen = `
                 </div>
 
               <div class="form-group">
-              <input value = "" name="annualSaving" class="form-control" id="annualSaving" placeholder="Khoản tiết kiệm về hưu hàng năm (Theo phần trăm thu nhập)" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <input value = "" name="annualSaving" class="form-control" id="annualSaving" placeholder="Tỷ lệ chi tiêu khi về hưu so với thu nhập năm cuối trước khi nghỉ hưu. (%)" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
               <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Phần trăm thu nhập hàng năm sẽ được đóng góp vào quỹ tiết kiệm hưu trí của bạn mỗi năm. Nếu thu nhập hàng năm của bạn là 150.000.000 đồng và tiết kiệm hưu trí hàng năm của bạn là 8%, thì mức đóng góp là 150.000.000 x 8% = 12.000.000 đồng mỗi năm."></span>
               <div class="validation"></div>
             </div>
