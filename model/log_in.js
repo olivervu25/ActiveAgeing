@@ -17,6 +17,14 @@ var logIn = (event)=>{
             .catch((error) => {
                 var errorCode = error.code;
                 var errorMessage = error.message;
+                swal({
+                    title: "Failed!",
+                    text: errorMessage,
+                    icon: "error",
+                    buttons: {
+                        confirm : {text:'ok',className:'ok-btn'},
+                    }
+                });
             });
 }
 

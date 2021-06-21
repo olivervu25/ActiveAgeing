@@ -1097,8 +1097,12 @@ components.studentLifeScreen = `
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input value = "" class="form-control" name="address" id="address" placeholder="Nơi ở hiện tại" />
-                <div class="validation"></div>
+              <select class="form-control" name= "flatform" id="address" style ="    font-size: 14px;">
+              <option value=""selected disabled hidden>Nơi ở
+              <option value="Hà Nội">Hà Nội
+              <option value="Đà Nẵng">Đà Nẵng
+              <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh
+              </select> 
               </div>
               <div class="form-group">
                 <input value = "" class="form-control" name="job" id="job" placeholder="Công việc hiện tại" />
@@ -1273,8 +1277,12 @@ components.findScreen = `
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="address" id="address" placeholder="Nơi ở" />
-                <div class="validation"></div>
+              <select class="form-control" name= "flatform" id="address" style ="    font-size: 14px;">
+              <option value=""selected disabled hidden>Nơi ở
+              <option value="Hà Nội">Hà Nội
+              <option value="Đà Nẵng">Đà Nẵng
+              <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh
+              </select>              
               </div>
               <div class="form-group">
                 <input value = "" class="form-control" name="currentAge" id="currentAge" placeholder="Tuổi hiện tại" />

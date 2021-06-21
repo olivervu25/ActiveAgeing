@@ -19,7 +19,10 @@ var submitUserInfor = function (event){
     for (var i = 0;i< listInput.length;i++){
         user[listInput[i].id] = listInput[i].value;
     }
-    //console.log(user);
+    listInput  = form.querySelectorAll("select");
+    for (var i = 0;i< listInput.length;i++){
+        user[listInput[i].id] = listInput[i].value;
+    }
     axios.post('https://sheetdb.io/api/v1/r8cqosz0yw8m0',{
         "data": user
     }).then( response => {

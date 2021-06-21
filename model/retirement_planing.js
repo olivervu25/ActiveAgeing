@@ -10,6 +10,10 @@ var calculate = function(event){
     for (var i = 0;i< listInput.length;i++){
         user[listInput[i].id] = listInput[i].value;
     }
+    listInput  = form.querySelectorAll("select");
+    for (var i = 0;i< listInput.length;i++){
+        user[listInput[i].id] = listInput[i].value;
+    }
     user.yearsRetirement = 80 - parseInt(user.retirementAge);
     user.inflation = 4;
     user.income = parseInt(user.income);
