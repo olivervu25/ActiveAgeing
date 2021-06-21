@@ -1292,17 +1292,17 @@ components.findScreen = `
               </div>
               <div class="form-group">
                 <input value = "" class="form-control" name="retirementAge" id="retirementAge" placeholder="Tuổi nghỉ hưu dự đoán" />
-                <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Độ tuổi bạn dự định nghỉ hưu. Chúng tôi giả định rằng bạn không đóng góp thêm vào quỹ tiết kiệm hưu trí của mình trong năm này. Ví dụ, nếu bạn nghỉ hưu ở tuổi 60, khoản đóng góp cuối cùng của bạn xảy ra khi bạn 59 tuổi. Chúng tôi giả định rằng bạn thực hiện toàn bộ khoản đóng góp của mình vào cuối mỗi năm."></span>
+                <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Độ tuổi bạn dự định nghỉ hưu, giả định rằng bạn không đóng góp thêm vào quỹ tiết kiệm hưu trí của mình trong năm này. Ví dụ, nếu bạn nghỉ hưu ở tuổi 60, vui lòng nhập '60'. Trong trường hợp này, khoản đóng góp cuối cùng của bạn xảy ra khi bạn 59 tuổi. Chúng tôi cũng giả định rằng bạn thực hiện toàn bộ khoản đóng góp của mình vào cuối mỗi năm."></span>
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input value = ""  class="form-control" name="income" id="income" placeholder="Thu nhập hàng năm của hộ gia đình hiện tại ( Triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tổng thu nhập của bạn trong năm hiện tại."></span>
+                <input value = ""  class="form-control" name="income" id="income" placeholder="Thu nhập hàng năm của hộ gia đình hiện tại (triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tổng thu nhập của bạn trong năm hiện tại. Nếu thu nhập trong năm nay của bạn là 180.000.000 VND, vui lòng nhập '180'."></span>
                 <div class="validation"></div>
               </div>
               <div class="form-group">
                 <input value = ""  class="form-control" name="increase" id="increase" placeholder="Tăng trưởng thu nhập ước tính hằng năm (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ lệ thu nhập ước tính tăng hàng năm cho đến năm nghỉ hưu dự kiến của bạn."></span>
+                <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ lệ thu nhập ước tính tăng hàng năm cho đến năm nghỉ hưu dự kiến của bạn. Nếu bạn ước tính mức lương hàng năm của bạn sẽ tăng 2%, vui lòng nhập '2'"></span>
                 <div class="validation"></div>
               </div>
               
@@ -1311,14 +1311,14 @@ components.findScreen = `
 
               <div class="col-lg-6">
                 <div class="form-group">
-                  <input value = "" class="form-control" name="saving" id="saving" placeholder="Số dư khoản tiết kiệm về hưu hiện tại ( Triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input value = "" class="form-control" name="saving" id="saving" placeholder="Số dư khoản tiết kiệm về hưu hiện tại (triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                   <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Số dư tài khoản tiết kiệm về hưu hiện tại của bạn."></span>
                   <div class="validation"></div>
                 </div>
 
               <div class="form-group">
-              <input value = "" name="annualSaving" class="form-control" id="annualSaving" placeholder="Tỷ lệ chi tiêu khi về hưu so với thu nhập năm cuối trước khi nghỉ hưu. (%)" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Phần trăm thu nhập hàng năm sẽ được đóng góp vào quỹ tiết kiệm hưu trí của bạn mỗi năm. Nếu thu nhập hàng năm của bạn là 150.000.000 đồng và tiết kiệm hưu trí hàng năm của bạn là 8%, thì mức đóng góp là 150.000.000 x 8% = 12.000.000 đồng mỗi năm."></span>
+              <input value = "" name="annualSaving" class="form-control" id="annualSaving" placeholder="Phần trăm thu nhập hằng năm đóng góp vào quỹ tiết kiệm về hưu (%)" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Phần trăm thu nhập hàng năm sẽ được đóng góp vào quỹ tiết kiệm hưu trí của bạn mỗi năm. Nếu thu nhập hàng năm của bạn là 180,000,000 đồng và tiết kiệm hưu trí hàng năm của bạn là 8%, vui lòng nhập '8'. Như vậy, mức đóng góp hàng năm bằng 180,000,000 x 8% = 14,400,000 VNĐ (14.4 triệu VNĐ)."></span>
               <div class="validation"></div>
             </div>
             <script>
@@ -1355,42 +1355,44 @@ components.findScreen = `
             </form>
           </div>
         </div>
-        <div class ="row">
+        <div id ="resultForm">
+          <div class ="row">
+            <div class="col-md-2">
+            </div>    
+            <div class="col-md-8 mt-5" id="firstOutcome">
+            </div>
+          </div>
+          <div class ="row">
+            <div class="col-md-2">
+            </div>    
+            <div class="col-md-8 mt-5" id="result">
+            </div>
+          </div>
+          <div class ="row mt-5"> 
+            <div class="col-md-12">
+            <canvas id="line-chart"></canvas>
+            </div>
+          </div>
+
+          <div class ="row">
           <div class="col-md-2">
           </div>    
-          <div class="col-md-8 mt-5" id="firstOutcome">
+          <div class="mt-5" id="callToAction">
           </div>
-        </div>
-        <div class ="row">
-          <div class="col-md-2">
-          </div>    
-          <div class="col-md-8 mt-5" id="result">
           </div>
-        </div>
-        <div class ="row mt-5"> 
-          <div class="col-md-12">
-          <canvas id="line-chart"></canvas>
+
+          <div class ="row">
+            <div class="col-md-2">
+            </div>    
+            <div class="col-md-8 mt-5" id="advice">
+            </div>
           </div>
-        </div>
 
-        <div class ="row">
-        <div class="col-md-2">
-        </div>    
-        <div class="mt-5" id="callToAction">
-        </div>
-        </div>
+        
+  
 
-        <div class ="row">
-          <div class="col-md-2">
-          </div>    
-          <div class="col-md-8 mt-5" id="advice">
+          <div class="mt-5"  id="table">
           </div>
-        </div>
-
-       
- 
-
-        <div class="mt-5"  id="table">
         </div>
 
       

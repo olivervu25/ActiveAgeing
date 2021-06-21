@@ -5,12 +5,13 @@ var translate = function(){
         text.innerHTML = "English";
         language = "vietnamese";
         changeToVietnamese();
-        
+        $.getScript( "model/retirement_planing.js");
     }
     else {
         text.innerHTML = "Vietnamese";
         language = "english";
         changeToEnglish();
+        $.getScript( "model/retirement_planing.js");
     }
     document.getElementById('translate').onclick = translate;
 }
@@ -33,7 +34,6 @@ function changeToEnglish(){
     }
     obj.innerHTML = inner;
     $.getScript( "model/navigation.js");
-    $.getScript( "model/retirement_planing.js");
 }
 function changeToVietnamese(){
     var obj = document.getElementById("app");
@@ -46,7 +46,6 @@ function changeToVietnamese(){
     }
     obj.innerHTML = inner;
     $.getScript( "model/navigation.js");
-    $.getScript( "model/retirement_planing.js");
 }
 var innerTranslate = document.getElementById('status');
 if (language == "english" && innerTranslate != null) innerTranslate.innerHTML = "Vietnamese";

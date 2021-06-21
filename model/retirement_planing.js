@@ -1,9 +1,9 @@
+console.log("retirement planning");
 var myChart;
-$("#submit_btn").on('click', calculate);
 var calculate = function(event){
     event.preventDefault();
     //console.log('submitted');
-
+    console.log(language);
     var user = {};
     var form = document.querySelector(".contactForm");
     var listInput  = form.querySelectorAll("input");
@@ -18,6 +18,7 @@ var calculate = function(event){
     user.inflation = 4;
     user.income = parseInt(user.income);
     user.saving = parseInt(user.saving);
+    console.log(user);
     submitData(user);
     user.year = user.retirementAge - user.currentAge;
     user.lastYearIncome = user.income*Math.pow(1+user.increase/100,user.year-1);
@@ -152,13 +153,13 @@ var calculate = function(event){
         var age = parseInt(user.currentAge) +i+1;
         inner = inner + `<tr>
                         <th scope="row">${age}</th>
-                        <td>${numberWithCommas(beginningRetirementBalance[i].toFixed(2))}</td>
-                        <td>${numberWithCommas(investmentGrowth[i].toFixed(2))}</td>
-                        <td>${numberWithCommas(contributions[i].toFixed(2))}</td>
-                        <td>${numberWithCommas(retirementWithdrawals[i].toFixed(2))}</td>
-                        <td>${numberWithCommas(retirementWithdrawals[i].toFixed(2))}</td>
-                        <td>${numberWithCommas(pension[i].toFixed(2))}</td>
-                        <td>${numberWithCommas(endingRetirementBalance[i].toFixed(2))}</td>
+                        <td>${numberWithCommas((beginningRetirementBalance[i].toFixed(2)))}</td>
+                        <td>${numberWithCommas((investmentGrowth[i].toFixed(2)))}</td>
+                        <td>${numberWithCommas((contributions[i].toFixed(2)))}</td>
+                        <td>${numberWithCommas((retirementWithdrawals[i].toFixed(2)))}</td>
+                        <td>${numberWithCommas((retirementWithdrawals[i].toFixed(2)))}</td>
+                        <td>${numberWithCommas((pension[i].toFixed(2)))}</td>
+                        <td>${numberWithCommas((endingRetirementBalance[i].toFixed(2)))}</td>
                     </tr>`
     }
 
@@ -182,7 +183,7 @@ var calculate = function(event){
     document.getElementById("table").innerHTML = table;
 
     if (language == "english") {
-      var obj = document.getElementById("app");
+      var obj = document.getElementById("resultForm");
     var inner = obj.innerHTML;
     
     for (var i = 0;i < diction.length;i++)
@@ -195,16 +196,17 @@ var calculate = function(event){
     drawChart(listLabels,endingRetirementBalance,retirementWithdrawals);
     
     $("#submit_btn").on('click', calculate);
-    
+   
 };
 
 function LastValue(list ){
     return list[list.length-1];
 }
 function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 function drawChart(listLabels,data1, data2) {
+    console.log("da draw");
     if (myChart != null) myChart.destroy();
     myChart = new Chart(document.getElementById("line-chart"), {
         type: 'line',
@@ -239,9 +241,14 @@ function drawChart(listLabels,data1, data2) {
 
 
   function submitData(user){
-    axios.post('https://sheetdb.io/api/v1/e0ypst3rztdb4',{
-        "data": user
-    }).then( response => {
-        //console.log(response.data);
+    var db = firebase.firestore();
+    db.collection("retirementPlan").add(user)
+    .then((docRef) => {
+        console.log("Document written with ID: ", docRef.id);
+    })
+    .catch((error) => {
+        console.error("Error adding document: ", error);
     });
   }
+
+  $("#submit_btn").on('click', calculate);

@@ -1,4 +1,4 @@
-
+console.log("sign up.js");
 var submitUserInfor = function (event){
     event.preventDefault();
     if (firebase.auth().currentUser != null){
@@ -23,22 +23,23 @@ var submitUserInfor = function (event){
     for (var i = 0;i< listInput.length;i++){
         user[listInput[i].id] = listInput[i].value;
     }
-    axios.post('https://sheetdb.io/api/v1/r8cqosz0yw8m0',{
-        "data": user
-    }).then( response => {
-       if (response.status == 201)  ;
-       //swal("Success!", "Your information has been recorded, thank you very much!", "success");
-    }).catch(error => {
-        console.log(error);
-        //swal("Failed", "Request failed with status code 400", "error");
-    });
-
-    signUp(user.email,user.password);
+    // axios.post('https://sheetdb.io/api/v1/r8cqosz0yw8m0',{
+    //     "data": user
+    // }).then( response => {
+    //    if (response.status == 201)  ;
+    //    //swal("Success!", "Your information has been recorded, thank you very much!", "success");
+    // }).catch(error => {
+    //     console.log(error);
+    //     //swal("Failed", "Request failed with status code 400", "error");
+    // });
+    signUp(user);
 }
-var signUp = function (email,password) {
-    firebase.auth().createUserWithEmailAndPassword(email, password)
+var signUp = function (userInfor) {
+    firebase.auth().createUserWithEmailAndPassword(userInfor.email, userInfor.password)
     .then((userCredential) => {
         // Signed in 
+        console.log(userInfor);
+        pushData(userInfor);
         var user = userCredential.user;
         user.sendEmailVerification()
         .then(() => {
@@ -73,5 +74,19 @@ var signUp = function (email,password) {
         // ..
     });    
 }
+
+var pushData = (user)=>{
+    var db = firebase.firestore();
+    db.collection("users").add(user)
+    .then((docRef) => {
+        console.log("Document written with ID: ", docRef.id);
+    })
+    .catch((error) => {
+        console.error("Error adding document: ", error);
+    });
+    
+}
+
+//pushData({email: "nguyenchiemdu@gmail.com"});
 
 $("#submit_btn button").on('click',submitUserInfor);
