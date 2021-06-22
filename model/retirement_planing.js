@@ -14,10 +14,9 @@ var calculate = function(event){
     for (var i = 0;i< listInput.length;i++){
         user[listInput[i].id] = listInput[i].value;
     }
-    user.yearsRetirement = 80 - parseInt(user.retirementAge);
-    user.inflation = 4;
-    user.income = parseInt(user.income);
-    user.saving = parseInt(user.saving);
+    //user.yearsRetirement = 35;
+    //80 - parseInt(user.retirementAge);
+    user.inflation = 2.9;
     console.log(user);
     submitData(user);
     user.year = user.retirementAge - user.currentAge;
@@ -32,7 +31,7 @@ var calculate = function(event){
     var endingRetirementBalance = [];
     beginningRetirementBalance.push(parseInt(user.saving));
     investmentGrowth.push(user.saving*user.rateBefore/100);
-    contributions.push(user.income*user.annualSaving/100);
+    contributions.push(user.income*user.annualSaving/100); // can sua
     retirementWithdrawals.push(0);
     pension.push(0);
     var tmp = beginningRetirementBalance[0]+investmentGrowth[0]+contributions[0]-retirementWithdrawals[0];
@@ -44,15 +43,15 @@ var calculate = function(event){
     // console.log(retirementWithdrawals);
     // console.log(endingRetirementBalance);
 
-    var i = parseInt(user.currentAge)+2;
+    var i = parseInt(user.currentAge)+1;
     check = beginningRetirementBalance[0]; 
-    while ( (check > 0 && i < parseInt(user.retirementAge)+parseInt(user.yearsRetirement)+2) || i== parseInt(user.currentAge)+2 ){
+    while ( (check > 0 && i < parseInt(user.retirementAge)+parseInt(user.yearsRetirement)+1) || i== parseInt(user.currentAge)+1 ){
         beginningRetirementBalance.push(LastValue(endingRetirementBalance));
         var rate;
         if (i < user.retirementAge) rate = user.rateBefore;
         else rate =user.rateAfter;
         investmentGrowth.push(LastValue(beginningRetirementBalance)*rate/100);
-        if (i< user.retirementAge) contributions.push((user.income*parseInt(user.annualSaving)/100)*Math.pow(1+parseInt(user.increase)/100,i-parseInt(user.currentAge)-1));
+        if (i< user.retirementAge) contributions.push((user.income*parseInt(user.annualSaving)/100)*Math.pow(1+parseInt(user.increase)/100,i-parseInt(user.currentAge)));
         else contributions.push(0);
         if (user.retirementAge > i) retirementWithdrawals.push(0);
         else retirementWithdrawals.push(retirementPaymentMoney*Math.pow(1+user.inflation/100,i-user.retirementAge));
@@ -65,11 +64,11 @@ var calculate = function(event){
         if (LastValue(endingRetirementBalance)<0) endingRetirementBalance[endingRetirementBalance.length-1]=0;
         if (LastValue(beginningRetirementBalance)<0) beginningRetirementBalance[beginningRetirementBalance.length-1]=0;
     }
-    var start = parseInt(user.currentAge)+1;
+    var start = parseInt(user.currentAge);
     var end = parseInt(user.retirementAge)+parseInt(user.yearsRetirement);
-    end = i-2;
+    end = i-2;// chua chac
 
-    var notification = `Bạn sẽ nghỉ hưu vào ${user.year} năm tới. Với mức tăng thu nhập hằng năm là ${user.increase}%, thu nhập vào năm cuối cùng trước khi về hưu của bạn sẽ là ${numberWithCommas(user.lastYearIncome.toFixed(2))} Triệu VND. ${user.retirementPay}% thu nhập năm cuối cùng trước khi về hưu của bạn sẽ được ước tính là chi tiêu hằng năm trong giai đoạn hưu trí của bạn tương ứng ${numberWithCommas(retirementPaymentMoney.toFixed(2))} Triệu VND. Giá trị này sẽ tăng theo tỷ lệ lạm phát sau đó.`;
+    var notification = `Bạn sẽ nghỉ hưu vào ${user.year} năm tới. Với mức tăng thu nhập hằng năm là ${user.increase}%, thu nhập vào năm cuối cùng trước khi về hưu của bạn sẽ là ${numberWithCommas(user.lastYearIncome.toFixed(2))} Triệu VND. ${user.retirementPay}% thu nhập năm cuối cùng trước khi về hưu của bạn sẽ được ước tính là chi tiêu hằng năm trong giai đoạn hưu trí của bạn tương ứng ${numberWithCommas(retirementPaymentMoney.toFixed(2))} triệu VNĐ. Giá trị này sẽ tăng theo tỷ lệ lạm phát sau đó.`;
     if ((parseInt(user.yearsRetirement))  > beginningRetirementBalance.length - (parseInt(user.retirementAge)-parseInt(user.currentAge))) notification += ` Tuy nhiên, có thể bạn cần phải điều chỉnh kế hoạch về hưu của mình đôi chút vì quỹ tiết kiệm về hưu của bạn sẽ cạn kiệt vào năm bạn ${end} tuổi. Xem biểu đồ minh hoạ bên dưới.`;
     else notification += ` Kế hoạch Quỹ tiết kiệm về hưu của bạn đang đi đúng hướng. Hãy sử dụng chức năng Quản lý tiết kiệm để dễ dàng theo dõi và quản lý tiến độ của mình nhé!`;
     document.getElementById("result").innerHTML = `<p style="color : #696592; text-align : justify">${notification}</p>`;
@@ -150,7 +149,7 @@ var calculate = function(event){
     var inner = ``;
     for (var i= 0;i< beginningRetirementBalance.length-1;i++)
     {
-        var age = parseInt(user.currentAge) +i+1;
+        var age = parseInt(user.currentAge) +i;
         inner = inner + `<tr>
                         <th scope="row">${age}</th>
                         <td>${numberWithCommas((beginningRetirementBalance[i].toFixed(2)))}</td>
@@ -199,6 +198,14 @@ var calculate = function(event){
    
 };
 
+function removePercent(s) {
+  console.log("remove");
+  s = s.replace("%","");
+  s = parseInt(s);
+  console.log(s);
+  return s;
+  }
+
 function LastValue(list ){
     return list[list.length-1];
 }
@@ -242,7 +249,7 @@ function drawChart(listLabels,data1, data2) {
 
   function submitData(user){
     var db = firebase.firestore();
-    db.collection("retirementPlan").add(user)
+    db.collection("test").add(user)
     .then((docRef) => {
         console.log("Document written with ID: ", docRef.id);
     })

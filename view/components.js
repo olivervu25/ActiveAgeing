@@ -1297,7 +1297,7 @@ components.findScreen = `
               </div>
               <div class="form-group">
                 <input value = ""  class="form-control" name="income" id="income" placeholder="Thu nhập hàng năm của hộ gia đình hiện tại (triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tổng thu nhập của bạn trong năm hiện tại. Nếu thu nhập trong năm nay của bạn là 180.000.000 VND, vui lòng nhập '180'."></span>
+                <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tổng thu nhập của bạn trong năm hiện tại. Nếu thu nhập trong năm nay của bạn là 180 triệu VND, vui lòng nhập '180'."></span>
                 <div class="validation"></div>
               </div>
               <div class="form-group">
@@ -1305,20 +1305,26 @@ components.findScreen = `
                 <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ lệ thu nhập ước tính tăng hàng năm cho đến năm nghỉ hưu dự kiến của bạn. Nếu bạn ước tính mức lương hàng năm của bạn sẽ tăng 2%, vui lòng nhập '2'"></span>
                 <div class="validation"></div>
               </div>
+              <div class="form-group">
+                  <input value = "" class="form-control" name="saving" id="saving" placeholder="Số dư quỹ tiết kiệm hưu trí hiện tại (triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Số dư tài khoản tiết kiệm về hưu hiện tại của bạn. Giả sử bạn đã tích góp được 700 triệu VNĐ cho quỹ tiết kiệm hưu trí của mình, vui lòng nhập '700'."></span>
+                  <div class="validation"></div>
+                </div>
+
               
               </div>
 
 
               <div class="col-lg-6">
                 <div class="form-group">
-                  <input value = "" class="form-control" name="saving" id="saving" placeholder="Số dư khoản tiết kiệm về hưu hiện tại (triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Số dư tài khoản tiết kiệm về hưu hiện tại của bạn."></span>
+                  <input value = "" class="form-control" name="saving" id="yearsRetirement" placeholder="Số năm sử dụng thu nhập sau về hưu" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tổng số năm bạn dự định sử dụng quỹ tiết kiệm hưu trí của mình để chi tiêu kể từ năm bạn nghỉ hưu. Giả sử bạn dự định về hưu ở tuổi 60 và mong muốn duy trì mức sống thoải mái trong vòng 30 năm nữa nhờ quỹ tiết kiệm hưu trí của mình, vui lòng nhập '30'. Nói cách khác, tuổi thọ dự kiến của bạn trong trường hợp này là 60 + 30 = 90 (tuổi)."></span>
                   <div class="validation"></div>
                 </div>
 
               <div class="form-group">
-              <input value = "" name="annualSaving" class="form-control" id="annualSaving" placeholder="Phần trăm thu nhập hằng năm đóng góp vào quỹ tiết kiệm về hưu (%)" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Phần trăm thu nhập hàng năm sẽ được đóng góp vào quỹ tiết kiệm hưu trí của bạn mỗi năm. Nếu thu nhập hàng năm của bạn là 180,000,000 đồng và tiết kiệm hưu trí hàng năm của bạn là 8%, vui lòng nhập '8'. Như vậy, mức đóng góp hàng năm bằng 180,000,000 x 8% = 14,400,000 VNĐ (14.4 triệu VNĐ)."></span>
+              <input value = "" name="annualSaving" class="form-control" id="annualSaving" placeholder="Khoản tiết kiệm về hưu hàng năm tính theo phần trăm thu nhập (%)" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Phần trăm thu nhập hàng năm sẽ được đóng góp vào quỹ tiết kiệm hưu trí của bạn mỗi năm. Nếu thu nhập hàng năm của bạn là 180 triệu VNĐ và tỷ lệ đóng góp hàng năm của bạn là 8%, vui lòng nhập '8'. Như vậy, mức đóng góp hàng năm bằng 180 x 8% = 14.4 triệu VNĐ."></span>
               <div class="validation"></div>
             </div>
             <script>
@@ -1328,22 +1334,28 @@ components.findScreen = `
             </script>
             <div class="form-group">
               <input value = "" class="form-control" name="retirementPay" id="retirementPay" placeholder="Thu nhập yêu cầu khi về hưu (%)" data-rule="email" data-msg="Please enter a valid email" />
-              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ lệ phần trăm thu nhập hộ gia đình sau khi nghỉ hưu mà bạn nghĩ rằng bạn sẽ cần để trang trải các chi phí của mình khi nghỉ hưu. Số tiền này dựa trên thu nhập hộ gia đình trong năm làm việc cuối cùng của bạn (năm ngay trước khi bạn nghỉ hưu)."></span>
+              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ lệ phần trăm thu nhập hộ gia đình sau khi nghỉ hưu mà bạn nghĩ rằng bạn sẽ cần để trang trải các chi phí của mình khi nghỉ hưu. Số tiền này dựa trên thu nhập hộ gia đình trong năm làm việc cuối cùng của bạn (năm ngay trước khi bạn nghỉ hưu). Giả sử bạn dự định về hưu ở tuổi 60, thu nhập năm bạn 59 tuổi là 210 triệu VNĐ, và bạn tin rằng tỷ lệ này là 60%, vui lòng nhập '60'. Khi đó, số tiền mà bạn cần để chi tiêu vào năm 60 tuổi bằng 210 x 60% = 126 triệu VNĐ."></span>
               <div class="validation"></div>
             </div>
             <div class="form-group">
               <input value = "" class="form-control" name="rateBefore" id="rateBefore" placeholder="Lợi suất ước tính trước khi về hưu (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ suất lợi nhuận kỳ vọng hàng năm trên quỹ tiết kiệm hưu trí của bạn trước khi nghỉ hưu."></span>
+              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ suất lợi nhuận kỳ vọng hàng năm trên quỹ tiết kiệm hưu trí của bạn trước khi nghỉ hưu. Lưu ý rằng tỷ lệ này có xu hướng giảm theo thời gian. Nếu bạn kỳ vọng tỷ suất trên là 7%, vui lòng nhập '7'.".></span>
               <div class="validation"></div>
             </div>
             <div class="form-group">
               <input value = "" class="form-control" name="rateAfter" id="rateAfter" placeholder="Lợi suất ước tính trong quá trình về hưu (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ suất lợi nhuận kỳ vọng hàng năm trên quỹ tiết kiệm hưu trí của bạn sau khi nghỉ hưu."></span>
+              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ suất lợi nhuận kỳ vọng hàng năm trên quỹ tiết kiệm hưu trí của bạn sau khi nghỉ hưu. Lưu ý rằng tỷ lệ này có xu hướng giảm theo thời gian. Nếu bạn kỳ vọng tỷ suất trên là 4%, vui lòng nhập '4'."></span>
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <input value = "" class="form-control" name="pension" id="pension" placeholder="Lương hưu và thu nhập sau về hưu khác" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Thu nhập dự kiến từ lương hưu hoặc các nguồn khác."></span>
+              <input value = "" class="form-control" name="pension" id="pension" placeholder="Lương hưu và thu nhập sau về hưu khác (triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Thu nhập dự kiến từ lương hưu hoặc các nguồn khác. Nếu bạn dự đoán mức lương hưu của mình là 2 triệu VNĐ mỗi tháng hay 24 triệu VNĐ mỗi năm, vui lòng nhập '24'."></span>
+              <div class="validation"></div>
+            </div>
+
+            <div class="form-group">
+              <input disabled="disabled" value = "" class="form-control" name="pension" id="inflation" placeholder="Mức lạm phát dự đoán (Mặc định 3.5%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Mức chi tiêu hàng năm sẽ được giả định tăng theo tỷ lệ lạm phát. Trong những năm gần đây, tỷ lệ lạm phát Việt Nam đang ở mức dao động từ 3%-4%. Vì vậy, chúng tôi giả định tỷ lệ này là 3.5%."></span>
               <div class="validation"></div>
             </div>
             
