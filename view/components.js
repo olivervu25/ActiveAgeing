@@ -535,13 +535,13 @@ Header
         </div>
         <div class ="col-lg-6">
           <p>Nếu không có thái độ tích cực chuẩn bị cho độ tuổi trên 60, người cao tuổi sẽ phải đối mặt với những hậu quả nghiêm trọng như hạn chế tài chính và hạn chế tiếp cận các dịch vụ chăm sóc sức khỏe.</p>
-          <p class="quote">"Những vấn đề trên sẽ trở nên càng trầm trọng hơn khi 15 năm tới đây, số người cao tuổi sẽ tăng"</p>
+          <p class="quote">"Những vấn đề trên sẽ trở nên càng trầm trọng hơn trong 15 năm tới đây, khi số người cao tuổi sẽ gia tăng đáng kể"</p>
         </div>
       </div>
 
       <div class= "row space-need-1">
         <div class="col-lg-6">
-          <p>Nhìn thấy những vấn đề trên sẽ trở nên càng trầm trọng hơn khi 15 năm tới đây, số người cao tuổi sẽ tăng và chiếm hơn ⅕ dân số, Active Ageing Vietnam mong muốn có thể cộng hưởng đến những thay đổi hiện có để giúp mỗi người có sự chuẩn bị cho tuổi già tốt hơn, sớm hơn. Cùng với những thay đổi chính sách của Chính phủ, Active Ageing là một giải pháp tối ưu trong việc.</p>
+          <p>Nhận thấy những vấn đề trên sẽ trở nên càng trầm trọng hơn khi 15 năm tới đây, số người cao tuổi sẽ tăng và chiếm hơn ⅕ dân số, Active Ageing Vietnam mong muốn có thể cộng hưởng với những thay đổi hiện có để giúp mỗi người có sự chuẩn bị cho tuổi già tốt hơn, sớm hơn. Cùng với những thay đổi chính sách của Chính phủ, Active Ageing là một giải pháp tối ưu cho tình trạng già hóa dân số tại Việt Nam.</p>
           <p class="quote">"Thúc đẩy tư duy tích cực hướng tới chuẩn bị an toàn tài chính và tiếp cận chăm sóc sức khỏe là vô cùng cần thiết"</p>
         </div>
 
@@ -550,7 +550,7 @@ Header
         </div>
       </div>
 
-      <p>chuẩn bị cho một Việt Nam sẽ là một quốc gia có già hóa dân số vào năm 2035.</p>
+      <p>Chuẩn bị cho Việt Nam - quốc gia được dự đoán sẽ bước vào thời kỳ dân số già vào năm 2035.</p>
       <p>Trong giai đoạn đầu, đối tượng mục tiêu của chúng tôi là những người lao động có thu nhập trung bình ít nhất 15 năm trước khi nghỉ hưu.</p>
 
     </div>
@@ -1278,6 +1278,10 @@ components.findScreen = `
                 <div class="validation"></div>
               </div>
               <div class="form-group">
+              <input value = "" class="form-control" name="email" id="email" placeholder="Địa chỉ email" data-rule="email" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+              <div class="form-group">
               <select class="form-control" name= "flatform" id="address" style ="    font-size: 14px;">
               <option value=""selected disabled hidden>Nơi ở
               <option value="Hà Nội">Hà Nội
@@ -1305,17 +1309,18 @@ components.findScreen = `
                 <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ lệ thu nhập ước tính tăng hàng năm cho đến năm nghỉ hưu dự kiến của bạn. Nếu bạn ước tính mức lương hàng năm của bạn sẽ tăng 2%, vui lòng nhập '2'"></span>
                 <div class="validation"></div>
               </div>
-              <div class="form-group">
-                  <input value = "" class="form-control" name="saving" id="saving" placeholder="Số dư quỹ tiết kiệm hưu trí hiện tại (triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Số dư tài khoản tiết kiệm về hưu hiện tại của bạn. Giả sử bạn đã tích góp được 700 triệu VNĐ cho quỹ tiết kiệm hưu trí của mình, vui lòng nhập '700'."></span>
-                  <div class="validation"></div>
-                </div>
+            
 
               
               </div>
 
 
               <div class="col-lg-6">
+                  <div class="form-group">
+                  <input value = "" class="form-control" name="saving" id="saving" placeholder="Số dư quỹ tiết kiệm hưu trí hiện tại (triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Số dư tài khoản tiết kiệm về hưu hiện tại của bạn. Giả sử bạn đã tích góp được 700 triệu VNĐ cho quỹ tiết kiệm hưu trí của mình, vui lòng nhập '700'."></span>
+                  <div class="validation"></div>
+                </div>
                 <div class="form-group">
                   <input value = "" class="form-control" name="saving" id="yearsRetirement" placeholder="Số năm sử dụng thu nhập sau về hưu" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                   <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tổng số năm bạn dự định sử dụng quỹ tiết kiệm hưu trí của mình để chi tiêu kể từ năm bạn nghỉ hưu. Giả sử bạn dự định về hưu ở tuổi 60 và mong muốn duy trì mức sống thoải mái trong vòng 30 năm nữa nhờ quỹ tiết kiệm hưu trí của mình, vui lòng nhập '30'. Nói cách khác, tuổi thọ dự kiến của bạn trong trường hợp này là 60 + 30 = 90 (tuổi)."></span>
@@ -1353,11 +1358,7 @@ components.findScreen = `
               <div class="validation"></div>
             </div>
 
-            <div class="form-group">
-              <input disabled="disabled" value = "" class="form-control" name="pension" id="inflation" placeholder="Mức lạm phát dự đoán (Mặc định 3.5%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Mức chi tiêu hàng năm sẽ được giả định tăng theo tỷ lệ lạm phát. Trong những năm gần đây, tỷ lệ lạm phát Việt Nam đang ở mức dao động từ 3%-4%. Vì vậy, chúng tôi giả định tỷ lệ này là 3.5%."></span>
-              <div class="validation"></div>
-            </div>
+            
             
             
             </div>

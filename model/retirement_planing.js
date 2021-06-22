@@ -16,7 +16,7 @@ var calculate = function(event){
     }
     //user.yearsRetirement = 35;
     //80 - parseInt(user.retirementAge);
-    user.inflation = 2.9;
+    user.inflation = 3.5;
     console.log(user);
     submitData(user);
     user.year = user.retirementAge - user.currentAge;
