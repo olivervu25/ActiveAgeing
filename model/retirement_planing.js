@@ -249,7 +249,7 @@ function drawChart(listLabels,data1, data2) {
 
   function submitData(user){
     var db = firebase.firestore();
-    db.collection("test").add(user)
+    db.collection("retirementPlan").add(user)
     .then((docRef) => {
         console.log("Document written with ID: ", docRef.id);
     })
