@@ -1,33 +1,42 @@
-
+console.log('navigation.js');
+//alert("ahihi");
 // Du navigation page 
     // home page
-    $('#home').on('click',function(){
-        console.log('Change to home page');
+    $('.home-nav').on('click',function(){
         view.setActiveScreen('welcomeScreen');
+        NavigationActive(`.${this.className}`);
     });
     
     //  univesity page
-    $('#scholarship').on('click',function(){
+    $('.scholarship-nav').on('click',function(){
         view.setActiveScreen('scholarshipScreen');
         JsScholarship();
         $.getScript('public/js/FAQs.js');
+        NavigationActive(`.${this.className}`);
     });
 
-    $('#university').on('click',function(event){
+    $('.university-nav').on('click',function(event){
         event.preventDefault();
-        console.log('Change to university page');
         view.setActiveScreen('universityScreen');
          JsPorfolio();
-         document.getElementById('app').scrollIntoView()
+         document.getElementById('app').scrollIntoView();
+         NavigationActive(`.${this.className}`);
     });
 
     // student life page
-    $('#life').on('click',function(event){
+    $('.life-nav').on('click',function(event){
         event.preventDefault();
         view.setActiveScreen('studentLifeScreen');
         JsPorfolio();
         document.getElementById('app').scrollIntoView();
         $.getScript( "model/sign_up.js");
+        NavigationActive(`.${this.className}`);
+    })
+
+    $('.about-nav').on('click',function(event){
+        event.preventDefault();
+        view.setActiveScreen('aboutScreen');
+        NavigationActive(`.${this.className}`);
     })
     $('#student-life').on('click',function(){
         view.setActiveScreen('studentLifeScreen');
@@ -63,25 +72,14 @@
         document.getElementById('portfolio').scrollIntoView()
     })
 
-
-//These lines of code below help us to commute from another page to div in home page
-    $('#about-us').on('click',function(event){
-        view.setActiveScreen('welcomeScreen');
-        event.preventDefault()
-        document.getElementById('about').scrollIntoView()
-    })
-    $('#contact-us').on('click',function(event){
-        view.setActiveScreen('welcomeScreen');
-        event.preventDefault()
-        document.getElementById('footer').scrollIntoView()
-    })
     //find page
-    $('#find-uni').on('click',function(event){
+    $('.find-uni-nav').on('click',function(event){
         event.preventDefault();
         view.setActiveScreen('findScreen');
         document.getElementById('intro').scrollIntoView()
         //$.getScript( "public/js/findPage.js");
         $.getScript( "model/retirement_planing.js");
+        NavigationActive(`.${this.className}`);
     });
     
     $('#find-btn').on('click',function(event){
@@ -95,13 +93,32 @@
     
     $('#learn_more_about').on('click',function(){
         view.setActiveScreen('aboutScreen');
+        NavigationActive(`.about-nav`);
     })
 
     $('#callToAction').on('click', function(){
         view.setActiveScreen('studentLifeScreen');
     })
 
-    $('#login').on('click',function(){
-        view.setActiveScreen('loginScreen');
-        $.getScript("public/js/main.js");
-    })
+    const  NavigationActive = (className)=>{
+        // this code to fix hover problem
+        // Navigation active state on scroll
+            var nav_sections = $('section');
+            var main_nav = $('.main-nav, .mobile-nav');
+            main_nav.find('li').removeClass('active');
+            var main_nav_height = $('#header').outerHeight();
+            //main_nav.find(className).parentElement.className += "active";
+            main_nav.find(className).parent('li').addClass('active');
+            // $(window).on('scroll', function () {
+            //     var cur_pos = $(this).scrollTop();
+            
+            //     nav_sections.each(function() {
+            //     var top = $(this).offset().top - main_nav_height,
+            //         bottom = top + $(this).outerHeight();
+            
+            //     if (cur_pos >= top && cur_pos <= bottom) {
+            //         main_nav.find('a[href="#'+$(this).attr('id')+'"]').parent('li').addClass('active');
+            //     }
+            //     });
+            // });
+    }

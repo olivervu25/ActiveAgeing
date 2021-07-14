@@ -1,56 +1,6 @@
 const components = {}
 components.welcomeScreen = `
 <!--==========================
-Header
-============================-->
-<header id="header">
-
-  <div id="topbar">
-    <div class="row">
-    <div class="container" style ="text-align : right;">
-      <button id="translate" type="button" class="btn" style="float: right">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
-        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
-        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
-        </svg>
-        <span id ="status">English</span>
-      </button>
-    </div>
-    </div>
-  </div>
-
-  <div class="container">
-
-    <div class="logo float-left">
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <h1 class="text-light"><a href="#intro" class="scrollto"><span>Rapid</span></a></h1> -->
-      <a href="#header" class="scrollto"><img style="height: 80px;width: 80px;" src="public/image/logo2.png" alt="" class="img-fluid"></a>
-    </div>
-
-    <nav class="main-nav float-right d-none d-lg-block">
-      <ul>
-          <li class="active"><a id='home' href="#intro">Trang Chủ</a></li>
-          <li><a href="#about">Về chúng tôi</a></li>
-          <li><a id='university' href="#">Vấn đề xã hội</a></li>
-          <li><a id='find-uni' href="#">Lập kế hoạch về hưu</a></li>
-          <li class="drop-down"><a id='scholarship' href="#">Thông tin</a>
-                <ul>
-                  <li><a href="#">Chuẩn bị về hưu</a></li>
-                  <li><a href="#">Về hưu thịnh vượng</a></li>
-                  <li><a href="#">Về hưu khoẻ mạnh</a></li>
-                  <li><a href="#">Về hưu an vui</a></li>
-                </ul>
-              </li>
-          <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-          <li id="user">
-          </li>
-        </ul>
-    </nav><!-- .main-nav -->
-    
-  </div>
-</header><!-- #header -->
-
-<!--==========================
   Intro Section
 ============================-->
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -425,51 +375,6 @@ Header
 <!-- <div id="preloader"></div> -->
 `;
 components.universityScreen = `
-<!--==========================
-Header
-============================-->
-<header id="header">
-
-  <div id="topbar">
-    <div class="container">
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-
-    <div class="logo float-left">
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <h1 class="text-light"><a href="#intro" class="scrollto"><span>Rapid</span></a></h1> -->
-      <a href="#header" class="scrollto"><img style="height: 80px;width: 80px;" src="public/image/logo2.png" alt="" class="img-fluid"></a>
-    </div>
-
-    <nav class="main-nav float-right d-none d-lg-block">
-      <ul>
-          <li class="active"><a id='home' href="#intro">Trang Chủ</a></li>
-          <li><a id="learn_more_about" href="#">Về chúng tôi</a></li>
-          <li><a id='university' href="#">Vấn đề xã hội</a></li>
-          <li><a id='find-uni' href="#">Lập kế hoạch về hưu</a></li>
-          <li class="drop-down"><a id='scholarship' href="#">Thông tin</a>
-                <ul>
-                  <li><a href="#">Chuẩn bị về hưu</a></li>
-                  <li><a href="#">Về hưu thịnh vượng</a></li>
-                  <li><a href="#">Về hưu khoẻ mạnh</a></li>
-                  <li><a href="#">Về hưu an vui</a></li>
-                </ul>
-              </li>
-          <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-          <li id ="user"><a href="#" id="login">ĐĂNG NHẬP</a></li>
-      </ul>
-    </nav><!-- .main-nav -->
-    
-  </div>
-</header><!-- #header -->
 
 <!--==========================
   Intro Section
@@ -647,51 +552,6 @@ Header
 <!-- <div id="preloader"></div> -->
 `
 components.scholarshipScreen = `
-      <!--==========================
-      Header
-      ============================-->
-      <header id="header">
-
-  <div id="topbar">
-    <div class="container">
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-
-    <div class="logo float-left">
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <h1 class="text-light"><a href="#intro" class="scrollto"><span>Rapid</span></a></h1> -->
-      <a href="#header" class="scrollto"><img style="height: 80px;width: 80px;" src="public/image/logo2.png" alt="" class="img-fluid"></a>
-    </div>
-
-    <nav class="main-nav float-right d-none d-lg-block">
-      <ul>
-          <li class="active"><a id='home' href="#intro">Trang Chủ</a></li>
-          <li><a href="#about">Về chúng tôi</a></li>
-          <li><a id='university' href="#">Vấn đề xã hội</a></li>
-          <li><a id='find-uni' href="#">Lập kế hoạch về hưu</a></li>
-          <li class="drop-down"><a id='scholarship' href="#">Thông tin</a>
-                <ul>
-                  <li><a href="#">Chuẩn bị về hưu</a></li>
-                  <li><a href="#">Về hưu thịnh vượng</a></li>
-                  <li><a href="#">Về hưu khoẻ mạnh</a></li>
-                  <li><a href="#">Về hưu an vui</a></li>
-                </ul>
-              </li>
-          <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-          <li id ="user"><a href="#" id="login">ĐĂNG NHẬP</a></li>
-      </ul>
-    </nav><!-- .main-nav -->
-    
-  </div>
-</header><!-- #header -->
       <!--==========================
         Intro Section
       ============================-->
@@ -1006,55 +866,6 @@ components.scholarshipScreen = `
     </div>
 `
 components.studentLifeScreen = `
-
-        <!--==========================
-        <!-- Header
-      ============================-->
-      <header id="header">
-
-      <div id="topbar">
-        <div class="container">
-          <div class="social-links">
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    
-      <div class="container">
-    
-        <div class="logo float-left">
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <h1 class="text-light"><a href="#intro" class="scrollto"><span>Rapid</span></a></h1> -->
-          <a href="#header" class="scrollto"><img style="height: 80px;width: 80px;" src="public/image/logo2.png" alt="" class="img-fluid"></a>
-        </div>
-    
-        <nav class="main-nav float-right d-none d-lg-block">
-          <ul>
-              <li class="active"><a id='home' href="#intro">Trang Chủ</a></li>
-              <li><a href="#about">Về chúng tôi</a></li>
-              <li><a id='university' href="#">Vấn đề xã hội</a></li>
-              <li><a id='find-uni' href="#">Lập kế hoạch về hưu</a></li>
-              <li class="drop-down"><a id='scholarship' href="#">Thông tin</a>
-                    <ul>
-                      <li><a href="#">Chuẩn bị về hưu</a></li>
-                      <li><a href="#">Về hưu thịnh vượng</a></li>
-                      <li><a href="#">Về hưu khoẻ mạnh</a></li>
-                      <li><a href="#">Về hưu an vui</a></li>
-                    </ul>
-                  </li>
-              <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-              <li id ="user" ><a href="#" id="login">ĐĂNG NHẬP</a></li>
-          </ul>
-        </nav><!-- .main-nav -->
-        
-      </div>
-    </header><!-- #header -->
-     <!--==========================
-        Intro Section
-      ============================-->
       <section id="intro" class="clearfix intro">
         <div class="container d-flex h-100">
           <div class="row justify-content-center align-self-center">
@@ -1183,52 +994,6 @@ components.studentLifeScreen = `
         <!-- Uncomment below i you want to use a preloader -->
         <!-- <div id="preloader"></div> -->`
 components.findScreen = `
-<header id="header">
-    <div id="topbar">
-    <div class="row">
-    <div class="container" style ="text-align : right;">
-    <button id="translate" type="button" class="btn" style="float: right">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
-        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
-        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
-        </svg>
-        <span id ="status">English</span>
-      </button>
-    </div>
-    </div>
-    </div>
-
-
-<div class="container">
-
-  <div class="logo float-left">
-    <!-- Uncomment below if you prefer to use an image logo -->
-    <!-- <h1 class="text-light"><a href="#intro" class="scrollto"><span>Rapid</span></a></h1> -->
-    <a href="#header" class="scrollto"><img style="height: 80px;width: 80px;" src="public/image/logo2.png" alt="" class="img-fluid"></a>
-  </div>
-
-  <nav class="main-nav float-right d-none d-lg-block">
-    <ul>
-        <li class="active"><a id='home' href="#intro">Trang Chủ</a></li>
-        <li><a href="#about">Về chúng tôi</a></li>
-        <li><a id='university' href="#">Vấn đề xã hội</a></li>
-        <li><a id='find-uni' href="#">Lập kế hoạch về hưu</a></li>
-        <li class="drop-down"><a id='scholarship' href="#">Thông tin</a>
-              <ul>
-                <li><a href="#">Chuẩn bị về hưu</a></li>
-                <li><a href="#">Về hưu thịnh vượng</a></li>
-                <li><a href="#">Về hưu khoẻ mạnh</a></li>
-                <li><a href="#">Về hưu an vui</a></li>
-              </ul>
-            </li>
-        <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-        <li id ="user"><a href="#" id="login">ĐĂNG NHẬP</a></li>
-    </ul>
-  </nav><!-- .main-nav -->
-  
-</div>
-</header><!-- #header -->
-
       <!--==========================
       Intro Section
       ============================-->
@@ -1499,52 +1264,7 @@ components.findScreen = `
 <!-- <div id="preloader"></div> -->
   </div> 
 `
-components.aboutScreen = `<!--==========================
-Header
-============================-->
-<header id="header">
-
-  <div id="topbar">
-    <div class="container">
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-
-    <div class="logo float-left">
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <h1 class="text-light"><a href="#intro" class="scrollto"><span>Rapid</span></a></h1> -->
-      <a href="#header" class="scrollto"><img style="height: 80px;width: 80px;" src="public/image/logo2.png" alt="" class="img-fluid"></a>
-    </div>
-
-    <nav class="main-nav float-right d-none d-lg-block">
-      <ul>
-          <li class="active"><a id='home' href="#intro">Trang Chủ</a></li>
-          <li><a href="#about">Về chúng tôi</a></li>
-          <li><a id='university' href="#">Vấn đề xã hội</a></li>
-          <li><a id='find-uni' href="#">Lập kế hoạch về hưu</a></li>
-          <li class="drop-down"><a id='scholarship' href="#">Thông tin</a>
-                <ul>
-                  <li><a href="#">Chuẩn bị về hưu</a></li>
-                  <li><a href="#">Về hưu thịnh vượng</a></li>
-                  <li><a href="#">Về hưu khoẻ mạnh</a></li>
-                  <li><a href="#">Về hưu an vui</a></li>
-                </ul>
-              </li>
-          <li><a href="#" id='life'>Đăng ký thành viên</a></li>
-          <li id ="user" ><a href="#" id="login">ĐĂNG NHẬP</a></li>
-      </ul>
-    </nav><!-- .main-nav -->
-    
-  </div>
-</header><!-- #header -->
-
+components.aboutScreen = `
 <section id="intro" class="clearfix">
 
     <div class="container d-flex h-100">
@@ -1791,7 +1511,7 @@ components.loginScreen =`
 					</div>
 
 					<div class="text-center w-full p-t-42 p-b-22">
-            <a class="txt1 bo1 hov1" href="#" id="home">
+            <a class="txt1 bo1 hov1" href="index.html" id="home">
               Quay lại trang chủ							
             </a>
 					</div>

@@ -1,4 +1,5 @@
 var language = "vietnamese";
+var currentScreen = "welcomeScreen";
 var url = "translation.xlsx";
 
 /* set up async GET request */

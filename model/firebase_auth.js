@@ -40,15 +40,17 @@ firebase.auth().onAuthStateChanged((user) => {
     } else {
         console.log("signed out");
       var user = document.getElementById("user");
-      if (user != null) user.innerHTML = `<a href="#" id='login'>ĐĂNG NHẬP</a>`;
-      $('#login').on('click',function(){
-        view.setActiveScreen('loginScreen');
-    })
+      if (user != null) user.innerHTML = `<a href="./login.html" id='login'>Đăng nhập</a>`;
+    //   $('#login').on('click',function(){
+    //     view.setActiveScreen('loginScreen');
+    // })
 
       // User is signed out
       // ...
     }
-  });
+    $.getScript("lib/mobile-nav/mobile-nav.js");
+    $.getScript("model/navigation.js");
+  })
 //$("#signup").on("click",signUp);
 
 

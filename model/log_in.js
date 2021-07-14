@@ -2,14 +2,16 @@ console.log("login.js");
 var logIn = (event)=>{
     event.preventDefault();
     console.log("clicked");
-    var email = $("input[name='email']")[0].value;
-    var password  = $("input[name='pass']")[0].value;
+    var email = $("input[id='email']")[0].value;
+    var password  = $("input[id='password']")[0].value;
+    // var email = $("#email").value;
+    // var password = $('#password').value;
     console.log(email);
     console.log(password);
     firebase.auth().signInWithEmailAndPassword(email, password)
             .then((userCredential) => {
                     console.log("signed in");
-                    location.reload();
+                    window.location.replace("./index.html");
                     // Signed in
                     var user = userCredential.user;
                     // ...
@@ -29,3 +31,4 @@ var logIn = (event)=>{
 }
 
 $(".login100-form-btn").on("click",logIn);
+$("#login").on("click",logIn);
