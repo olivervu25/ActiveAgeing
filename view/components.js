@@ -1293,11 +1293,11 @@ components.aboutScreen = `
             <img src="./public/image/about us 1.jpeg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0" style = "text-align: justify;">
-            <h2 style = "color: #413e66;font-weight: 650;"">Active Ageing Vietnam</h2>
-            <p style ="color : #696592">
+            <h2 style = "color: #333333;font-weight: 650;"">Active Ageing Vietnam</h2>
+            <p style ="color : #232323">
               Active Ageing là dự án được ra đời với nỗi trăn trở về một vấn đề mà Việt Nam và một số nước trong khu vực đang và sẽ phải đối mặt trong tương lai gần, đó chính là già hoá dân số và những hệ luỵ có liên quan.
             </p>
-            <p style ="color : #696592">
+            <p style ="color : #232323">
               Khi Việt Nam đang trên đà phát triển từ nhóm nước có thu nhập thấp sang nhóm có mức thu nhập trung bình, những vấn đề về an sinh xã hội lại được quan tâm và chú ý hơn bao giờ hết. Một trong những vấn đề nhức nhối hiện nay chính là tình trạng già hoá dân số dẫn đến những gánh nặng nhất định cho cá nhân và cả cộng đồng. Theo Vụ Liên Hiệp Quốc về vấn đề Kinh tế và Xã hội, tốc độ già hoá dân số tại các quốc gia Đông Nam Á hiện nay rất nhanh. Vào năm 2030, có 5/11 quốc gia ASEAN sẽ đối mặt với già hóa dân số, bao gồm Việt Nam. Trước bối cảnh đó, sự chuẩn bị cho giai đoạn già hoá dân số là vô cùng cấp thiết, đặc biệt là ở góc độ cá nhân.
             </p>
           </div>
@@ -1309,7 +1309,7 @@ components.aboutScreen = `
 
           <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" style = "text-align: justify;">
             <!-- <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4> -->
-            <p style ="color : #696592">
+            <p style ="color : #232323">
               Góp phần cộng hưởng những nỗ lực để đối phó với các thách thức mà cả xã hội đang gặp phải, dự án tiến hành thực hiện “Gói các giải pháp hỗ trợ người cao tuổi quản lý tài chính và tiếp cận dịch vụ chăm sóc sức khỏe chuẩn bị cho tuổi già”. Chúng tôi tin rằng việc nâng cao sự chủ động trong tài chính và sức khoẻ không chỉ ích cho riêng một cá nhân mà còn tạo ra những ảnh hưởng tích cực cho cộng đồng, góp phần vào việc phát triển kinh tế-xã hội, hướng đến một tương lai bền vững hơn.
            </p>
           </div>

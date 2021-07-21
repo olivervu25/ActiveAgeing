@@ -155,7 +155,7 @@ function calculate(event){
     }
 
     var table = `<table class="table table-bordered">
-                    <thead style="background-color: #1bb1dc; color : white">
+                    <thead style="background-color: #F89595; color : white">
                     <tr>
                         <th scope="col">Tuổi</th>
                         <th scope="col">Số dư Quỹ tiết kiệm Hưu trí đầu kỳ</th>
