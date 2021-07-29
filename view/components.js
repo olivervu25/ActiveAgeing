@@ -552,318 +552,67 @@ components.universityScreen = `
 <!-- <div id="preloader"></div> -->
 `
 components.scholarshipScreen = `
-      <!--==========================
-        Intro Section
-      ============================-->
-      <section id="intro" class="clearfix">
-        <div class="container d-flex h-100">
-          <div class="row justify-content-center align-self-center">
-            <div class="col-md-6 intro-info order-md-first order-last">
-              <h2>Active Ageing <br> <span>Vietnam</span></h2>
+<main id="main">
+<section id="about" class="section-bg">
+      <div class="container justify-content-center align-self-center">
+
+        <header class="section-header" style="margin-top: 13%;">
+          <h3>Tin tức</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+        </header>
+
+        <div id='listPost' class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
+            <div class="box" style="padding: 0;">
+              <div class="image" style="background: #e6fdfc;"><img width= 100% src = "./public/image/posts/post1.jpeg" /></div>
               
+              <div style = "padding: 5px 30px"><h4 class="title"><a href="">Top 3 bí quyết để có một tuổi “xế chiều” thịnh vượng khỏe mạnh an vui</a></h4></div>
             </div>
-
-            <div class="col-md-6 intro-img order-md-last order-first">
-              <img src="public/image/intro-img.svg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
           </div>
 
-        </div>
-      </section><!-- #intro -->
-       
-        <div style = "display: none">
-        <main>
-            <!--==========================
-      Why Us Section
-    ============================-->
-    <section id="why-us" class="wow fadeIn">
-        <div class="container-fluid">
-          
-          <header class="section-header">
-            <h3>Học bổng</h3>
-            <p>Học bổng toàn phần, bán phần học tập tại các trường đại học hàng đầu thế giới,<br>tại sao không?</p>
-          </header>
-          <div class="row">
-  
-            <div class="col-lg-6">
-              <div class="scholarship-img">
-                <img src="./public/image/scholarship.jpg" alt="" class="img-fluid">
-              </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
             </div>
-  
-            <div class="col-lg-6">
-              <div class="why-us-content">
-                <p>Học bổng Nga là những loại hình học bổng được tài trợ bởi ngân sách của Chính phủ Việt Nam và Chính phủ Liên bang Nga hoặc từ các trường Đại học Nga. Trong giai đoạn 2016-2020 dự kiến hằng năm sẽ có khoảng 1,000-1,500 suất học bổng du học Nga dành cho học sinh, sinh viên Việt Nam với hơn 400 mã ngành khác nhau tại 460 Trường Đại học công lập thuộc Liên bang Nga.
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div>
 
-                </p>
-  
-                <div class="features wow bounceInUp clearfix">
-                  <i class="fa fa-diamond" style="color: #f058dc;"></i>
-                  <h4>Học bổng toàn phần</h4>
-                  <p>Commodi quia voluptatum. Est cupiditate voluptas quaerat officiis ex alias dignissimos et ipsum. Soluta at enim modi ut incidunt dolor et.</p>
-                  <p><a href="#full-scholarship">Xem thêm</a></p>
-                </div>
-  
-                <div class="features wow bounceInUp clearfix">
-                    <i class="fa fa-diamond" style="color: #f058dc;"></i>
-                    <h4>Học bổng bán phần</h4>
-                  <p>Molestias eius rerum iusto voluptas et ab cupiditate aut enim. Assumenda animi occaecati. Quo dolore fuga quasi autem aliquid ipsum odit. Perferendis doloremque iure nulla aut.</p>
-                  <p><a href="#partial-scholarship">Xem thêm</a></p>
-                </div>
-                
-                <div class="features wow bounceInUp clearfix">
-                    <i class="fa fa-diamond" style="color: #f058dc;"></i>
-                    <h4>Học bổng trao đổi ngắn hạn</h4>
-                  <p>Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur. Totam dolores ut enim ullam voluptas distinctio aut.</p>
-                  <p><a href="#full-scholarship">Xem thêm</a></p>
-                </div>
-                
-              </div>
-  
-            </div>
-  
-          </div>
-  
         </div>
-  
-        <div class="container">
-          <div class="row counters">
-  
-            <div class="col-lg-3 col-6 text-center">
-              <span data-toggle="counter-up">1000</span>
-              <p>Trường đại học</p>
-            </div>
-  
-            <div class="col-lg-3 col-6 text-center">
-              <span data-toggle="counter-up">994</span>
-              <p>Suất học bổng</p>
-            </div>
-  
-            <div class="col-lg-3 col-6 text-center">
-              <span data-toggle="counter-up">420</span>
-              <p>USD</p>
-            </div>
-  
-            <div class="col-lg-3 col-6 text-center">
-              <span data-toggle="counter-up">100</span>
-              <p>Chất lượng</p>
-            </div>
-    
-          </div>
-  
-        </div>
-      </section>
-      <!--==========================
-      Call To Action Section
-    ============================-->
-    <section id="call-to-action" class="wow fadeInUp">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-9 text-center text-lg-left">
-              <h3 class="cta-title">Tìm ngay ngôi trường phù hợp với bản thân bạn</h3>
-              <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="col-lg-3 cta-btn-container text-center">
-              <a class="cta-btn align-middle" >Tìm hiểu ngay</a>
-            </div>
-          </div>
-  
-        </div>
-      </section><!-- #call-to-action -->
-    <!--==========================
-      Features Section
-    ============================-->
-    <br>
-        <section id="full-scholarship">
-         <div class="container">
-  
-          <div class="row feature-item">
-            <div class="col-lg-6 wow fadeInUp">
-              <img src="./public/image/full-scholarship.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-              <h4>Học bổng toàn phần - Học bổng Hiệp Định</h4>
-              <p>
-                Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
-              </p>
-              <p>
-                Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
-              </p>
-            </div>
-          </div>
-  
-          <div class="row feature-item mt-5 pt-5">
-  
-            <div class="col-lg-12 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-              <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4>
-              <p>
-               Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt. 
-              </p>
-              <p>
-                Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
-              </p>
-              <p>
-                Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
-              </p>
-            </div>
-            
-          </div>
-  
-        </div>
-      </section><!-- #about -->
-      <!--==========================
-      See more Section
-    ============================-->
-    <section id="call-to-action" class="wow fadeInUp">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-9 text-center text-lg-left">
-              <h3 class="cta-title">Thắc mắc về học bổng toàn phần?</h3>
-              <p class="cta-text">Nếu còn các thắc mắc về học bổng toàn phần, xem phần các câu hỏi thường gặp tại đây</p>
-            </div>
-            <div class="col-lg-3 cta-btn-container text-center">
-              <a class="cta-btn align-middle" href="#faq">Xem thêm</a>
-            </div>
-          </div>
-  
-        </div>
-      </section><!-- #call-to-action -->
-      <br>
-      <br>
-    <!--==========================
-      Partial Scholarship Section
-    ============================-->
-    <section id="partial-scholarship">
-        <div class="container">
- 
-         <div class="row feature-item">
-           
-           <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-             <h4>Học bổng bán phần - Học bổng một phía</h4>
-             <p>
-               Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
-             </p>
-             <p>
-               Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
-             </p>
-           </div>
-           <div class="col-lg-6 wow fadeInUp">
-             <img src="./public/image/full-scholarship.jpg" class="img-fluid" alt="">
-           </div>
-         </div>
- 
-         <div class="row feature-item mt-5 pt-5">
- 
-           <div class="col-lg-12 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-             <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4>
-             <p>
-              Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt. 
-             </p>
-             <p>
-               Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
-             </p>
-             <p>
-               Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
-             </p>
-           </div>
-           
-         </div>
- 
-       </div>
-     </section><!-- #about -->
-     <!--==========================
-     Success Story Section
-   ============================-->
-   <section id="testimonials">
-       <div class="container">
- 
-         <header class="section-header">
-           <h3>Câu chuyện thành công</h3>
-         </header>
- 
-         <div class="row justify-content-center">
-           <div class="col-lg-8">
- 
-             <div class="owl-carousel testimonials-carousel wow fadeInUp">
-     
-               <div class="testimonial-item">
-                 <img src="./public/image/vu thanh long.jpg" class="testimonial-img" alt="">
-                 <h3>Vũ Thành Long</h3>
-                 <h4>NUST MISIS</h4>
-                 <p>
-                   Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                 </p>
-               </div>
-     
-               <div class="testimonial-item">
-                 <img src="public/image/testimonial-2.jpg" class="testimonial-img" alt="">
-                 <h3>Nguyễn Chiếm Dự</h3>
-                 <h4>NUST MISIS</h4>
-                 <p>
-                   Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                 </p>
-               </div>
-     
-               <div class="testimonial-item">
-                 <img src="public/image/testimonial-3.jpg" class="testimonial-img" alt="">
-                 <h3>Jena Karlis</h3>
-                 <h4>Store Owner</h4>
-                 <p>
-                   Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                 </p>
-               </div>
-     
-               <div class="testimonial-item">
-                 <img src="public/image/testimonial-4.jpg" class="testimonial-img" alt="">
-                 <h3>Matt Brandon</h3>
-                 <h4>Freelancer</h4>
-                 <p>
-                   Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                 </p>
-               </div>
- 
-             </div>
- 
-           </div>
-         </div>
- 
- 
-       </div>
-     </section><!-- #testimonials -->
-     <br>
-     <br>
-      <!--==========================
-      Frequently Asked Questions Section
-    ============================-->
-    <section id="faq">
-        <div class="container">
-          <header class="section-header">
-            <h3>Những câu hỏi thường gặp</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-          </header>
-  
-          
-            <div id='faq-list' class="list-group">
-            </div>
-  
-        
-      </section><!-- #faq -->
+
+      </div>
+    </section>
     </main>
-        </div>
-   <!--==========================
-          Footer
-        ============================-->
-        <footer id="footer" class="section-bg">
-          
-            
-          </footer><!-- #footer -->
-  
-  
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-        <!-- Uncomment below i you want to use a preloader -->
-        <!-- <div id="preloader"></div> -->
-  
-    </div>
 `
 components.studentLifeScreen = `
       <section id="intro" class="clearfix intro">
@@ -1379,6 +1128,91 @@ components.aboutScreen = `
         </div>
 
       </div>
+      <div class="container" style="padding-top: 30px;">
+      <header class="section-header">
+      <h3>Giải pháp xã hội của Active Ageing Vietnam</h3>
+      <p></p>
+    </header>
+        <div class="row feature-item">
+          <div class="col-lg-8 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <div class= "embed-responsive embed-responsive-16by9">
+      <iframe class= "embed-responsive-item" src="https://www.facebook.com/plugins/video.php?height=295&href=https%3A%2F%2Fwww.facebook.com%2FActiveAgeingVietnam%2Fvideos%2F544102426723651%2F&show_text=false&width=560&t=0" width="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>           
+        </div>    
+           
+          </div>
+          <div class="col-lg-4 wow fadeInUp pt-5 pt-lg-0" style="text-align: justify; visibility: visible; animation-name: fadeInUp;">
+            
+            <p style="color : #232323">
+            Hiện nay, thế giới đang phải vật lộn với quá trình già hóa dân số diễn ra rất nhanh, và Việt Nam cũng không phải là ngoại lệ. Thực tế, Việt Nam là một trong những quốc gia có tốc độ già hóa dân số nhanh nhất. Nếu không kịp thời chuẩn bị cho giai đoạn dân số già sắp tới, người cao tuổi sẽ phải đối mặt với hậu quả nghiêm trọng như thiếu hụt tài chính, khó tiếp cận các dịch vụ chăm sóc sức khỏe và suy giảm phúc lợi. Gói giải pháp cung cấp bởi Active Ageing Vietnam bao gồm một ứng dụng trên nền tảng di động, một trang web và chuỗi các hội thảo.
+            </p>
+          </div>
+        </div>
+        <div class="row feature-item wow fadeInUp">
+            <p>
+            Xin vui lòng dành ít phút để xem video minh họa giải pháp xã hội của chúng tôi. Video này thể hiện mức độ mà Active Ageing Vietnam hiểu rõ nguyên nhân gốc rễ của vấn đề xã hội nêu trên; giải thích quá trình mà chúng tôi tiếp cận chúng để đưa ra các giải pháp cho người lao động nhằm giúp họ nâng cao mức sống của mình khi về hưu; và chỉ ra những tác động xã hội mà Active Ageing Vietnam có thể mang đến cho cộng đồng.
+            </p>
+        </div>
+        <div class="row feature-item mt-5 pt-5" style=" margin-top: 0! important; padding-top: 1rem! important; ">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" style="visibility: visible; animation-name: fadeInUp;">
+            <img src="./public/image/about us 3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" style="text-align: justify; visibility: visible; animation-name: fadeInUp;">
+            <!-- <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4> -->
+            <p style="color : #232323">
+            Bên cạnh đó, chúng tôi đã mời ông Lê Hồng Lĩnh (CEO của Hiệp hội CFO Việt Nam) và ông Ngô Đình Đức (Nhà sáng lập kiêm Tổng Giám đốc Công ty Cổ phần Tư vấn POCD) góp mặt trong video này nhằm chia sẻ quan điểm về giải pháp của Active Ageing Vietnam. Các tác động xã hội mà chúng tôi hướng đến dựa trên mục tiêu phát triển bền vững thứ #1, #3 và #11 của Liên Hợp Quốc.
+           </p>
+           <p>
+           Chúng tôi rất mong nhận được ý kiến, phản hồi của bạn để phát triển giải pháp hoàn thiện hơn. Chúng tôi xin trân trọng cảm ơn sự quan tâm, theo dõi va ủng hộ của bạn/ anh/ chị trong thời gian qua và sắp tới.
+           </p>
+          </div>
+          
+        </div>
+        <header class="section-header">
+      <h3>Giới thiệu gói giải pháp của Active Ageing Vietnam</h3>
+      <p></p>
+    </header>
+        <div class="row feature-item mt-5 pt-5" style=" margin-top: 0! important; padding-top: 1rem! important; ">
+          <div class="col-lg-8 wow fadeInUp embed-responsive embed-responsive-16by9" style="visibility: visible; animation-name: fadeInUp;">
+          <iframe class= "embed-responsive-item" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FActiveAgeingVietnam%2Fvideos%2F530433654981749%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+          </div>
+
+          <div class="col-lg-4 wow fadeInUp pt-4 pt-lg-0" style="text-align: justify; visibility: visible; animation-name: fadeInUp;">
+            <!-- <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4> -->
+            <p style="color : #232323">
+            Bạn có mong muốn khoảng thời gian nghỉ hưu của mình sẽ vui vẻ, an yên?<br>
+            Bạn có mong muốn mình sẽ có một kế hoạch cụ thể để chuẩn bị cho tuổi “xế chiều”?
+           </p>
+           <p>
+           Chúng tôi tin rằng tất cả các dự định này đều có thể khả thi cùng với Active Ageing Vietnam. Được ra đời với nỗi trăn trở về già hóa dân số, gói giải pháp của chúng tôi bao gồm ứng dụng di động, trang web được phát triển theo hướng kỹ thuật số và các chuỗi hội thảo nhằm cung cấp các thông tin từ các chuyên gia có kinh nghiệm.
+           </p>
+          </div>
+          
+        </div>
+        <div class="row feature-item wow fadeInUp">
+        <p>
+        Vậy, những giải pháp này sẽ được vận hành ra sao? Bằng cách nào dự án có thể đem lại lợi ích nhiều nhất tới cộng động? Hãy cùng chúng tôi khám phá tại video dưới đây!
+        </p>
+    </div>
+    <div class="row feature-item mt-5 pt-5" style=" margin-top: 0! important; padding-top: 1rem! important; ">
+    <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" style="visibility: visible; animation-name: fadeInUp;">
+      <img src="./public/image/about us 3.png" class="img-fluid" alt="">
+    </div>
+
+    <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" style="text-align: justify; visibility: visible; animation-name: fadeInUp;">
+      <!-- <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4> -->
+      <p style="color : #232323">
+      Active Ageing Vietnam xin gửi lời cảm ơn chân thành nhất đến ông Raymond Chu (Chu Quang Thái) - đại diện thường trực phía Nam Cục Phát triển thị trường và doanh nghiệp Khoa học và Công nghệ, Bộ Khoa học và Công nghệ đã tham gia đóng góp ý kiến về tiềm năng của dự án. Những nhận xét và lời động viên của ông là sự khích lệ vô cùng lớn đối với Active Ageing Vietnam! 
+     </p>
+     
+     <p>
+     Ngoài ra, dự án rất mong nhận được ý kiến, phản hồi của bạn để phát triển giải pháp hoàn thiện hơn. Chúng tôi xin trân trọng cảm ơn sự quan tâm, theo dõi và ủng hộ của bạn trong thời gian qua và sắp tới.
+
+     </p>
+    </div>
+    
+  </div>
+      </div>
     </section><!-- #services -->
 
 </main>
@@ -1545,4 +1379,261 @@ components.loginScreen =`
 	<script src="js/main.js"></script>
 
 </body>
+`
+components.prepareRetire = `
+
+  <main id="main">
+<section id="about" class="section-bg">
+      <div class="container justify-content-center align-self-center">
+
+        <header class="section-header" style="margin-top: 13%;">
+          <h3>Chuẩn bị về hưu</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+        </header>
+
+        <div id='listPost' class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
+            <div class="box" style="padding: 0;">
+              <div class="image" style="background: #e6fdfc;"><img width= 100% src = "./public/image/posts/post1.jpeg" /></div>
+              
+              <div style = "padding: 5px 30px"><h4 class="title"><a href="">Top 3 bí quyết để có một tuổi “xế chiều” thịnh vượng khỏe mạnh an vui</a></h4></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    </main>
+`
+
+
+components.prosperousRetire = `
+
+  <main id="main">
+<section id="about" class="section-bg">
+      <div class="container justify-content-center align-self-center">
+
+        <header class="section-header" style="margin-top: 13%;">
+          <h3>Về hưu thịnh vượng</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+        </header>
+
+        <div id='listPost' class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
+            <div class="box" style="padding: 0;">
+              <div class="image" style="background: #e6fdfc;"><img width= 100% src = "./public/image/posts/post1.jpeg" /></div>
+              
+              <div style = "padding: 5px 30px"><h4 class="title"><a href="">Top 3 bí quyết để có một tuổi “xế chiều” thịnh vượng khỏe mạnh an vui</a></h4></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    </main>
+`
+components.healthyRetire = `
+<main id="main">
+<section id="about" class="section-bg">
+      <div class="container justify-content-center align-self-center">
+
+        <header class="section-header" style="margin-top: 13%;">
+          <h3>Về hưu khoẻ mạnh</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+        </header>
+
+        <div id='listPost' class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
+            <div class="box" style="padding: 0;">
+              <div class="image" style="background: #e6fdfc;"><img width= 100% src = "./public/image/posts/post1.jpeg" /></div>
+              
+              <div style = "padding: 5px 30px"><h4 class="title"><a href="">Top 3 bí quyết để có một tuổi “xế chiều” thịnh vượng khỏe mạnh an vui</a></h4></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    </main>
+`
+
+components.happyRetire = `
+<main id="main">
+<section id="about" class="section-bg">
+      <div class="container justify-content-center align-self-center">
+
+        <header class="section-header" style="margin-top: 13%;">
+          <h3>Về hưu an vui</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+        </header>
+
+        <div id='listPost' class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
+            <div class="box" style="padding: 0;">
+              <div class="image" style="background: #e6fdfc;"><img width= 100% src = "./public/image/posts/post1.jpeg" /></div>
+              
+              <div style = "padding: 5px 30px"><h4 class="title"><a href="">Top 3 bí quyết để có một tuổi “xế chiều” thịnh vượng khỏe mạnh an vui</a></h4></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    </main>
 `

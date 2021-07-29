@@ -4,12 +4,12 @@ var translate = function(){
     if (text.innerHTML == "Vietnamese") {
         text.innerHTML = "English";
         language = "vietnamese";
-        changeToVietnamese();
+        changeToVietnamese(true);
     }
     else {
         text.innerHTML = "Vietnamese";
         language = "english";
-        changeToEnglish();
+        changeToEnglish(true);
     }
     if (currentScreen =="findScreen") retirementRecall();
     if (currentScreen == "welcomeScreen") 
@@ -19,11 +19,25 @@ var translate = function(){
         })
 }
 $("#translate").on('click',translate);
+$('.translate').on('click', function (event) {
+    event.preventDefault();
+    var inner = this.innerHTML;
+    if (inner.includes('Eng')){
+        this.innerHTML =  inner.replace('Eng','Vie');
+        language = "english";
+        changeToEnglish(false);
+    }
+    else{
+        this.innerHTML = inner.replace('Vie','Eng');
+        language = "vietnamese";
+        changeToVietnamese(false);
+    }
+    
+  });
 
 
 
-
-function changeToEnglish(){
+function changeToEnglish(includeNav){
     var innerTranslate = document.getElementById('status');
     if (innerTranslate != null) innerTranslate.innerHTML = "Vietnamese";
     var obj = document.getElementById("app");
@@ -36,6 +50,8 @@ function changeToEnglish(){
         }
     }
     obj.innerHTML = inner;
+    if (includeNav)
+    {
     document.getElementById("home").innerHTML = "Home";
     document.getElementById("about").innerHTML = "About Us";
     document.getElementById("university").innerHTML = "Social Issues";
@@ -44,9 +60,9 @@ function changeToEnglish(){
     document.getElementById("life").innerHTML = "Sign up";
     var user = document.getElementById("login");
     if (user != null) user.innerHTML = "Sign In";
-
+    }
 }
-function changeToVietnamese(){
+function changeToVietnamese(includeNav){
     var obj = document.getElementById("app");
     var inner = obj.innerHTML;
     for (var i = 0;i < diction.length;i++)
@@ -56,7 +72,8 @@ function changeToVietnamese(){
         ,word["Vietnamese"]);
     }
     obj.innerHTML = inner;
-    document.getElementById("home").innerHTML = "Trang Chủ";
+    if (includeNav){
+        document.getElementById("home").innerHTML = "Trang Chủ";
     document.getElementById("about").innerHTML = "Về chúng tôi";
     document.getElementById("university").innerHTML = "Vấn đề xã hội";
     document.getElementById("find-uni").innerHTML = "Lập kế hoạch về hưu";
@@ -64,6 +81,7 @@ function changeToVietnamese(){
     document.getElementById("life").innerHTML = "Đăng ký thành viên";
     var user = document.getElementById("login");
     if (user != null) user.innerHTML = "ĐĂNG NHẬP";
+    }
 }
 var innerTranslate = document.getElementById('status');
 if (language == "english" && innerTranslate != null) innerTranslate.innerHTML = "Vietnamese";

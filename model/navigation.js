@@ -10,8 +10,9 @@ console.log('navigation.js');
     //  univesity page
     $('.scholarship-nav').on('click',function(){
         view.setActiveScreen('scholarshipScreen');
+        renderInformationData('news')
         JsScholarship();
-        $.getScript('public/js/FAQs.js');
+        // $.getScript('public/js/FAQs.js');
         NavigationActive(`.${this.className}`);
     });
 
@@ -98,6 +99,30 @@ console.log('navigation.js');
 
     $('#callToAction').on('click', function(){
         view.setActiveScreen('studentLifeScreen');
+    })
+
+    $('.prepare-retire').on('click',function (e) {
+        e.preventDefault();
+        view.setActiveScreen('prepareRetire');
+        renderInformationData('prepare-retire');
+    })
+    
+
+    $('.prosperous-retire').on('click',function (e) {
+        e.preventDefault();
+        view.setActiveScreen('prosperousRetire');
+        renderInformationData('prosperous-retire');
+    })
+    
+    $('.healthy-retire').on('click',function (e) {
+        e.preventDefault();
+        view.setActiveScreen('healthyRetire');
+        renderInformationData('healthy-retire');
+    })
+    $('.happy-retire').on('click',function (e) {
+        e.preventDefault();
+        view.setActiveScreen('happyRetire');
+        renderInformationData('happy-retire');
     })
 
     const  NavigationActive = (className)=>{
