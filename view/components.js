@@ -113,16 +113,40 @@ components.welcomeScreen = `
       <div class = "row justify-content-md-center">
       <div class="col-lg-3 col-md-9 wow fadeInUp">
           <div class="member">
-            <img src="public/image/team/co-chat.jpg" class="img-fluid" alt="">
+            <img src="public/image/team/co-thuy.jpeg" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
-                <h4>Trần Nguyên Chất (PhD)</h4>
+                <h4>Hồ Thị Hải Thùy (ThD)</h4>
                 <span>Project Mentor</span>
                 <span>Đại học Ngoại Thương CS2. TPHCM</span>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-lg-3 col-md-9 wow fadeInUp">
+        <div class="member">
+          <img src="public/image/team/co-khanh.jpeg" class="img-fluid" alt="">
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4>Phạm Thị Mai Khanh (PhD)</h4>
+              <span>Project Mentor</span>
+              <span>Đại học Ngoại Thương CS2. TPHCM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-9 wow fadeInUp">
+      <div class="member">
+        <img src="public/image/team/co-chat.jpg" class="img-fluid" alt="">
+        <div class="member-info">
+          <div class="member-info-content">
+            <h4>Trần Nguyên Chất (PhD)</h4>
+            <span>Project Mentor</span>
+            <span>Đại học Ngoại Thương CS2. TPHCM</span>
+          </div>
+        </div>
+      </div>
+    </div>
         <div class="col-lg-3 col-md-9 wow fadeInUp">
           <div class="member">
             <img src="public/image/team/thay-quang.png" class="img-fluid" alt="">
@@ -131,6 +155,20 @@ components.welcomeScreen = `
                 <h4>Ngô Ngọc Quang (PhD)</h4>
                 <span>Project Mentor</span>
                 <span>Đại học Ngoại Thương CS2. TPHCM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+      <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/long.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Vũ Thành Long</h4>
+                <span>Technical Leader</span>
+                <span>Đại học Khoa Học và Công Nghệ, Nga</span>
               </div>
             </div>
           </div>
@@ -147,10 +185,20 @@ components.welcomeScreen = `
             </div>
           </div>
         </div>
-  
-        
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/thu2.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Trần Minh Thư</h4>
+                <span>Project Development Executive</span>
+                <span>Đại học Ngoại Thương CS2. TPHCM</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row">
+      <div class="row  justify-content-md-center">
 
         <div class="col-lg-3 col-md-6 wow fadeInUp">
           <div class="member">
@@ -178,31 +226,9 @@ components.welcomeScreen = `
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 wow fadeInUp">
-          <div class="member">
-            <img src="public/image/team/thu2.jpg" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Trần Minh Thư</h4>
-                <span>Project Development Executive</span>
-                <span>Đại học Ngoại Thương CS2. TPHCM</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
-        <div class="col-lg-3 col-md-6 wow fadeInUp">
-          <div class="member">
-            <img src="public/image/team/long.jpg" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Vũ Thành Long</h4>
-                <span>Technical Leader</span>
-                <span>Đại học Khoa Học và Công Nghệ, Nga</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
         <div class="col-lg-3 col-md-6 wow fadeInUp">
           <div class="member">
@@ -217,7 +243,12 @@ components.welcomeScreen = `
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 wow fadeInUp">
+        
+
+
+      </div>
+      <div class="row  justify-content-md-center">
+      <div class="col-lg-3 col-md-6 wow fadeInUp">
           <div class="member">
             <img src="public/image/team/vy.jpg" class="img-fluid" alt="">
             <div class="member-info">
@@ -255,8 +286,6 @@ components.welcomeScreen = `
             </div>
           </div>
         </div>
-
-
       </div>
 
     </div>
@@ -558,7 +587,7 @@ components.scholarshipScreen = `
 
         <header class="section-header" style="margin-top: 13%;">
           <h3>Tin tức</h3>
-          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+          
         </header>
 
         <div id='listPost' class="row">
@@ -883,7 +912,75 @@ components.findScreen = `
           </div>
         </div>
         <div id ="resultForm">
+        
           <div class ="row">
+          <main id="introduction">
+          <!--==========================
+            Features Section
+          ============================-->
+          <section id="about">
+              <div class="container" style="padding-top: 30px;">
+                <h2 style = "color: #333333;font-weight: 650;text-align: center;">Lập kế hoạch về hưu cùng active ageing vietnam</h2>
+                <img src="../public/image/retire-plan.jpeg" width="100%"/>
+                <h4 class="title mt-4">
+                    Bạn đang tìm kiếm một kế hoạch về hưu mà không biết bắt đầu như thế nào? Ngay đây chúng tôi sẽ giúp bạn. Thiết lập tầm nhìn kế hoạch về hưu của cá nhân bạn chỉ bằng việc trả lời một số câu hỏi. Bắt đầu thôi!
+                  </h4>
+                <div class="row feature-item mt-5 wow fadeInUp">
+                    <h4 class="title" style = "color: #333333;font-weight: 650;">Bước 1: Truy cập website Active Ageing Vietnam (http://activeageingvietnam.com/ ) và chọn tab “Lập kế hoạch về hưu”.</h4>
+                    <img src="../public/image/step1.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="row feature-item mt-5 wow fadeInUp">
+                    <h4 class="title" style = "color: #333333;font-weight: 650;">Bước 2: Điền các thông tin vào bảng hỏi, lưu ý đơn vị của các câu hỏi. Bạn có thể rê chuột vào nút "i" để đọc phần giải thích câu hỏi.</h4>
+                    <img src="../public/image/step2.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="row feature-item mt-5 wow fadeInUp">
+                    <h4 class="title" style = "color: #333333;font-weight: 650;">Bước 3: Xem kết quả phân tích.</h4>
+                    <img src="../public/image/step3.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="row feature-item mt-5 wow fadeInUp">
+                    <h4 class="title" style = "color: #333333;font-weight: 650;">Bước 4: Xem đề xuất nếu kế hoạch chưa hợp lí. Đăng ký trở thành hội viên của Active Ageing Vietnam để nhận thêm thông tin hơn về các tính năng khác.</h4>
+                    <img src="../public/image/step4.jpg" class="img-fluid rounded" alt="">
+                </div>
+
+                <div class="row feature-item mt-5 pt-5" style = "padding-top: 1rem! important; ">
+                  <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+                    <img src="../public/image/example.jpg" class="img-fluid rounded" alt="">
+                  </div>
+        
+                  <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" style = "text-align: justify;">
+                    <!-- <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4> -->
+                    <h4 class="title" style = "color: #333333;font-weight: 650;">Trước hết, để giúp bạn dễ thao tác, chúng tôi đã đặt ra bài toán:</h4>
+                    <p style ="color : #232323">
+                        “Ông Nguyễn Văn X hiện đang 45 tuổi, thu nhập trung bình 15 triệu VNĐ/ tháng (180 triệu VNĐ/năm). Ông dự kiến thu nhập của mình sẽ tăng 2% hàng năm cho đến khi ông nghỉ hưu ở tuổi 60. Để chuẩn bị cho tương lai, ông đã tích góp được 700 triệu VNĐ riêng cho “Quỹ Tiết kiệm Về hưu” của mình (Quỹ tiết kiệm về hưu là một Quỹ tiết kiệm riêng, tách biệt khỏi các khoản tiết kiệm khác như: Tiết kiệm mua xe, Tiết kiệm cho con,...). 
+                   </p>
+                   <p>
+                    Hàng năm, ông dự kiến trích 8% trên tổng thu nhập để đóng góp thêm vào Quỹ Tiết kiệm Về hưu. Khoản đóng góp cuối cùng xảy ra vào năm ông 59 tuổi. Kể từ sau năm này, ông không có thêm thu nhập nào do ông không có lương hưu. Khoản tiền từ Quỹ Tiết kiệm Về hưu sẽ được sử dụng để đầu tư bằng nhiều hình thức khác nhau (gửi tiết kiệm, đầu tư vàng, ngoại tệ, các tài sản tài chính khác,...) và ông dự kiến sẽ thu được lợi tức (lãi suất) hàng năm là 6.5% (trước khi về hưu) và 4.5% (sau khi về hưu). Ông hy vọng mình sẽ thọ đến 90 tuổi và vẫn chủ động về tài chính.”
+                   </p>
+                  </div>
+                  
+                </div>
+
+                <div class="row feature-item mt-5">
+                    <!-- <img src="../public/image/make_plan.jpeg" class="img-fluid rounded" alt=""> -->
+                    <!-- <h4 class="title" style="color: #333333;font-weight: 650;">Lập kế hoạch tài chính để nghỉ hưu an nhàn</h4> -->
+                    <p style="color : #232323">
+                        Từ những dữ liệu trên, Active Ageing Vietnam đã giúp ông X tính toán kế hoạch về hưu của ông và đề xuất được kết quả như 4 hình minh hoạ.
+                    </p>
+                    <p>
+                        Active Ageing Vienam xin trân trọng cảm ơn các bạn đã quan tâm, ủng hộ và trải nghiệm sản phẩm đầu tiên của chúng tôi!
+                    </p>
+              </div>
+              
+            <!-- </section>#feature -->
+          <!--==========================
+            Services Section
+          ============================-->
+          <!-- <section id="services" class="section-bg"> -->
+              
+            </section><!-- #services -->
+        
+        </main>
+      
             <div class="col-md-2">
             </div>    
             <div class="col-md-8 mt-5" id="firstOutcome">
@@ -1388,7 +1485,7 @@ components.prepareRetire = `
 
         <header class="section-header" style="margin-top: 13%;">
           <h3>Chuẩn bị về hưu</h3>
-          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+          
         </header>
 
         <div id='listPost' class="row">
@@ -1454,7 +1551,7 @@ components.prosperousRetire = `
 
         <header class="section-header" style="margin-top: 13%;">
           <h3>Về hưu thịnh vượng</h3>
-          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+          
         </header>
 
         <div id='listPost' class="row">
@@ -1517,7 +1614,7 @@ components.healthyRetire = `
 
         <header class="section-header" style="margin-top: 13%;">
           <h3>Về hưu khoẻ mạnh</h3>
-          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+          
         </header>
 
         <div id='listPost' class="row">
@@ -1581,7 +1678,7 @@ components.happyRetire = `
 
         <header class="section-header" style="margin-top: 13%;">
           <h3>Về hưu an vui</h3>
-          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+          
         </header>
 
         <div id='listPost' class="row">

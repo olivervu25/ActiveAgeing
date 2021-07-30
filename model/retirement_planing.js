@@ -12,6 +12,7 @@ var innerHTML = document.getElementById("retirement").innerHTML;
 function calculate(event){
     event.preventDefault();
     //console.log('submitted');
+    document.getElementById('introduction').innerHTML = '';
     console.log(language);
     var form = document.querySelector(".contactForm");
     var listInput  = form.querySelectorAll("input");
