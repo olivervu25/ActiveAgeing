@@ -10,7 +10,7 @@ console.log('navigation.js');
     //  univesity page
     $('.scholarship-nav').on('click',function(){
         view.setActiveScreen('scholarshipScreen');
-        renderInformationData('news')
+        // renderInformationData('news')
         JsScholarship();
         // $.getScript('public/js/FAQs.js');
         NavigationActive(`.${this.className}`);
@@ -100,14 +100,12 @@ console.log('navigation.js');
     $('#callToAction').on('click', function(){
         view.setActiveScreen('studentLifeScreen');
     })
-
     $('.prepare-retire').on('click',function (e) {
         e.preventDefault();
         view.setActiveScreen('prepareRetire');
         renderInformationData('prepare-retire');
     })
     
-
     $('.prosperous-retire').on('click',function (e) {
         e.preventDefault();
         view.setActiveScreen('prosperousRetire');
@@ -124,7 +122,11 @@ console.log('navigation.js');
         view.setActiveScreen('happyRetire');
         renderInformationData('happy-retire');
     })
-
+    $('.news').on('click', function (e) {
+        e.preventDefault();
+        view.setActiveScreen('news');
+        renderInformationData('news');
+    })
     const  NavigationActive = (className)=>{
         // this code to fix hover problem
         // Navigation active state on scroll

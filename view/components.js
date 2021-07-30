@@ -5,7 +5,24 @@ components.welcomeScreen = `
 ============================-->
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
+  <div class="carousel-item active">
+    <section id="intro"  class="clearfix">
+
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+      <div class="col-md-3 intro-info order-md-first order-last">
+        <h3>Đi tìm hạnh phúc thời covid-19: an toàn tài chính và sức khoẻ tinh thần</h3>
+        <div>
+          <a href="./posts/webinar.html" class="btn-get-started scrollto">Tìm hiểu ngay</a>
+        </div>
+      </div>
+      <div class="col-md-9 intro-img order-md-last order-first">
+      <img src="./public/image/slider.jpg" alt="" class="img-fluid">
+    </div>
+      </div>
+    </div>
+    </section><!-- #intro -->     </div>
+    <div class="carousel-item">
     <section id="intro" class="clearfix">
 
     <div class="container d-flex h-100">
@@ -24,22 +41,6 @@ components.welcomeScreen = `
     </div>
     </div>
     </section><!-- #intro -->    </div>
-    <div class="carousel-item">
-    <section id="intro" class="clearfix">
-
-    <div class="container d-flex h-100">
-    <div class="row justify-content-center align-self-center">
-      <div class="col-md-6 intro-info order-md-first order-last">
-        <h2>Active Ageing là dự án kinh doanh xã hội giúp mọi người chuẩn bị cho tuổi già một cách chủ động.</h2>
-      </div>
-    
-      <div class="col-md-6 intro-img order-md-last order-first">
-        <img src="public/image/prepare.png" alt="" class="img-fluid">
-      </div>
-    
-    </div>
-    </div>
-    </section><!-- #intro -->     </div>
     <div class="carousel-item">
     <section id="intro" class="clearfix">
 
@@ -69,6 +70,21 @@ components.welcomeScreen = `
 
 
 <main id="main">
+<section id="call-to-action" class="call-to-action wow bounceInUp scale" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+    <div class="container" data-aos="zoom-out">
+      <div class="row">
+        <div class="col-lg-9 text-center text-lg-start">
+          <h3 class="cta-title">HOT : HỘI THẢO “ĐI TÌM HẠNH PHÚC THỜI COVID-19: AN TOÀN TÀI CHÍNH VÀ SỨC KHOẺ TINH THẦN”!</h3>
+          <p class="cta-text">"Tham gia ngay, nhận quà liền tay"</p>
+          <p class="cta-text" >Nhận ngay sách Spenditude, khóa coaching cùng chuyên gia và tài khoản premium Active Ageing Vietnam!</p>
+        </div>
+        <div class="col-lg-3 cta-btn-container text-center">
+          <a class="cta-btn align-middle" id="register" href="./posts/webinar.html" style="text-transform: uppercase;">Tìm hiểu ngay</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!--==========================
     About Us Section
@@ -290,7 +306,26 @@ components.welcomeScreen = `
 
     </div>
   </section><!-- #team -->
+  <section id="clients" class="wow fadeInUp">
+      <div class="container">
 
+        <header class="section-header">
+          <h3>Our Clients</h3>
+        </header>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="public/image/clients/client-1.png" alt="">
+          <img src="public/image/clients/client-2.png" alt="">
+          <img src="public/image/clients/client-3.png" alt="">
+          <img src="public/image/clients/client-4.png" alt="">
+          <img src="public/image/clients/client-5.png" alt="">
+          <img src="public/image/clients/client-6.png" alt="">
+          <img src="public/image/clients/client-7.png" alt="">
+          <img src="public/image/clients/client-8.png" alt="">
+        </div>
+
+      </div>
+    </section><!-- #clients -->
   <!--==========================
     Find Section
   ============================-->
@@ -340,7 +375,7 @@ components.welcomeScreen = `
                       (Ms.) Lâm Tố Như<br>
                       External Relations Executive<br>
                       <strong>Phone:</strong> +84 914864707<br>
-                      <strong>Email:</strong> activeageing.ftu2@gmail.com<br>
+                      <strong>Email:</strong> activeageing.info@gmail.com<br>
                     </p>
                   </div>
   
@@ -518,7 +553,7 @@ components.universityScreen = `
                       (Ms.) Lâm Tố Như<br>
                       External Relations Executive<br>
                       <strong>Phone:</strong> +84 914864707<br>
-                      <strong>Email:</strong> activeageing.ftu2@gmail.com
+                      <strong>Email:</strong> activeageing.info@gmail.com
                       <br>
                     </p>
                   </div>
@@ -586,53 +621,45 @@ components.scholarshipScreen = `
       <div class="container justify-content-center align-self-center">
 
         <header class="section-header" style="margin-top: 13%;">
-          <h3>Tin tức</h3>
+          <h3>Thông tin</h3>
           
         </header>
 
         <div id='listPost' class="row">
 
-          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+          <div class="col-md-6 col-lg-4 wow bounceInUp prepare-retire" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
             <div class="box">
               <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <h4 class="title"><a href="">Chuẩn bị về hưu </a></h4>
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+          <div class="col-md-6 col-lg-4 wow bounceInUp prosperous-retire" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
             <div class="box">
               <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <h4 class="title"><a href="">Về hưu thịnh vượng</a></h4>
               <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
-            <div class="box" style="padding: 0;">
-              <div class="image" style="background: #e6fdfc;"><img width= 100% src = "./public/image/posts/post1.jpeg" /></div>
-              
-              <div style = "padding: 5px 30px"><h4 class="title"><a href="">Top 3 bí quyết để có một tuổi “xế chiều” thịnh vượng khỏe mạnh an vui</a></h4></div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
+          <div class="col-md-6 col-lg-4 wow bounceInUp healthy-retire" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
             <div class="box">
               <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <h4 class="title"><a href="">Về hưu khoẻ mạnh</a></h4>
               <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
+          <div class="col-md-6 col-lg-4 wow bounceInUp happy-retire" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
             <div class="box">
               <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <h4 class="title"><a href="">Về hưu an vui</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
+          <div class="col-md-6 col-lg-4 wow bounceInUp news" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
             <div class="box">
               <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
-              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <h4 class="title"><a href="">Tin tức</a></h4>
               <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
             </div>
           </div>
@@ -1050,7 +1077,7 @@ components.findScreen = `
                       (Ms.) Lâm Tố Như<br>
                       External Relations Executive<br>
                       <strong>Phone:</strong> +84 914864707<br>
-                      <strong>Email:</strong> activeageing.ftu2@gmail.com<br>
+                      <strong>Email:</strong> activeageing.info@gmail.com<br>
                     </p>
                   </div>
   
@@ -1342,7 +1369,7 @@ components.aboutScreen = `
                       (Ms.) Lâm Tố Như<br>
                       External Relations Executive<br>
                       <strong>Phone:</strong> +84 914864707<br>
-                      <strong>Email:</strong> activeageing.ftu2@gmail.com<br>
+                      <strong>Email:</strong> activeageing.info@gmail.com<br>
                     </p>
                   </div>
   
@@ -1678,6 +1705,69 @@ components.happyRetire = `
 
         <header class="section-header" style="margin-top: 13%;">
           <h3>Về hưu an vui</h3>
+          
+        </header>
+
+        <div id='listPost' class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
+            <div class="box" style="padding: 0;">
+              <div class="image" style="background: #e6fdfc;"><img width= 100% src = "./public/image/posts/post1.jpeg" /></div>
+              
+              <div style = "padding: 5px 30px"><h4 class="title"><a href="">Top 3 bí quyết để có một tuổi “xế chiều” thịnh vượng khỏe mạnh an vui</a></h4></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
+            <div class="box">
+              <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    </main>
+`
+components.news =`
+<main id="main">
+<section id="about" class="section-bg">
+      <div class="container justify-content-center align-self-center">
+
+        <header class="section-header" style="margin-top: 13%;">
+          <h3>Tin tức</h3>
           
         </header>
 

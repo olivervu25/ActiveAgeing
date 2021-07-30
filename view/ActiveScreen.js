@@ -4,6 +4,9 @@ const reCallJsFiles = (screenName)=>{
       if (screenName=="loginScreen"){
         $.getScript("model/log_in.js");
       }
+      if (screenName == 'scholarshipScreen'){
+        $.getScript("model/navigation_infor_tab.js");
+      }
     // $.getScript("lib/mobile-nav/mobile-nav.js");
     // $.getScript("contactform/contactform.js");
     //$.getScript("public/js/main.js");
@@ -107,6 +110,11 @@ renderInformationData= function (type){
 
     if (type == 'news')
       data = [
+        {
+          'title' : 'Đi tìm hạnh phúc thời covid-19: an toàn tài chính và sức khoẻ tinh thần',
+          'imgSrc' : './public/image/posts/post11.jpeg',
+          'href' : './posts/webinar.html'
+        },
         {
           'title' : 'Già hóa dân số và những gánh nặng người già đang và sẽ gặp phải',
           'imgSrc' : './public/image/posts/post9.jpeg',

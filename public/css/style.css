@@ -18,6 +18,11 @@ background: #028cb3 !important;
   background: #12B281;
 }
 
+.scale:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 /* .drop-down */
 .dropdown:hover .dropdown-menu {
   display: block;
