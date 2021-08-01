@@ -238,7 +238,7 @@ components.welcomeScreen = `
             <img src="public/image/team/co-thuy.jpeg" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
-                <h4>Hồ Thị Hải Thùy (ThD)</h4>
+                <h4>Hồ Thị Hải Thùy (ThS)</h4>
                 <span>Project Mentor</span>
                 <span>Đại học Ngoại Thương CS2. TPHCM</span>
               </div>
@@ -419,10 +419,28 @@ components.welcomeScreen = `
           <h3>Chúng tôi vinh dự được hỗ trợ từ</h3>
         </header>
 
+        <div class="row">
+
+        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s">
+            <img src="public/image/clients/client-3.png" alt="">
+        </div>
+        
+        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s">
+          <img src="public/image/clients/client-9.jpg" alt="">
+        </div>
+
+        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <img src="public/image/clients/client-10.jpg" alt="">
+        </div>
+
+        <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <img src="public/image/clients/client-11.jpg" alt="">
+        </div>
+      </div>
+
         <div class="owl-carousel clients-carousel">
           <img src="public/image/clients/client-1.png" alt="">
           <img src="public/image/clients/client-2.png" alt="">
-          <img src="public/image/clients/client-3.png" alt="">
           <img src="public/image/clients/client-4.png" alt="">
           <img src="public/image/clients/client-5.png" alt="">
           <img src="public/image/clients/client-6.png" alt="">
@@ -774,21 +792,21 @@ components.scholarshipScreen = `
             <div class="box">
               <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
               <h4 class="title"><a href="">Chuẩn bị về hưu </a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <p class="description">Cung cấp công cụ, giải pháp và thông tin giúp chuẩn bị kế hoạch về hưu một các hiệu quả.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp prosperous-retire" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
             <div class="box">
               <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
               <h4 class="title"><a href="">Về hưu thịnh vượng</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <p class="description">Cung cấp thong tin hữu ích chuẩn bị cho cuộc sống về hưu thịnh vượng.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp healthy-retire" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
             <div class="box">
               <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
               <h4 class="title"><a href="">Về hưu khoẻ mạnh</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <p class="description">Cung cấp thong tin hữu ích chuẩn bị cho cuộc sống về hưu khỏe mạnh.</p>
             </div>
           </div>
 
@@ -796,14 +814,14 @@ components.scholarshipScreen = `
             <div class="box">
               <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
               <h4 class="title"><a href="">Về hưu an vui</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <p class="description">Cung cấp thong tin hữu ích chuẩn bị cho cuộc sống về hưu an vui.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp news" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
             <div class="box">
               <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
               <h4 class="title"><a href="">Tin tức</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              <p class="description">Cập nhật các tin tức sự kiện và thông tin tài chính, sức khỏe hữu ích từ Active Ageing Vietnam.</p>
             </div>
           </div>
 
