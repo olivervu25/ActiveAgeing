@@ -426,24 +426,39 @@ components.welcomeScreen = `
         </div>
         
         <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s">
-          <img src="public/image/clients/client-9.jpg" alt="">
+          
+          <img src="public/image/clients/client-2.png" alt="">
         </div>
 
         <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <img src="public/image/clients/client-10.jpg" alt="">
+            <img src="public/image/clients/client-6.png" alt="">
         </div>
 
         <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <img src="public/image/clients/client-11.jpg" alt="">
+            <img src="public/image/clients/client-15.jpeg" alt="">
         </div>
+      </div>
+      <div class='row justify-content-md-center'>
+          <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <img src="public/image/clients/client-12.jpeg" alt="">
+          </div>
+          <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <img src="public/image/clients/client-13.svg" alt="">
+          </div>
+          <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <img src="public/image/clients/client-11.jpg" alt="">
+          </div>
+          <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <img src="public/image/clients/client-14.png" alt="">
+          </div>
       </div>
 
         <div class="owl-carousel clients-carousel">
           <img src="public/image/clients/client-1.png" alt="">
-          <img src="public/image/clients/client-2.png" alt="">
+          <img src="public/image/clients/client-9.jpg" alt="">
           <img src="public/image/clients/client-4.png" alt="">
           <img src="public/image/clients/client-5.png" alt="">
-          <img src="public/image/clients/client-6.png" alt="">
+          <img src="public/image/clients/client-10.jpg" alt="">
         </div>
 
       </div>
@@ -497,7 +512,7 @@ components.welcomeScreen = `
                       (Ms.) Lâm Tố Như<br>
                       External Relations Executive<br>
                       <strong>Phone:</strong> +84 914864707<br>
-                      <strong>Email:</strong> activeageing.info@gmail.com<br>
+                      <strong>Email:</strong> activeageingvietnam@gmail.com<br>
                     </p>
                   </div>
   
@@ -714,7 +729,7 @@ components.universityScreen = `
                       (Ms.) Lâm Tố Như<br>
                       External Relations Executive<br>
                       <strong>Phone:</strong> +84 914864707<br>
-                      <strong>Email:</strong> activeageing.info@gmail.com
+                      <strong>Email:</strong> activeageingvietnam@gmail.com
                       <br>
                     </p>
                   </div>
@@ -1238,7 +1253,7 @@ components.findScreen = `
                       (Ms.) Lâm Tố Như<br>
                       External Relations Executive<br>
                       <strong>Phone:</strong> +84 914864707<br>
-                      <strong>Email:</strong> activeageing.info@gmail.com<br>
+                      <strong>Email:</strong> activeageingvietnam@gmail.com<br>
                     </p>
                   </div>
   
@@ -1560,7 +1575,7 @@ components.aboutScreen = `
                       (Ms.) Lâm Tố Như<br>
                       External Relations Executive<br>
                       <strong>Phone:</strong> +84 914864707<br>
-                      <strong>Email:</strong> activeageing.info@gmail.com<br>
+                      <strong>Email:</strong> activeageingvietnam@gmail.com<br>
                     </p>
                   </div>
   
@@ -2183,7 +2198,7 @@ components.solutionScreen = `
                       (Ms.) Lâm Tố Như<br>
                       External Relations Executive<br>
                       <strong>Phone:</strong> +84 914864707<br>
-                      <strong>Email:</strong> activeageing.info@gmail.com<br>
+                      <strong>Email:</strong> activeageingvietnam@gmail.com<br>
                     </p>
                   </div>
   

@@ -11,6 +11,14 @@ var endingRetirementBalance = [];
 var innerHTML = document.getElementById("retirement").innerHTML;
 function calculate(event){
     event.preventDefault();
+    user = {};
+    listLabels = [];
+    beginningRetirementBalance = [];
+    investmentGrowth = [];
+    contributions =  [];
+    retirementWithdrawals = [];
+    pension = [];
+    endingRetirementBalance = [];
     //console.log('submitted');
     document.getElementById('introduction').innerHTML = '';
     console.log(language);
