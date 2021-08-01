@@ -7,6 +7,10 @@ const reCallJsFiles = (screenName)=>{
       if (screenName == 'scholarshipScreen'){
         $.getScript("model/navigation_infor_tab.js");
       }
+      if (screenName == 'welcomeScreen'){
+        $.getScript("model/homepage.js");
+      }
+      // $.getScript("public/js/main.js");
     // $.getScript("lib/mobile-nav/mobile-nav.js");
     // $.getScript("contactform/contactform.js");
     //$.getScript("public/js/main.js");

@@ -3,9 +3,9 @@ components.welcomeScreen = `
 <!--==========================
   Intro Section
 ============================-->
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-interval="1000" data-bs-ride="carousel">
   <div class="carousel-inner">
-  <div class="carousel-item active">
+  <div class="carousel-item active" data-interval="1000">
     <section id="intro"  class="clearfix">
 
     <div class="container d-flex h-100">
@@ -22,7 +22,7 @@ components.welcomeScreen = `
       </div>
     </div>
     </section><!-- #intro -->     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-interval="1000">
     <section id="intro" class="clearfix">
 
     <div class="container d-flex h-100">
@@ -41,7 +41,7 @@ components.welcomeScreen = `
     </div>
     </div>
     </section><!-- #intro -->    </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-interval="1000">
     <section id="intro" class="clearfix">
 
     <div class="container d-flex h-100">
@@ -74,12 +74,21 @@ components.welcomeScreen = `
     <div class="container" data-aos="zoom-out">
       <div class="row">
         <div class="col-lg-9 text-center text-lg-start">
-          <h3 class="cta-title">HOT : HỘI THẢO “ĐI TÌM HẠNH PHÚC THỜI COVID-19: AN TOÀN TÀI CHÍNH VÀ SỨC KHOẺ TINH THẦN”!</h3>
-          <p class="cta-text">"Tham gia ngay, nhận quà liền tay"</p>
-          <p class="cta-text" >Nhận ngay sách Spenditude, khóa coaching cùng chuyên gia và tài khoản premium Active Ageing Vietnam!</p>
+          <h3 class="cta-title" style="font-family : 'Arial'; font-size: 19px">Hot : Hội thảo “đi tìm hạnh phúc thời covid-19: an toàn tài chính và sức khoẻ tinh thần”!</h3>
+          <p class="cta-text">"Tham gia ngay, nhận quà liền tay" </br>
+          Nhận ngay sách Spenditude, khóa coaching cùng chuyên gia và tài khoản premium Active Ageing Vietnam!
+          </p>
+          <p class="cta-text" ></p>
         </div>
         <div class="col-lg-3 cta-btn-container text-center">
-          <a class="cta-btn align-middle" id="register" href="./posts/webinar.html" style="text-transform: uppercase;">Tìm hiểu ngay</a>
+        <div class="container">
+        <div class ="row">
+        <a class="cta-btn align-middle" id="" href="./posts/webinar.html" style="text-transform: uppercase;">Tìm hiểu ngay</a>
+        </div>
+        <div class = "row">
+        <a class="cta-btn align-middle register-webinar" id="" href="" style="text-transform: uppercase;">Đăng kí tham dự</a>
+        </div>
+        </div>
         </div>
       </div>
 
@@ -115,6 +124,103 @@ components.welcomeScreen = `
     </div>
 
   </section><!-- #about -->
+  
+
+  <section id="about" class="wow fadeInUp">
+      <div class="container min-height">
+      <header class="section-header" style="text-align: center;">
+          <h3 style="">Gói giải pháp của Active Ageing Vietnam</h3>
+          <p></p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">construction</i></div>
+              <h4 class="title"><a href="">Công cụ</a></h4>
+              <p class="description">Hỗ trợ tính toán, quản lý, lập báo cáo qua website và app</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+            <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">school</i></div>
+              <h4 class="title"><a href="">Kiến thức</a></h4>
+              <p class="description">Các bài viết chuyên môn, chia sẻ từ diễn giả qua webinars, hội thảo</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+            <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">share</i></div>
+              <h4 class="title"><a href="">Sự kết nối</a></h4>
+              <p class="description">Các cộng đồng có cùng mối quan tâm, mạng lưới chuyên gia</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <div class="box">
+          <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">layers</i></div>
+            <h4 class="title"><a href="">Sự cố vấn</a></h4>
+            <p class="description">Cơ hội tương tác với chuyên gia và nhận cố vấn</p>
+          </div>
+        </div>
+          
+
+        </div>
+      </div>
+      </div>
+    </section><!-- #clients -->
+
+    
+    <section id="about" class="wow fadeInUp">
+      <div class="container">
+      <header class="section-header">
+    <h3>Các bài viết, tài liệu</h3>
+  </header>
+
+  <div class="row feature-item wow fadeInUp" >
+
+  <div id="listPost" class="row">
+
+  <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s;">
+      <a href="./posts/Lap ke hoach ve huu cung active ageing vietnam.html"></a>
+          <div class="box" style="padding: 0;">
+          <a href="./posts/Lap ke hoach ve huu cung active ageing vietnam.html">
+          <div class="image" style="background: #e6fdfc;">
+            <img width="100%" src="./public/image/posts/post4.jpeg">
+          </div>
+          </a>
+          <div style="padding: 5px 30px"><a href="./posts/Lap ke hoach ve huu cung active ageing vietnam.html"></a>
+          <h4 class="title">
+            <a href="./posts/Lap ke hoach ve huu cung active ageing vietnam.html"></a>
+            <a href="./posts/Lap ke hoach ve huu cung active ageing vietnam.html">Lập kế hoạch về hưu cùng Active Ageing Vietnam</a>
+          </h4>
+          </div>
+          </div>
+  </div>
+
+  <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s;">
+      <a href="./posts/Giai ma phuong phap 50 30 20.html">
+      </a><div class="box" style="padding: 0;"><a href="./posts/Giai ma phuong phap 50 30 20.html">
+        <div class="image" style="background: #e6fdfc;"><img width="100%" src="./public/image/posts/post6.jpeg"></div>
+        </a><div style="padding: 5px 30px"><a href="./posts/Giai ma phuong phap 50 30 20.html"></a><h4 class="title"><a href="./posts/Giai ma phuong phap 50 30 20.html"></a><a href="./posts/Giai ma phuong phap 50 30 20.html">Giải mã phương pháp 50/20/30 trong quản lý tài chính cá nhân hiệu quả</a></h4></div>
+      </div>
+      
+    </div>
+
+    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s;">
+    <a href="./posts/Bo tui nhung thoi quen tot cho suc khoe.html">
+    </a><div class="box" style="padding: 0;"><a href="./posts/Bo tui nhung thoi quen tot cho suc khoe.html">
+      <div class="image" style="background: #e6fdfc;"><img width="100%" src="./public/image/posts/post7.jpeg"></div>
+      </a><div style="padding: 5px 30px"><a href="./posts/Bo tui nhung thoi quen tot cho suc khoe.html"></a><h4 class="title"><a href="./posts/Bo tui nhung thoi quen tot cho suc khoe.html"></a><a href="./posts/Bo tui nhung thoi quen tot cho suc khoe.html">Bỏ túi những thói quen tốt cho sức khỏe</a></h4></div>
+    </div>
+    
+  </div>
+      
+  </div>
+      </div>
+    </section>
 
   <!--==========================
     Team Section
@@ -310,7 +416,7 @@ components.welcomeScreen = `
       <div class="container">
 
         <header class="section-header">
-          <h3>Our Clients</h3>
+          <h3>Chúng tôi vinh dự được hỗ trợ từ</h3>
         </header>
 
         <div class="owl-carousel clients-carousel">
@@ -320,8 +426,6 @@ components.welcomeScreen = `
           <img src="public/image/clients/client-4.png" alt="">
           <img src="public/image/clients/client-5.png" alt="">
           <img src="public/image/clients/client-6.png" alt="">
-          <img src="public/image/clients/client-7.png" alt="">
-          <img src="public/image/clients/client-8.png" alt="">
         </div>
 
       </div>
@@ -499,7 +603,7 @@ components.universityScreen = `
       <div class = "row space-need">
         <div class="col-lg-6">
           <div class="scholarship-img">
-            <img src="./public/image/old.jpg" alt="" class="img-fluid">
+            <img src="./public/image/make-plan.jpeg" alt="" class="img-fluid">
           </div>
         </div>
         <div class ="col-lg-6">
@@ -519,11 +623,50 @@ components.universityScreen = `
         </div>
       </div>
 
-      <p>Chuẩn bị cho Việt Nam - quốc gia được dự đoán sẽ bước vào thời kỳ dân số già vào năm 2035.</p>
-      <p>Trong giai đoạn đầu, đối tượng mục tiêu của chúng tôi là những người lao động có thu nhập trung bình ít nhất 15 năm trước khi nghỉ hưu.</p>
+      <p>
+      Chuẩn bị cho Việt Nam - quốc gia được dự đoán sẽ bước vào thời kỳ dân số già vào năm 2035. <br>
+      Trong giai đoạn đầu, đối tượng mục tiêu của chúng tôi là những người lao động có thu nhập trung bình ít nhất 15 năm trước khi nghỉ hưu.
+      </p>
 
     </div>
   </section><!-- #portfolio -->
+
+  <div class="container" style="padding-top: 30px;">
+      <header class="section-header">
+      <h3>Giải pháp xã hội của Active Ageing Vietnam</h3>
+      <p></p>
+    </header>
+    <div class="row feature-item wow fadeInUp" style="text-align: justify; visibility: visible; animation-name: fadeInUp;">
+    <p style="color : #232323">
+      Hiện nay, thế giới đang phải vật lộn với quá trình già hóa dân số diễn ra rất nhanh, và Việt Nam cũng không phải là ngoại lệ. Thực tế, Việt Nam là một trong những quốc gia có tốc độ già hóa dân số nhanh nhất, đặt nước ta trước thách thức “già trước khi giàu”. Nếu thiếu sự chuẩn bị chủ động cho tuổi già, mọi người sẽ gặp phải các vấn đề nghiêm trọng như: thiếu hụt tài chính, suy giảm sức khoẻ,...khi về già.
+    </p>
+    <p>
+    Video này thể hiện mức độ mà Active Ageing Vietnam hiểu rõ nguyên nhân gốc rễ của vấn đề xã hội nêu trên; giải thích quá trình mà chúng tôi tiếp cận chúng để đưa ra các giải pháp cho người lao động nhằm giúp họ nâng cao mức sống của mình khi về hưu; và chỉ ra những tác động xã hội mà Active Ageing Vietnam có thể mang đến cho cộng đồng.
+
+    </p>
+    </div>
+        <div class="row feature-item">
+          <div class="col-lg-8 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <div class= "embed-responsive embed-responsive-16by9">
+        <iframe class= "embed-responsive-item" width="100%" src="https://www.youtube.com/embed/K22EmimdUsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>    
+           
+          </div>
+          <div class="col-lg-4 wow fadeInUp pt-5 pt-lg-0" style="text-align: justify; visibility: visible; animation-name: fadeInUp;">
+            
+            <p style="color : #232323">
+            Bên cạnh đó, chúng tôi đã mời ông Lê Hồng Lĩnh (CEO của Hiệp hội CFO Việt Nam) và ông Ngô Đình Đức (Nhà sáng lập kiêm Tổng Giám đốc Công ty Cổ phần Tư vấn POCD) góp mặt trong video này nhằm chia sẻ quan điểm về giải pháp của Active Ageing Vietnam. 
+            </p>
+          </div>
+        </div>
+        <div class="row feature-item wow fadeInUp">
+            <p>
+            Các tác động xã hội mà chúng tôi hướng đến dựa trên mục tiêu phát triển bền vững thứ #1, #3 và #11 của Liên Hợp Quốc.”
+            </p>
+        </div>
+
+          
+        </div>
 
    <!--==========================
     Footer
@@ -680,7 +823,7 @@ components.studentLifeScreen = `
             </div>
 
             <div class="col-md-6 intro-img order-md-last order-first">
-              <img src="public/image/intro-img.svg" alt="" class="img-fluid">
+              <img src="public/image/regist.png" alt="" class="img-fluid">
             </div>
           </div>
 
@@ -814,7 +957,7 @@ components.findScreen = `
           </div>
           </div>
           <div class="col-md-6 intro-img order-md-last order-first">
-            <img src="public/image/planning.png" alt="" class="img-fluid">
+            <img src="public/image/plan.png" alt="" class="img-fluid">
           </div>
         </div>
 
@@ -1171,7 +1314,7 @@ components.aboutScreen = `
               Active Ageing là dự án được ra đời với nỗi trăn trở về một vấn đề mà Việt Nam và một số nước trong khu vực đang và sẽ phải đối mặt trong tương lai gần, đó chính là già hoá dân số và những hệ luỵ có liên quan.
             </p>
             <p style ="color : #232323">
-              Khi Việt Nam đang trên đà phát triển từ nhóm nước có thu nhập thấp sang nhóm có mức thu nhập trung bình, những vấn đề về an sinh xã hội lại được quan tâm và chú ý hơn bao giờ hết. Một trong những vấn đề nhức nhối hiện nay chính là tình trạng già hoá dân số dẫn đến những gánh nặng nhất định cho cá nhân và cả cộng đồng. Theo Vụ Liên Hiệp Quốc về vấn đề Kinh tế và Xã hội, tốc độ già hoá dân số tại các quốc gia Đông Nam Á hiện nay rất nhanh. Vào năm 2030, có 5/11 quốc gia ASEAN sẽ đối mặt với già hóa dân số, bao gồm Việt Nam. Trước bối cảnh đó, sự chuẩn bị cho giai đoạn già hoá dân số là vô cùng cấp thiết, đặc biệt là ở góc độ cá nhân.
+            Khi Việt Nam đang trên đà phát triển từ nhóm nước có thu nhập thấp sang nhóm có mức thu nhập trung bình, những vấn đề về an sinh xã hội lại được quan tâm và chú ý hơn bao giờ hết. Trước bối cảnh đó, sự chuẩn bị cho giai đoạn già hoá dân số là vô cùng cấp thiết, đặc biệt là ở góc độ cá nhân.
             </p>
           </div>
         </div>
@@ -1183,7 +1326,7 @@ components.aboutScreen = `
           <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" style = "text-align: justify;">
             <!-- <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4> -->
             <p style ="color : #232323">
-              Góp phần cộng hưởng những nỗ lực để đối phó với các thách thức mà cả xã hội đang gặp phải, dự án tiến hành thực hiện “Gói các giải pháp hỗ trợ người cao tuổi quản lý tài chính và tiếp cận dịch vụ chăm sóc sức khỏe chuẩn bị cho tuổi già”. Chúng tôi tin rằng việc nâng cao sự chủ động trong tài chính và sức khoẻ không chỉ ích cho riêng một cá nhân mà còn tạo ra những ảnh hưởng tích cực cho cộng đồng, góp phần vào việc phát triển kinh tế-xã hội, hướng đến một tương lai bền vững hơn.
+            Góp phần cộng hưởng những nỗ lực để đối phó với các thách thức mà cả xã hội đang gặp phải, dự án tiến hành thực hiện “Gói giải pháp hỗ trợ quản lý tài chính và tiếp cận kiến thức chăm sóc sức khỏe chuẩn bị cho tuổi già”. Chúng tôi tin rằng việc nâng cao sự chủ động trong tài chính và sức khoẻ không chỉ ích cho riêng một cá nhân mà còn tạo ra những ảnh hưởng tích cực cho cộng đồng, góp phần vào việc phát triển kinh tế-xã hội, hướng đến một tương lai bền vững hơn.
            </p>
           </div>
           
@@ -1195,10 +1338,15 @@ components.aboutScreen = `
     Services Section
   ============================-->
   <!-- <section id="services" class="section-bg"> -->
-      <div style = "padding-top: 30px" class="container">
+      <div style = "padding-top: 30px" class="container min-height-180">
 
-        <header class="section-header">
-          <h3>Dự án chúng tôi hướng đến</h3>
+        <header class="section-header" style="text-align: center;">
+          <h2 style="font-size: 48px;font-weight: 700;">Dự án chúng tôi hướng đến</h2>
+          <p></p>
+        </header>
+
+        <header class="section-header" style="text-align: center;">
+          <h3 style="color : #12B281">Đối với cá nhân</h3>
           <p></p>
         </header>
 
@@ -1206,24 +1354,132 @@ components.aboutScreen = `
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
-              
-              <p class="description">Thúc đẩy tiết kiệm cá nhân qua việc cung cấp các công cụ quản lý chi tiêu, quản lý tiết kiệm dễ sử dụng</p>
+              <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">trending_up</i></div>
+              <h4 class="title"><a href="">Nâng cao nhận thức về dân số già và tầm quan trọng của sự chuẩn bị chủ động.</a></h4>
+              <p class="description"></p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
-             
-              <p class="description">Giúp người dùng thiết lập kế hoạch quản lý tài chính chuẩn bị cho giai đoạn sau về hưu và cung cấp cơ hội kết nối với các chuyên gia tài chính qua các gói tư vấn cá nhân 1-1</p>
+            <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">construction</i></div>
+              <h4 class="title"><a href="">Cung cấp các công cụ được cá nhân hóa để quản lý tài chính, sức khỏe.</a></h4>
+              <p class="description"></p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" style="background: #e6fdfc;"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
-              <!-- <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>  -->
-              <p class="description"> Cung cấp thông tin về dịch vụ chăm sóc sức khỏe, bảo hiểm y tế, du lịch, giải trí và các hoạt động khác.</p>
+            <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">people</i></div>
+              <h4 class="title"><a href="">Tạo cộng đồng chia sẻ thông tin và kinh nghiệm.</a></h4>
+              <p class="description"></p>
+            </div>
+          </div>
+          <!-- <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div> -->
+
+        </div>
+
+        <header class="section-header" style="text-align: center;">
+          <h3 style="color : #12B281">Đối với doanh nghiệp</h3>
+          <p></p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">check_circle</i></div>
+              <h4 class="title"><a href="">Nâng cao hình ảnh và danh tiếng của công ty về trách nhiệm xã hội.</a></h4>
+              <p class="description"></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+            <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">trending_up</i></div>
+              <h4 class="title"><a href="">Nâng cao nhận thức cho người lao động về việc làm việc để tích lũy tài chính.</a></h4>
+              <p class="description"></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+            <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">featured_video</i></div>
+              <h4 class="title"><a href="">Quảng cáo sản phẩm / dịch vụ của họ trên nền tảng của chúng tôi.</a></h4>
+              <p class="description"></p>
+            </div>
+          </div>
+          <!-- <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div> -->
+
+        </div>
+
+        <header class="section-header" style="text-align: center;">
+          <h3 style="color : #12B281">Đối với toàn xã hội</h3>
+          <p></p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">moving</i></div>
+              <h4 class="title"><a href="">Đảm bảo an sinh xã hội và thúc đẩy kinh tế phát triển.</a></h4>
+              <p class="description"></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+            <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">reduce_capacity</i></div>
+              <h4 class="title"><a href="">Giảm bớt áp lực chăm sóc người cao tuổi khi Việt Nam bước vào giai đoạn già hóa.</a></h4>
+              <p class="description"></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+            <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">elderly</i></div>
+              <h4 class="title"><a href="">Hạn chế tình trạng “già rồi mới giàu”.</a></h4>
+              <p class="description"></p>
             </div>
           </div>
           <!-- <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
@@ -1252,91 +1508,8 @@ components.aboutScreen = `
         </div>
 
       </div>
-      <div class="container" style="padding-top: 30px;">
-      <header class="section-header">
-      <h3>Giải pháp xã hội của Active Ageing Vietnam</h3>
-      <p></p>
-    </header>
-        <div class="row feature-item">
-          <div class="col-lg-8 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-        <div class= "embed-responsive embed-responsive-16by9">
-      <iframe class= "embed-responsive-item" src="https://www.facebook.com/plugins/video.php?height=295&href=https%3A%2F%2Fwww.facebook.com%2FActiveAgeingVietnam%2Fvideos%2F544102426723651%2F&show_text=false&width=560&t=0" width="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>           
-        </div>    
-           
-          </div>
-          <div class="col-lg-4 wow fadeInUp pt-5 pt-lg-0" style="text-align: justify; visibility: visible; animation-name: fadeInUp;">
-            
-            <p style="color : #232323">
-            Hiện nay, thế giới đang phải vật lộn với quá trình già hóa dân số diễn ra rất nhanh, và Việt Nam cũng không phải là ngoại lệ. Thực tế, Việt Nam là một trong những quốc gia có tốc độ già hóa dân số nhanh nhất. Nếu không kịp thời chuẩn bị cho giai đoạn dân số già sắp tới, người cao tuổi sẽ phải đối mặt với hậu quả nghiêm trọng như thiếu hụt tài chính, khó tiếp cận các dịch vụ chăm sóc sức khỏe và suy giảm phúc lợi. Gói giải pháp cung cấp bởi Active Ageing Vietnam bao gồm một ứng dụng trên nền tảng di động, một trang web và chuỗi các hội thảo.
-            </p>
-          </div>
-        </div>
-        <div class="row feature-item wow fadeInUp">
-            <p>
-            Xin vui lòng dành ít phút để xem video minh họa giải pháp xã hội của chúng tôi. Video này thể hiện mức độ mà Active Ageing Vietnam hiểu rõ nguyên nhân gốc rễ của vấn đề xã hội nêu trên; giải thích quá trình mà chúng tôi tiếp cận chúng để đưa ra các giải pháp cho người lao động nhằm giúp họ nâng cao mức sống của mình khi về hưu; và chỉ ra những tác động xã hội mà Active Ageing Vietnam có thể mang đến cho cộng đồng.
-            </p>
-        </div>
-        <div class="row feature-item mt-5 pt-5" style=" margin-top: 0! important; padding-top: 1rem! important; ">
-          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" style="visibility: visible; animation-name: fadeInUp;">
-            <img src="./public/image/about us 3.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" style="text-align: justify; visibility: visible; animation-name: fadeInUp;">
-            <!-- <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4> -->
-            <p style="color : #232323">
-            Bên cạnh đó, chúng tôi đã mời ông Lê Hồng Lĩnh (CEO của Hiệp hội CFO Việt Nam) và ông Ngô Đình Đức (Nhà sáng lập kiêm Tổng Giám đốc Công ty Cổ phần Tư vấn POCD) góp mặt trong video này nhằm chia sẻ quan điểm về giải pháp của Active Ageing Vietnam. Các tác động xã hội mà chúng tôi hướng đến dựa trên mục tiêu phát triển bền vững thứ #1, #3 và #11 của Liên Hợp Quốc.
-           </p>
-           <p>
-           Chúng tôi rất mong nhận được ý kiến, phản hồi của bạn để phát triển giải pháp hoàn thiện hơn. Chúng tôi xin trân trọng cảm ơn sự quan tâm, theo dõi va ủng hộ của bạn/ anh/ chị trong thời gian qua và sắp tới.
-           </p>
-          </div>
-          
-        </div>
-        <header class="section-header">
-      <h3>Giới thiệu gói giải pháp của Active Ageing Vietnam</h3>
-      <p></p>
-    </header>
-        <div class="row feature-item mt-5 pt-5" style=" margin-top: 0! important; padding-top: 1rem! important; ">
-          <div class="col-lg-8 wow fadeInUp embed-responsive embed-responsive-16by9" style="visibility: visible; animation-name: fadeInUp;">
-          <iframe class= "embed-responsive-item" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FActiveAgeingVietnam%2Fvideos%2F530433654981749%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-          </div>
-
-          <div class="col-lg-4 wow fadeInUp pt-4 pt-lg-0" style="text-align: justify; visibility: visible; animation-name: fadeInUp;">
-            <!-- <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4> -->
-            <p style="color : #232323">
-            Bạn có mong muốn khoảng thời gian nghỉ hưu của mình sẽ vui vẻ, an yên?<br>
-            Bạn có mong muốn mình sẽ có một kế hoạch cụ thể để chuẩn bị cho tuổi “xế chiều”?
-           </p>
-           <p>
-           Chúng tôi tin rằng tất cả các dự định này đều có thể khả thi cùng với Active Ageing Vietnam. Được ra đời với nỗi trăn trở về già hóa dân số, gói giải pháp của chúng tôi bao gồm ứng dụng di động, trang web được phát triển theo hướng kỹ thuật số và các chuỗi hội thảo nhằm cung cấp các thông tin từ các chuyên gia có kinh nghiệm.
-           </p>
-          </div>
-          
-        </div>
-        <div class="row feature-item wow fadeInUp">
-        <p>
-        Vậy, những giải pháp này sẽ được vận hành ra sao? Bằng cách nào dự án có thể đem lại lợi ích nhiều nhất tới cộng động? Hãy cùng chúng tôi khám phá tại video dưới đây!
-        </p>
-    </div>
-    <div class="row feature-item mt-5 pt-5" style=" margin-top: 0! important; padding-top: 1rem! important; ">
-    <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" style="visibility: visible; animation-name: fadeInUp;">
-      <img src="./public/image/about us 3.png" class="img-fluid" alt="">
-    </div>
-
-    <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" style="text-align: justify; visibility: visible; animation-name: fadeInUp;">
-      <!-- <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4> -->
-      <p style="color : #232323">
-      Active Ageing Vietnam xin gửi lời cảm ơn chân thành nhất đến ông Raymond Chu (Chu Quang Thái) - đại diện thường trực phía Nam Cục Phát triển thị trường và doanh nghiệp Khoa học và Công nghệ, Bộ Khoa học và Công nghệ đã tham gia đóng góp ý kiến về tiềm năng của dự án. Những nhận xét và lời động viên của ông là sự khích lệ vô cùng lớn đối với Active Ageing Vietnam! 
-     </p>
-     
-     <p>
-     Ngoài ra, dự án rất mong nhận được ý kiến, phản hồi của bạn để phát triển giải pháp hoàn thiện hơn. Chúng tôi xin trân trọng cảm ơn sự quan tâm, theo dõi và ủng hộ của bạn trong thời gian qua và sắp tới.
-
-     </p>
-    </div>
-    
-  </div>
-      </div>
+      
+        
     </section><!-- #services -->
 
 </main>
@@ -1823,4 +1996,231 @@ components.news =`
       </div>
     </section>
     </main>
+`
+
+components.solutionScreen = `
+<section id="intro" class="clearfix">
+
+    <div class="container d-flex h-100">
+    <div class="row justify-content-center align-self-center">
+      <div class="col-md-6 intro-info order-md-first order-last">
+        <h2>Giải pháp của <span>Active Ageing Vietnam</span></h2>
+        
+      </div>
+    
+      <div class="col-md-6 intro-img order-md-last order-first" style = "text-align: center">
+        <img src="public/image/solution.png" alt="" class="img-fluid">
+      </div>
+    
+    </div>
+    </div>
+  </section><!-- #intro -->
+<main id="main">
+  <!--==========================
+    Features Section
+  ============================-->
+  <section id="about">
+      <div class="container" style="padding-top: 30px;">
+        <div class="row feature-item">
+        <div class="section-header">
+        <h3 style="font-size: 32px;">Bạn có mong muốn mình sẽ có một kế hoạch cụ thể để chuẩn bị cho tuổi “xế chiều”?</h3>
+
+        <h3 style="font-size: 32px;">Bạn có mong muốn khoảng thời gian nghỉ hưu của mình sẽ vui vẻ, an yên?</h3>
+      </div>
+        </div>
+        <div class="row feature-item wow fadeInUp mt-5">
+          <div class="col-lg-6 wow fadeInUp">
+            <img src="./public/image/about us 1.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0" style = "text-align: justify;">
+            <p style ="color : #232323">
+            Chúng tôi tin rằng tất cả các dự định này đều có thể khả thi cùng với Active Ageing Vietnam. Được ra đời với nỗi trăn trở về già hóa dân số, gói giải pháp của chúng tôi bao gồm ứng dụng di động, trang website và các chuỗi hội thảo nhằm cung cấp các thông tin từ các chuyên gia có kinh nghiệm.
+            </p>
+          </div>
+        </div>
+
+        <div class="row feature-item wow fadeInUp">
+            <p style="text-align: center; ">
+              Với 3 sản phẩm trên, chúng tôi mong muốn đồng hành cùng mọi người trên hành trình chuẩn bị cho tuổi già của họ với:
+            </p>
+        </div>
+        <div class="row feature-item wow fadeInUp min-height-223" >
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #ECF9F4;">
+                <i class="material-icons" style="color :#12B281; " >construction</i>
+              </div>
+              <h4 class="title"><a href="">Các công cụ</a></h4>
+              <p class="description">Hỗ trợ tính toán, quản lý, lập báo cáo qua website và app</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+            <div class="icon" style="background: #ECF9F4;">
+            <i class="material-icons" style="color :#12B281; " >school</i>
+            </div>
+              <h4 class="title"><a href="">Kiến thức</a></h4>
+              <p class="description">Từ các bài viết chuyên môn, chia sẻ từ diễn giả qua webinars, hội thảo</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+            <div class="icon" style="background: #ECF9F4;">
+            <i class="material-icons" style="color :#12B281; " >assistant</i>
+            </div>
+              <h4 class="title"><a href="">Sự kết nối và sự cố vấn</a></h4>
+              <p class="description">Gắn kết các cộng đồng có cùng mối quan tâm với mạng lưới chuyên gia.</p>
+            </div>
+          </div>
+          <!-- <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div> -->
+
+        </div>
+
+        <div class="row feature-item">
+          <div class="col-lg-8 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <div class= "embed-responsive embed-responsive-16by9">
+        <iframe class= "embed-responsive-item" width="100%" src="https://www.youtube.com/embed/K22EmimdUsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col wow fadeInUp" style="text-align : center; visibility: visible; animation-name: fadeInUp;">
+            <i>Giải pháp của Active Ageing Việt Nam</i>
+        </div>    
+           
+          </div>
+          <div class="col-lg-4 wow fadeInUp mt-5 pt-lg-0" style="text-align: justify; visibility: visible; animation-name: fadeInUp;">
+            
+            <p style="color : #232323">
+            Active Ageing Vietnam xin gửi lời cảm ơn chân thành nhất đến ông Raymond Chu (Chu Quang Thái) - đại diện thường trực phía Nam Cục Phát triển thị trường và doanh nghiệp Khoa học và Công nghệ, Bộ Khoa học và Công nghệ đã tham gia đóng góp ý kiến về tiềm năng của dự án. Những nhận xét và lời động viên của ông là sự khích lệ vô cùng lớn đối với Active Ageing Vietnam trên hành trình hoàn thiện giải pháp.
+            </p>
+          </div>
+        </div>
+        <div class="row feature-item mt-5">
+          <div class="col-lg-8 wow fadeInUp order-1 order-lg-2" style="visibility: visible; animation-name: fadeInUp;">
+          <div class="wow fadeInUp embed-responsive embed-responsive-16by9" style="visibility: visible; animation-name: fadeInUp;">
+          <iframe class= "embed-responsive-item" width="100%" src="https://www.youtube.com/embed/GX0kH973Tm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        <div class="col wow fadeInUp" style="text-align : center; visibility: visible; animation-name: fadeInUp;">
+            <i>Giới thiệu gói giải pháp của Active Ageing Vietnam</i>
+        </div>    
+           
+          </div>
+          <div class="col-lg-4 wow fadeInUp mt-5 pt-lg-0 order-2 order-lg-1" style="text-align: justify; visibility: visible; animation-name: fadeInUp;">
+            
+            <p style="color : #232323">
+            Ngoài ra, dự án rất mong nhận được ý kiến, phản hồi của bạn để phát triển giải pháp tốt hơn. Chúng tôi xin trân trọng cảm ơn sự quan tâm, theo dõi và ủng hộ của bạn trong thời gian qua và sắp tới.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+</main>
+
+<!--==========================
+  Footer
+============================-->
+<footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+  
+        <div class="row">
+  
+          <div class="col-lg-6">
+  
+            <div class="row">
+  
+                <div class="col-sm-6">
+  
+                  <div class="footer-info">
+                    <h4>Active Ageing Vietnam</h4>
+                    <p>Dự án Active Ageing được ra đời với nỗi trăn trở về một vấn đề mà Việt Nam và các nước trong khu vực đang và sẽ phải đối mặt trong tương lai gần, đó chính là già hoá dân số và những hệ luỵ có liên quan. Chúng tôi tin rằng việc đồng hành cùng mỗi cá nhân nâng cao sự chủ động trong quản lý tài chính và bảo vệ sức khoẻ sẽ tạo ra những ảnh hưởng tích cực cho cộng đồng, góp phần kiến tạo một tương lai bền vững hơn.</p>
+                  </div>
+                </div>
+  
+                <div class="col-sm-6">
+                  <div class="footer-links">
+                    <h4>Liên hệ</h4>
+                    <p>
+                      (Ms.) Lâm Tố Như<br>
+                      External Relations Executive<br>
+                      <strong>Phone:</strong> +84 914864707<br>
+                      <strong>Email:</strong> activeageing.info@gmail.com<br>
+                    </p>
+                  </div>
+  
+              
+  
+                </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-6">
+  
+            <div class="form">
+              
+              <h4>Đặt câu hỏi cho chúng tôi</h4>
+              <p>Chúng tôi sẵn sàng lắng nghe mọi câu hỏi, băn khoăn từ bạn!</p>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Tên của bạn" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Chủ đề" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Nội dung"></textarea>
+                  <div class="validation"></div>
+                </div>
+  
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+  
+                <div class="text-center"><button type="submit" title="Send Message">Gửi câu hỏi</button></div>
+              </form>
+            </div>
+  
+          </div>
+  
+          
+  
+        </div>
+  
+      </div>
+    </div>
+  
+    
+  </footer><!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<!-- Uncomment below i you want to use a preloader -->
+<!-- <div id="preloader"></div> -->
 `

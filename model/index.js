@@ -9,3 +9,6 @@ init();
 $(window).resize(function() {
     console.log(window.innerWidth);
   });
+// $(document).ready(function() {
+//     jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000  // 2 seconds
+//   });

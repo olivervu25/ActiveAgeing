@@ -33,12 +33,18 @@ console.log('navigation.js');
         $.getScript( "model/sign_up.js");
         NavigationActive(`.${this.className}`);
     })
-
+    
     $('.about-nav').on('click',function(event){
         event.preventDefault();
         view.setActiveScreen('aboutScreen');
         NavigationActive(`.${this.className}`);
     })
+    $('.solution-nav').on('click',function(event){
+        event.preventDefault();
+        view.setActiveScreen('solutionScreen');
+        NavigationActive(`.${this.className}`);
+    })
+
     $('#student-life').on('click',function(){
         view.setActiveScreen('studentLifeScreen');
         event.preventDefault();
@@ -92,14 +98,6 @@ console.log('navigation.js');
 
     // new code for active ageing
     
-    $('#learn_more_about').on('click',function(){
-        view.setActiveScreen('aboutScreen');
-        NavigationActive(`.about-nav`);
-    })
-
-    $('#callToAction').on('click', function(){
-        view.setActiveScreen('studentLifeScreen');
-    })
     $('.prepare-retire').on('click',function (e) {
         e.preventDefault();
         view.setActiveScreen('prepareRetire');
