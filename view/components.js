@@ -459,6 +459,8 @@ components.welcomeScreen = `
           <img src="public/image/clients/client-4.png" alt="">
           <img src="public/image/clients/client-5.png" alt="">
           <img src="public/image/clients/client-10.jpg" alt="">
+          <img src="public/image/clients/client-16.png" alt="">
+
         </div>
 
       </div>
