@@ -13,11 +13,11 @@ components.welcomeScreen = `
       <div class="col-md-3 intro-info order-md-first order-last">
         <h3>Đi tìm hạnh phúc thời covid-19: an toàn tài chính và sức khoẻ tinh thần</h3>
         <div>
-          <a href="./posts/webinar.html" class="btn-get-started scrollto">Tìm hiểu ngay</a>
+          <a href="./posts/webinar2.html" class="btn-get-started scrollto">Tìm hiểu ngay</a>
         </div>
       </div>
       <div class="col-md-9 intro-img order-md-last order-first">
-      <img src="./public/image/slider.jpg" alt="" class="img-fluid">
+      <img src="./public/image/slider1.jpeg" alt="" class="img-fluid">
     </div>
       </div>
     </div>
@@ -74,7 +74,7 @@ components.welcomeScreen = `
     <div class="container" data-aos="zoom-out">
       <div class="row">
         <div class="col-lg-9 text-center text-lg-start">
-          <h3 class="cta-title" style="font-family : 'Arial'; font-size: 19px">Hot : Hội thảo “đi tìm hạnh phúc thời covid-19: an toàn tài chính và sức khoẻ tinh thần”!</h3>
+          <h3 class="cta-title" style="font-family : 'Arial'; font-size: 19px">Hot : Webinar 2021: xây dựng kế hoạch cuộc đời hậu đại dịch covid-19”!</h3>
           <p class="cta-text">"Tham gia ngay, nhận quà liền tay" </br>
           Nhận ngay sách Spenditude, khóa coaching cùng chuyên gia và tài khoản premium Active Ageing Vietnam!
           </p>
@@ -83,7 +83,7 @@ components.welcomeScreen = `
         <div class="col-lg-3 cta-btn-container text-center">
         <div class="container">
         <div class ="row">
-        <a class="cta-btn align-middle" id="" href="./posts/webinar.html" style="text-transform: uppercase;">Tìm hiểu ngay</a>
+        <a class="cta-btn align-middle" id="" href="./posts/webinar2.html" style="text-transform: uppercase;">Tìm hiểu ngay</a>
         </div>
         <div class = "row">
         <a class="cta-btn align-middle register-webinar" id="" href="" style="text-transform: uppercase;">Đăng kí tham dự</a>

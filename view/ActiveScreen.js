@@ -128,6 +128,11 @@ renderInformationData= function (type){
           'title' : '"Già hóa dân số" - Thách thức mà Việt Nam phải đối mặt',
           'imgSrc' : './public/image/posts/post10.jpeg',
           'href' : './posts/Gia hoa dan so- thach thuc ma viet nam phai doi mat.html'
+        },
+        {
+          'title' : 'Xây dựng kế hoạch cuộc đời hậu đại dịch covid-19',
+          'imgSrc' : './public/image/posts/post12.jpeg',
+          'href' : './posts/webinar2.html'
         }
       ]
     var list = document.getElementById('listPost');
