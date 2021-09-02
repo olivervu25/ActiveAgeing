@@ -5,24 +5,7 @@ components.welcomeScreen = `
 ============================-->
 <div id="carouselExampleControls" class="carousel slide" data-interval="10000" data-bs-ride="carousel">
   <div class="carousel-inner">
-  <div class="carousel-item active" data-interval="10000">
-    <section id="intro"  class="clearfix">
-
-    <div class="container d-flex h-100">
-      <div class="row justify-content-center align-self-center" style="padding-top: 20%;">
-      <div class="col-md-3 intro-info order-md-first order-last" style="fpadding-top: 22%;">
-        <h3>Webinar 2021: xây dựng kế hoạch cuộc đời hậu đại dịch covid-19</h3>
-        
-          <a href="./posts/webinar2.html" class="btn-get-started scrollto">Tìm hiểu ngay</a>
-       
-      </div>
-      <div class="col-md-9 intro-img order-md-last order-first">
-      <img src="./public/image/slider1.jpeg" alt="" class="img-fluid">
-    </div>
-      </div>
-    </div>
-    </section><!-- #intro -->     </div>
-    <div class="carousel-item" data-interval="10000">
+    <div class="carousel-item active" data-interval="10000">
     <section id="intro" class="clearfix">
 
     <div class="container d-flex h-100">
@@ -30,7 +13,7 @@ components.welcomeScreen = `
       <div class="col-md-6 intro-info order-md-first order-last">
         <h2>Vì một tuổi <span>"xế chiều"</span> thịnh vượng, khỏe mạnh, an vui.</h2>
         <div>
-          <a href="#about" class="btn-get-started scrollto">Lên kế hoạch về hưu ngay</a>
+          <a id ='makeplan' href="#" class="btn-get-started scrollto">Lên kế hoạch về hưu ngay</a>
         </div>
       </div>
     
@@ -70,31 +53,31 @@ components.welcomeScreen = `
 
 
 <main id="main">
-<section id="call-to-action" class="call-to-action wow bounceInUp scale" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
-    <div class="container" data-aos="zoom-out">
-      <div class="row">
-        <div class="col-lg-9 text-center text-lg-start">
-          <h3 class="cta-title" style="font-family : 'Arial'; font-size: 19px">Hot : Webinar 2021: xây dựng kế hoạch cuộc đời hậu đại dịch covid-19”!</h3>
-          <p class="cta-text">"Tham gia ngay, nhận quà liền tay" </br>
-          Nhận ngay sách Spenditude, khóa coaching cùng chuyên gia và tài khoản premium Active Ageing Vietnam!
-          </p>
-          <p class="cta-text" ></p>
-        </div>
-        <div class="col-lg-3 cta-btn-container text-center">
-        <div class="container">
-        <div class ="row">
-        <a class="cta-btn align-middle" id="" href="./posts/webinar2.html" style="text-transform: uppercase;">Tìm hiểu ngay</a>
-        </div>
-        <div class = "row">
-        <a class="cta-btn align-middle register-webinar" id="" href="https://bit.ly/3ApwREb" style="text-transform: uppercase;">Đăng kí tham dự</a>
-        </div>
-        </div>
-        </div>
-      </div>
 
+<!-- <section id="call-to-action" class="call-to-action wow bounceInUp scale" style="visibility: visible; animation-duration: 1.4s; animation-name: bounceInUp;">
+<div class="container" data-aos="zoom-out">
+  <div class="row">
+    <div class="col-lg-9 text-center text-lg-start">
+      <h3 class="cta-title" style="font-family : 'Arial'; font-size: 19px">Hot : Webinar 2021: xây dựng kế hoạch cuộc đời hậu đại dịch covid-19”!</h3>
+      <p class="cta-text">"Tham gia ngay, nhận quà liền tay" </br>
+      Nhận ngay sách Spenditude, khóa coaching cùng chuyên gia và tài khoản premium Active Ageing Vietnam!
+      </p>
+      <p class="cta-text" ></p>
     </div>
-  </section>
+    <div class="col-lg-3 cta-btn-container text-center">
+    <div class="container">
+    <div class ="row">
+    <a class="cta-btn align-middle" id="" href="./posts/webinar2.html" style="text-transform: uppercase;">Tìm hiểu ngay</a>
+    </div>
+    <div class = "row">
+    <a class="cta-btn align-middle register-webinar" id="" href="https://bit.ly/3ApwREb" style="text-transform: uppercase;">Đăng kí tham dự</a>
+    </div>
+    </div>
+    </div>
+  </div>
 
+</div>
+</section> -->
   <!--==========================
     About Us Section
   ============================-->

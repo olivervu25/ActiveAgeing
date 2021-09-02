@@ -3,7 +3,9 @@ $('#learn_more_about').on('click',function(){
     view.setActiveScreen('aboutScreen');
     NavigationActive(`.about-nav`);
 })
-
+$('#makeplan').on('click', function (){
+  view.setActiveScreen('findScreen')
+})
 $('#callToAction').on('click', function(){
     view.setActiveScreen('studentLifeScreen');
 })
