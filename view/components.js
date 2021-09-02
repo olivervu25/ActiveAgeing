@@ -3,18 +3,18 @@ components.welcomeScreen = `
 <!--==========================
   Intro Section
 ============================-->
-<div id="carouselExampleControls" class="carousel slide" data-interval="1000" data-bs-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-interval="10000" data-bs-ride="carousel">
   <div class="carousel-inner">
-  <div class="carousel-item active" data-interval="1000">
+  <div class="carousel-item active" data-interval="10000">
     <section id="intro"  class="clearfix">
 
     <div class="container d-flex h-100">
-      <div class="row justify-content-center align-self-center">
-      <div class="col-md-3 intro-info order-md-first order-last">
-        <h3>Đi tìm hạnh phúc thời covid-19: an toàn tài chính và sức khoẻ tinh thần</h3>
-        <div>
+      <div class="row justify-content-center align-self-center" style="padding-top: 20%;">
+      <div class="col-md-3 intro-info order-md-first order-last" style="fpadding-top: 22%;">
+        <h3>Webinar 2021: xây dựng kế hoạch cuộc đời hậu đại dịch covid-19</h3>
+        
           <a href="./posts/webinar2.html" class="btn-get-started scrollto">Tìm hiểu ngay</a>
-        </div>
+       
       </div>
       <div class="col-md-9 intro-img order-md-last order-first">
       <img src="./public/image/slider1.jpeg" alt="" class="img-fluid">
@@ -22,7 +22,7 @@ components.welcomeScreen = `
       </div>
     </div>
     </section><!-- #intro -->     </div>
-    <div class="carousel-item" data-interval="1000">
+    <div class="carousel-item" data-interval="10000">
     <section id="intro" class="clearfix">
 
     <div class="container d-flex h-100">
@@ -86,7 +86,7 @@ components.welcomeScreen = `
         <a class="cta-btn align-middle" id="" href="./posts/webinar2.html" style="text-transform: uppercase;">Tìm hiểu ngay</a>
         </div>
         <div class = "row">
-        <a class="cta-btn align-middle register-webinar" id="" href="" style="text-transform: uppercase;">Đăng kí tham dự</a>
+        <a class="cta-btn align-middle register-webinar" id="" href="https://bit.ly/3ApwREb" style="text-transform: uppercase;">Đăng kí tham dự</a>
         </div>
         </div>
         </div>

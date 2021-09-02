@@ -8,12 +8,12 @@ $('#callToAction').on('click', function(){
     view.setActiveScreen('studentLifeScreen');
 })
 $('.register-webinar').on('click', function (event) {
-    event.preventDefault();
-    view.setActiveScreen('studentLifeScreen');
-    JsPorfolio();
-    document.getElementById('app').scrollIntoView();
-    $.getScript( "model/sign_up.js");
-    NavigationActive(`.${this.className}`);
+    // event.preventDefault();
+    // view.setActiveScreen('studentLifeScreen');
+    // JsPorfolio();
+    // document.getElementById('app').scrollIntoView();
+    // $.getScript( "model/sign_up.js");
+    // NavigationActive(`.${this.className}`);
   })
 
   
