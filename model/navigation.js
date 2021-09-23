@@ -10,7 +10,7 @@ console.log('navigation.js');
     //  univesity page
     $('.scholarship-nav').on('click',function(){
         view.setActiveScreen('scholarshipScreen');
-        // renderInformationData('news')
+        // renderInformationData('events')
         JsScholarship();
         // $.getScript('public/js/FAQs.js');
         NavigationActive(`.${this.className}`);
@@ -120,10 +120,10 @@ console.log('navigation.js');
         view.setActiveScreen('happyRetire');
         renderInformationData('happy-retire');
     })
-    $('.news').on('click', function (e) {
+    $('.events').on('click', function (e) {
         e.preventDefault();
-        view.setActiveScreen('news');
-        renderInformationData('news');
+        view.setActiveScreen('events');
+        renderInformationData('events');
     })
     const  NavigationActive = (className)=>{
         // this code to fix hover problem

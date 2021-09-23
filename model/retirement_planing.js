@@ -10,7 +10,10 @@ var pension = [];
 var endingRetirementBalance = [];
 var innerHTML = document.getElementById("retirement").innerHTML;
 function calculate(event){
-    event.preventDefault();
+    var form = document.querySelector(".contactForm");
+    // console.log($('#input-form')[0].checkValidity());
+    if  (!$('#input-form')[0].checkValidity()) return;
+    // event.preventDefault();;
     user = {};
     listLabels = [];
     beginningRetirementBalance = [];
@@ -20,9 +23,11 @@ function calculate(event){
     pension = [];
     endingRetirementBalance = [];
     //console.log('submitted');
-    document.getElementById('introduction').innerHTML = '';
-    console.log(language);
-    var form = document.querySelector(".contactForm");
+    // document.getElementById('introduction').innerHTML = '';
+    // console.log(language);
+    
+
+    // console.log(form.innerHTML);
     var listInput  = form.querySelectorAll("input");
     for (var i = 0;i< listInput.length;i++){
         user[listInput[i].id] = listInput[i].value;
@@ -34,7 +39,7 @@ function calculate(event){
     //user.yearsRetirement = 35;
     //80 - parseInt(user.retirementAge);
     user.inflation = 3.5;
-    console.log(user);
+    // console.log(user);
     submitData(user);
     user.year = user.retirementAge - user.currentAge;
     user.lastYearIncome = user.income*Math.pow(1+user.increase/100,user.year-1);

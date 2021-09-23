@@ -9,13 +9,20 @@
   min-height:  331px;
 }
 #about .row .box  p {
-  text-align: justify;
+  text-align: center;
 }
 #submit_btn button :hover {
 background: #028cb3 !important;
 }
 .ok-btn {
   background: #12B281;
+}
+
+.solution h4 {
+  text-transform: uppercase;
+}
+.explore:hover {
+  background: #00865D !important;
 }
 
 .scale:hover {
@@ -26,13 +33,18 @@ background: #028cb3 !important;
 
 } */
 
-.min-height .box {
 
-  min-height: 254px !important;
+.min-height .fixed {
+
+  min-height: 286px !important;
+}
+.title a {
+  font-family:"Arial", sans-serif ;
+  font-size: 20px;
 }
 .min-height-180 .box {
 
-  min-height: 180px !important;
+  min-height: 224px !important;
 }
 
 .min-height-223 .box {
@@ -72,6 +84,7 @@ a:focus {
 p {
   padding: 0;
   margin: 0 0 30px 0;
+  font-size: 20px !important;
 }
 
 h1,
@@ -80,10 +93,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Pacifico";
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
+}
+
+h1,h2,h3 {
+  text-transform: uppercase;
 }
 
 /* Back to top button */
@@ -212,7 +229,7 @@ h6 {
 #header.header-pages {
   /* height: 70px; */
   padding: 15px 0;
-  background-color: #fff;
+  background-color: #ECF9F4;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
 
@@ -306,6 +323,7 @@ h6 {
 .main-nav * {
   margin: 0;
   padding: 0;
+  padding-top: 7px !important;
   list-style: none;
 }
 
@@ -321,7 +339,7 @@ h6 {
   color: #333333;
   padding: 10px 15px;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 16xpx;
   font-family: "Arial";
   text-transform: uppercase;
   font-weight: 600;
@@ -361,7 +379,7 @@ h6 {
 
 .main-nav .drop-down ul a {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   text-transform: none;
   color: #5CCEA4;
@@ -518,7 +536,7 @@ h6 {
   text-align: center;
   font-weight: 700;
   position: relative;
-  font-family: "Pacifico";
+  font-family: 'Raleway', sans-serif;
 }
 
 .section-header p {
@@ -535,7 +553,7 @@ h6 {
 --------------------------------*/
 .content-issue .quote{
   font-size: 33px;
-  font-family: "Pacifico";
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   color: #333333;
 
@@ -589,17 +607,17 @@ h6 {
 
 #about .about-content h2 {
   color: #333333;
-  font-family: "Pacifico";
+  font-family: 'Raleway', sans-serif;
   font-weight: 650;
-  font-size: 30px;
+  font-size: 36px;
 }
 
 #about .about-content h4 {
   padding-top: 20px;
   color: #12B281;
-  font-family: "Pacifico";
-  font-style: italic;
-  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  /* font-style: italic; */
+  font-size: 20px;
   text-align: end;
   font-weight: 400;
 }
@@ -763,18 +781,23 @@ h6 {
 }
 /* Du Edit text like template */
 .find-university h2{
-  font-size: 31px;
+  font-size: 36px;
     color: #333333;
     text-align: left;
     font-weight: 700;
     position: relative;
-    font-family: "Pacifico";
+    font-family: 'Raleway', sans-serif;
 }
 .find-university h3{
   color: #232323;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 20px;
     font-style: italic;
+  text-transform: none !important;
+}
+
+.box .title a {
+  font-weight: bold;
 }
 
 /* Du Edit btn like template : background blue and color white */
@@ -1390,7 +1413,7 @@ h6 {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-family: "Pacifico";
+  font-family: 'Raleway', sans-serif;
   color: #333333;
   font-weight: 400;
   letter-spacing: 3px;
@@ -1398,7 +1421,7 @@ h6 {
 }
 
 #footer .footer-top .footer-info p {
-  font-size: 13px;
+  font-size: 16px !important;
   line-height: 24px;
   margin-bottom: 0;
   text-align: justify;
@@ -1407,7 +1430,7 @@ h6 {
 }
 
 #footer .footer-top .form p {
-  font-size: 13px;
+  font-size: 16px !important;
   line-height: 12px;
   margin-bottom: 20px;
   text-align: justify;
@@ -1415,9 +1438,13 @@ h6 {
   color: #4D4D4D;
 }
 
+.footer-links p {
+  font-size:  16px !important;
+}
+
 
 #footer .footer-top .footer-contact p {
-  font-size: 13px;
+  font-size: 16px !important;
   line-height: 24px;
   margin-bottom: 0;
   text-align: justify;

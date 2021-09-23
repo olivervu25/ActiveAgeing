@@ -22,8 +22,8 @@ $('.happy-retire').on('click',function (e) {
     view.setActiveScreen('happyRetire');
     renderInformationData('happy-retire');
 })
-$('.news').on('click', function (e) {
+$('.events').on('click', function (e) {
     e.preventDefault();
-    view.setActiveScreen('news');
-    renderInformationData('news');
+    view.setActiveScreen('events');
+    renderInformationData('events');
 })

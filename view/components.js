@@ -3,22 +3,22 @@ components.welcomeScreen = `
 <!--==========================
   Intro Section
 ============================-->
-<div id="carouselExampleControls" class="carousel slide" data-interval="10000" data-bs-ride="carousel">
+<div id="carouselExampleControls" class="carousel carousel-dark slide" data-interval="10000" data-bs-ride="carousel">
+<div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-interval="10000">
     <section id="intro" class="clearfix">
 
     <div class="container d-flex h-100">
     <div class="row justify-content-center align-self-center">
-      <div class="col-md-6 intro-info order-md-first order-last">
-        <h2>Vì một tuổi <span>"xế chiều"</span> thịnh vượng, khỏe mạnh, an vui.</h2>
-        <div>
-          <a id ='makeplan' href="#" class="btn-get-started scrollto">Lên kế hoạch về hưu ngay</a>
-        </div>
-      </div>
     
-      <div class="col-md-6 intro-img order-md-last order-first">
-        <img src="public/image/header/header1.png" alt="" class="img-fluid">
+    
+      <div class="col-md-12 intro-img order-md-last order-first">
+        <img src="public/image/slider/slider-01.png" alt="" class="img-fluid">
       </div>
     
     </div>
@@ -27,20 +27,30 @@ components.welcomeScreen = `
     <div class="carousel-item" data-interval="1000">
     <section id="intro" class="clearfix">
 
-    <div class="container d-flex h-100">
-    <div class="row justify-content-center align-self-center">
-      <div class="col-md-6 intro-info order-md-first order-last">
-        <h2>Già hoá dân số không chỉ là một vấn đề vĩ mô mà còn tác động đến mỗi cá nhân, mỗi gia đình</h2>
-      </div>
-    
-      <div class="col-md-6 intro-img order-md-last order-first">
-        <img src="public/image/ageing-problem.png" alt="" class="img-fluid">
-      </div>
+        <div class="container d-flex h-100">
+        <div class="row justify-content-center align-self-center">
+        <div class="col-md-12 intro-img order-md-last order-first">
+        <img src="public/image/slider/slider-02.png" alt="" class="img-fluid">
+        </div>
     
     </div>
     </div>
     </section><!-- #intro -->     </div>
+    <div class="carousel-item" data-interval="1000">
+    <section id="intro" class="clearfix">
+
+        <div class="container d-flex h-100">
+        <div class="row justify-content-center align-self-center">
+        <div class="col-md-12 intro-img order-md-last order-first">
+        <img src="public/image/slider/slider-03.png" alt="" class="img-fluid">
+        </div>
+    
+    </div>
+    </div>
+    </section><!-- #intro -->     </div>
+    
   </div>
+  
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
@@ -81,7 +91,7 @@ components.welcomeScreen = `
   <!--==========================
     About Us Section
   ============================-->
-  <section id="about">
+  <section id="about" style = " background: #ECF9F4;">
     <div class="container">
       <div class="row">
 
@@ -93,10 +103,10 @@ components.welcomeScreen = `
 
         <div class="col-lg-7 col-md-6">
           <div class="about-content">
-            <h2>Câu chuyện của Active Ageing Vietnam</h2>
-            <p>Dự án Active Ageing được ra đời với nỗi trăn trở về một vấn đề mà Việt Nam và các nước trong khu vực đang và sẽ phải đối mặt trong tương lai gần, đó chính là già hoá dân số và những hệ luỵ có liên quan.<br><br>Chúng tôi tin rằng việc đồng hành cùng mỗi cá nhân nâng cao sự chủ động trong quản lý tài chính và bảo vệ sức khoẻ sẽ tạo ra những ảnh hưởng tích cực cho cộng đồng, góp phần kiến tạo một tương lai bền vững hơn. Những giải pháp mà Active Ageing đang phát triển sẽ giúp tất cả mọi người, ở mọi lứa tuổi, có được sự hiểu biết và có thể bắt đầu chuẩn bị cho tuổi già về tài chính và sức khoẻ ngay từ hôm nay.</p>
+            <h2>Câu chuyện của  <br> Active Ageing Vietnam</h2>
+            <p>Dự án Active Ageing Việt Nam được ra đời với nỗi trăn trở về một vấn đề mà Việt Nam và các nước trong khu vực đang và sẽ phải đối mặt trong tương lai gần, đó chính là già hoá dân số và những hệ luỵ có liên quan.<br><br>Chúng tôi tin rằng việc đồng hành cùng mỗi cá nhân nâng cao sự chủ động trong quản lý tài chính và bảo vệ sức khoẻ sẽ tạo ra những ảnh hưởng tích cực cho cộng đồng, góp phần kiến tạo một tương lai bền vững hơn. Những giải pháp mà Active Ageing Việt Nam đang phát triển sẽ giúp tất cả mọi người, ở mọi lứa tuổi, có được sự hiểu biết và có thể bắt đầu chuẩn bị cho tuổi già về tài chính và sức khoẻ ngay từ hôm nay.</p>
             <div>
-            <a id="learn_more_about" href="#"><h4>Tìm hiểu thêm những giải pháp từ Active Ageing Vietnam →</h4></a>
+            <a id="learn_more_about" href="#"><h4>Tìm hiểu thêm</h4></a>
             </div>
           </div>
             
@@ -116,36 +126,50 @@ components.welcomeScreen = `
           <p></p>
         </header>
 
-        <div class="row">
+        <div class="row solution">
 
           <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s">
-            <div class="box">
-              <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">construction</i></div>
+            <div class="box make-plan">
+              <div class="row fixed"> <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">construction</i></div>
               <h4 class="title"><a href="">Công cụ</a></h4>
               <p class="description">Hỗ trợ tính toán, quản lý, lập báo cáo qua website và app</p>
+              </div> 
+              <div class="row"><button type="button" class="btn explore" style=" background: #12B281;color: white;">Khám phá</button></div>
             </div>
+           
           </div>
           <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-duration="1.4s">
-            <div class="box">
+            <div class="box information">
+            <div class="row fixed">
             <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">school</i></div>
               <h4 class="title"><a href="">Kiến thức</a></h4>
               <p class="description">Các bài viết chuyên môn, chia sẻ từ diễn giả qua webinars, hội thảo</p>
             </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="box">
-            <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">share</i></div>
-              <h4 class="title"><a href="">Sự kết nối</a></h4>
-              <p class="description">Các cộng đồng có cùng mối quan tâm, mạng lưới chuyên gia</p>
+            <div class="row"><button type="button" class="btn explore" style=" background: #12B281;color: white;">Khám phá</button></div>
             </div>
+            
           </div>
 
           <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-          <div class="box">
+            <div class="box events-link">
+            <div class="row fixed">
+              <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">share</i></div>
+                <h4 class="title"><a href="">Sự kết nối</a></h4>
+                <p class="description">Các cộng đồng có cùng mối quan tâm, mạng lưới chuyên gia</p>
+            </div>
+            <div class="row"><button type="button" class="btn explore" style=" background: #12B281;color: white;">Khám phá</button></div>
+            </div>
+           
+          </div>
+
+          <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <div class="box regist-link">
+          <div class="row fixed">
           <div class="icon" style="background: #ECF9F4;"><i class="material-icons" style="color: #12B281;">layers</i></div>
             <h4 class="title"><a href="">Sự cố vấn</a></h4>
             <p class="description">Cơ hội tương tác với chuyên gia và nhận cố vấn</p>
+          </div>
+          <div class="row"><button type="button" class="btn explore" style=" background: #12B281;color: white;">Khám phá</button></div>
           </div>
         </div>
           
@@ -156,64 +180,147 @@ components.welcomeScreen = `
     </section><!-- #clients -->
 
     
-    <section id="about" class="wow fadeInUp">
-      <div class="container">
-      <header class="section-header">
-    <h3>Các bài viết, tài liệu</h3>
-  </header>
-
-  <div class="row feature-item wow fadeInUp" >
-
-  <div id="listPost" class="row">
-
-  <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s;">
-      <a href="./posts/Lap ke hoach ve huu cung active ageing vietnam.html"></a>
-          <div class="box" style="padding: 0;">
-          <a href="./posts/Lap ke hoach ve huu cung active ageing vietnam.html">
-          <div class="image" style="background: #e6fdfc;">
-            <img width="100%" src="./public/image/posts/post4.jpeg">
-          </div>
-          </a>
-          <div style="padding: 5px 30px"><a href="./posts/Lap ke hoach ve huu cung active ageing vietnam.html"></a>
-          <h4 class="title">
-            <a href="./posts/Lap ke hoach ve huu cung active ageing vietnam.html"></a>
-            <a href="./posts/Lap ke hoach ve huu cung active ageing vietnam.html">Lập kế hoạch về hưu cùng Active Ageing Vietnam</a>
-          </h4>
-          </div>
-          </div>
-  </div>
-
-  <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s;">
-      <a href="./posts/Giai ma phuong phap 50 30 20.html">
-      </a><div class="box" style="padding: 0;"><a href="./posts/Giai ma phuong phap 50 30 20.html">
-        <div class="image" style="background: #e6fdfc;"><img width="100%" src="./public/image/posts/post6.jpeg"></div>
-        </a><div style="padding: 5px 30px"><a href="./posts/Giai ma phuong phap 50 30 20.html"></a><h4 class="title"><a href="./posts/Giai ma phuong phap 50 30 20.html"></a><a href="./posts/Giai ma phuong phap 50 30 20.html">Giải mã phương pháp 50/20/30 trong quản lý tài chính cá nhân hiệu quả</a></h4></div>
-      </div>
-      
-    </div>
-
-    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s;">
-    <a href="./posts/Bo tui nhung thoi quen tot cho suc khoe.html">
-    </a><div class="box" style="padding: 0;"><a href="./posts/Bo tui nhung thoi quen tot cho suc khoe.html">
-      <div class="image" style="background: #e6fdfc;"><img width="100%" src="./public/image/posts/post7.jpeg"></div>
-      </a><div style="padding: 5px 30px"><a href="./posts/Bo tui nhung thoi quen tot cho suc khoe.html"></a><h4 class="title"><a href="./posts/Bo tui nhung thoi quen tot cho suc khoe.html"></a><a href="./posts/Bo tui nhung thoi quen tot cho suc khoe.html">Bỏ túi những thói quen tốt cho sức khỏe</a></h4></div>
-    </div>
     
-  </div>
-      
-  </div>
-      </div>
-    </section>
 
   <!--==========================
     Team Section
   ============================-->
-  <section id="team" class="section-bg">
+  <section id="team" class="section-bg" style = " background: #ECF9F4;">
   
     <div class="container">
       <div class="section-header">
         <h3>Chúng tôi</h3>
         <p>Những người trẻ cùng chung nỗi trăn trở</p>
+      </div>
+      
+      <div class="row justify-content-md-center">
+      
+        <div class="col-lg-3 col-md-9 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/quynh.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Nguyễn Lê Như Quỳnh</h4>
+                <span>Project Leader</span>
+                <span>Đại học Ngoại Thương CS2. TPHCM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/vy.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Hồ Phan Thanh Vy</h4>
+                <span>Finance Executive</span>
+                <span>Đại học Ngoại Thương CS2. TPHCM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/thu2.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Trần Minh Thư</h4>
+                <span>Project Development Executive</span>
+                <span>Đại học Ngoại Thương CS2. TPHCM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row  justify-content-md-center">
+      <div class="col-lg-3 col-md-6 wow fadeInUp">
+      <div class="member">
+        <img src="public/image/team/long.jpg" class="img-fluid" alt="">
+        <div class="member-info">
+          <div class="member-info-content">
+            <h4>Vũ Thành Long</h4>
+            <span>Technical Leader</span>
+            <span>Đại học Khoa Học và Công Nghệ, Nga</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/du.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Nguyễn Chiếm Dự</h4>
+                <span>Engineering Executive</span>
+                <span>Đại học Khoa Học và Công Nghệ, Nga</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/quang.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Lưu Vũ Quang</h4>
+                <span>App Designer</span>
+                <span>Đại học Ngoại Thương Hà Nội</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+
+        
+
+        
+
+        
+        
+
+
+      </div>
+      <div class="row  justify-content-md-center">
+      <div class="col-lg-3 col-md-6 wow fadeInUp">
+      <div class="member">
+        <img src="public/image/team/nhu.jpg" class="img-fluid" alt="">
+        <div class="member-info">
+          <div class="member-info-content">
+            <h4>Lâm Tố Như</h4>
+            <span>External Relations Executive</span>
+            <span>Đại học Ngoại Thương CS2. TPHCM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/tuan.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Nguyễn Quốc Tuấn</h4>
+                <span>Marketing Executive</span>
+                <span>Đại học Ngoại Thương CS2. TPHCM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 wow fadeInUp">
+          <div class="member">
+            <img src="public/image/team/trang.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Nguyễn Huyền Trang</h4>
+                <span>Marketing Executive</span>
+                <span>Đại học Ngoại Thương Hà Nội</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class = "row justify-content-md-center">
       <div class="col-lg-3 col-md-9 wow fadeInUp">
@@ -221,7 +328,7 @@ components.welcomeScreen = `
             <img src="public/image/team/co-thuy.jpeg" class="img-fluid" alt="">
             <div class="member-info">
               <div class="member-info-content">
-                <h4>Hồ Thị Hải Thùy (ThS)</h4>
+                <h4>Hồ Thị Hải Thùy (MBus)</h4>
                 <span>Project Mentor</span>
                 <span>Đại học Ngoại Thương CS2. TPHCM</span>
               </div>
@@ -265,141 +372,13 @@ components.welcomeScreen = `
           </div>
         </div>
       </div>
-      <div class="row justify-content-md-center">
-      <div class="col-lg-3 col-md-6 wow fadeInUp">
-          <div class="member">
-            <img src="public/image/team/long.jpg" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Vũ Thành Long</h4>
-                <span>Technical Leader</span>
-                <span>Đại học Khoa Học và Công Nghệ, Nga</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-9 wow fadeInUp">
-          <div class="member">
-            <img src="public/image/team/quynh.jpg" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Nguyễn Lê Như Quỳnh</h4>
-                <span>Project Leader</span>
-                <span>Đại học Ngoại Thương CS2. TPHCM</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 wow fadeInUp">
-          <div class="member">
-            <img src="public/image/team/thu2.jpg" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Trần Minh Thư</h4>
-                <span>Project Development Executive</span>
-                <span>Đại học Ngoại Thương CS2. TPHCM</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row  justify-content-md-center">
-
-        <div class="col-lg-3 col-md-6 wow fadeInUp">
-          <div class="member">
-            <img src="public/image/team/quang.png" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Lưu Vũ Quang</h4>
-                <span>App Designer</span>
-                <span>Đại học Ngoại Thương Hà Nội</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 wow fadeInUp">
-          <div class="member">
-            <img src="public/image/team/nhu.jpg" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Lâm Tố Như</h4>
-                <span>External Relations Executive</span>
-                <span>Đại học Ngoại Thương CS2. TPHCM</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-
-        
-
-        <div class="col-lg-3 col-md-6 wow fadeInUp">
-          <div class="member">
-            <img src="public/image/team/du.jpg" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Nguyễn Chiếm Dự</h4>
-                <span>Engineering Executive</span>
-                <span>Đại học Khoa Học và Công Nghệ, Nga</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-
-
-      </div>
-      <div class="row  justify-content-md-center">
-      <div class="col-lg-3 col-md-6 wow fadeInUp">
-          <div class="member">
-            <img src="public/image/team/vy.jpg" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Hồ Phan Thanh Vy</h4>
-                <span>Finance Executive</span>
-                <span>Đại học Ngoại Thương CS2. TPHCM</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 wow fadeInUp">
-          <div class="member">
-            <img src="public/image/team/tuan.jpg" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Nguyễn Quốc Tuấn</h4>
-                <span>Marketing Executive</span>
-                <span>Đại học Ngoại Thương CS2. TPHCM</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 wow fadeInUp">
-          <div class="member">
-            <img src="public/image/team/trang.jpg" class="img-fluid" alt="">
-            <div class="member-info">
-              <div class="member-info-content">
-                <h4>Nguyễn Huyền Trang</h4>
-                <span>Marketing Executive</span>
-                <span>Đại học Ngoại Thương Hà Nội</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section><!-- #team -->
   <section id="clients" class="wow fadeInUp">
       <div class="container">
 
         <header class="section-header">
-          <h3>Chúng tôi vinh dự được hỗ trợ từ</h3>
+          <h3>Chúng tôi vinh dự được đồng hành bởi</h3>
         </header>
 
         <div class="row">
@@ -451,7 +430,7 @@ components.welcomeScreen = `
   <!--==========================
     Find Section
   ============================-->
-  <section id="find" class="section-bg">
+  <section id="find" class="section-bg" style = " background: #ECF9F4;">
     <div class="container">
       <div class="row feature-item mt-5 pt-5">
         <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
@@ -817,10 +796,10 @@ components.scholarshipScreen = `
               <p class="description">Cung cấp thong tin hữu ích chuẩn bị cho cuộc sống về hưu an vui.</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 wow bounceInUp news" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
+          <div class="col-md-6 col-lg-4 wow bounceInUp events" data-wow-delay="0.2s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.2s; animation-name: bounceInUp;">
             <div class="box">
               <div class="icon" style="background: #ecebff;"><i class="ion-ios-clock-outline" style="color: #8660fe;"></i></div>
-              <h4 class="title"><a href="">Tin tức</a></h4>
+              <h4 class="title"><a href="">Sự kiện</a></h4>
               <p class="description">Cập nhật các tin tức sự kiện và thông tin tài chính, sức khỏe hữu ích từ Active Ageing Vietnam.</p>
             </div>
           </div>
@@ -880,6 +859,15 @@ components.studentLifeScreen = `
               <option value="Đà Nẵng">Đà Nẵng
               <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh
               <option value="Khác">Khác
+              </select> 
+              </div>
+              <div class="form-group">
+              <select class="form-control" name= "type" id="type" style ="    font-size: 14px;">
+              <option value=""selected disabled hidden>Vai trò đồng hành
+              <option value="Đối tác">Đối tác
+              <option value="Thành viên">Thành viên
+              <option value="Nhận thông tin">Nhận thông tin
+              <option value="Tuyển dụng">Tuyển dụng
               </select> 
               </div>
               <div class="form-group">
@@ -988,8 +976,9 @@ components.findScreen = `
           <br><br>
           <header class="section-header">
             <h3>LẬP KẾ HOẠCH VỀ HƯU</h3>
-            <p>Bạn đang tìm kiếm một kế hoạch về hưu mà không biết bắt đầu như thế nào? Ngay đây chúng tôi sẽ giúp bạn. Thiết lập tầm nhìn kế hoạch về hưu của cá nhân bạn chỉ bằng việc trả lời một số câu hỏi. Bắt đầu thôi!</p>
-          </header>
+            <p style ="padding-bottom: 3px;">Bạn đang tìm kiếm một kế hoạch về hưu mà không biết bắt đầu như thế nào? Ngay đây chúng tôi sẽ giúp bạn. Thiết lập tầm nhìn kế hoạch về hưu của cá nhân bạn chỉ bằng việc trả lời một số câu hỏi. Bắt đầu thôi!</p>
+            <p>Xem hướng dẫn sử dụng tính năng <a href="./posts/Lap ke hoach ve huu cung active ageing vietnam.html" target="_blank" style="color : #12B281">tại đây</a></p>
+            </header>
           <div class = "retirement">
           <div class="form">
           <div class="row">
@@ -1001,19 +990,19 @@ components.findScreen = `
           </div>
           </div>
             <p></p>
-            <form action="" method="post" role="form" class="contactForm">
+            <form id ='input-form' class="contactForm" onsubmit="return false;">
             <div class = "row">
             <div class="col-lg-6">
               <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Tên của bạn">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Tên của bạn" required>
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-              <input value = "" class="form-control" name="email" id="email" placeholder="Địa chỉ email" data-rule="email" data-msg="Please enter at least 8 chars of subject" />
+              <input value = "" type='email'  class="form-control" name="email" id="email" placeholder="Địa chỉ email" data-rule="email" data-msg="Please enter at least 8 chars of subject"  required>
               <div class="validation"></div>
             </div>
               <div class="form-group">
-              <select class="form-control" name= "flatform" id="address" style ="    font-size: 14px;">
+              <select class="form-control" name= "flatform" id="address" style ="    font-size: 14px;" >
               <option value=""selected disabled hidden>Nơi ở
               <option value="Hà Nội">Hà Nội
               <option value="Đà Nẵng">Đà Nẵng
@@ -1022,21 +1011,21 @@ components.findScreen = `
               </select>              
               </div>
               <div class="form-group">
-                <input value = "" class="form-control" name="currentAge" id="currentAge" placeholder="Tuổi hiện tại" />
+                <input value = "" type='number' class="form-control" name="currentAge" id="currentAge" placeholder="Tuổi hiện tại" min='1' required>
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input value = "" class="form-control" name="retirementAge" id="retirementAge" placeholder="Tuổi nghỉ hưu dự đoán" />
+                <input value = "" type="number"  min='1' class="form-control" name="retirementAge" id="retirementAge" placeholder="Tuổi nghỉ hưu dự đoán" required/>
                 <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Độ tuổi bạn dự định nghỉ hưu, giả định rằng bạn không đóng góp thêm vào quỹ tiết kiệm hưu trí của mình trong năm này. Ví dụ, nếu bạn nghỉ hưu ở tuổi 60, vui lòng nhập '60'. Trong trường hợp này, khoản đóng góp cuối cùng của bạn xảy ra khi bạn 59 tuổi. Chúng tôi cũng giả định rằng bạn thực hiện toàn bộ khoản đóng góp của mình vào cuối mỗi năm."></span>
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input value = ""  class="form-control" name="income" id="income" placeholder="Thu nhập hàng năm của hộ gia đình hiện tại (triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input value = ""  type="number" class="form-control" name="income" id="income" placeholder="Thu nhập hàng năm của hộ gia đình hiện tại (triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
                 <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tổng thu nhập của bạn trong năm hiện tại. Nếu thu nhập trong năm nay của bạn là 180 triệu VND, vui lòng nhập '180'."></span>
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input value = ""  class="form-control" name="increase" id="increase" placeholder="Tăng trưởng thu nhập ước tính hằng năm (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input value = ""  type="number" class="form-control" name="increase" id="increase" placeholder="Tăng trưởng thu nhập ước tính hằng năm (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
                 <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ lệ thu nhập ước tính tăng hàng năm cho đến năm nghỉ hưu dự kiến của bạn. Nếu bạn ước tính mức lương hàng năm của bạn sẽ tăng 2%, vui lòng nhập '2'"></span>
                 <div class="validation"></div>
               </div>
@@ -1048,18 +1037,18 @@ components.findScreen = `
 
               <div class="col-lg-6">
                   <div class="form-group">
-                  <input value = "" class="form-control" name="saving" id="saving" placeholder="Số dư quỹ tiết kiệm hưu trí hiện tại (triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input value = "" type="number" class="form-control" name="saving" id="saving" placeholder="Số dư quỹ tiết kiệm hưu trí hiện tại (triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
                   <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Số dư tài khoản tiết kiệm về hưu hiện tại của bạn. Giả sử bạn đã tích góp được 700 triệu VNĐ cho quỹ tiết kiệm hưu trí của mình, vui lòng nhập '700'."></span>
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input value = "" class="form-control" name="saving" id="yearsRetirement" placeholder="Số năm sử dụng thu nhập sau về hưu" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input value = ""  type="number" class="form-control" name="saving" id="yearsRetirement" placeholder="Số năm sử dụng thu nhập sau về hưu" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
                   <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tổng số năm bạn dự định sử dụng quỹ tiết kiệm hưu trí của mình để chi tiêu kể từ năm bạn nghỉ hưu. Giả sử bạn dự định về hưu ở tuổi 60 và mong muốn duy trì mức sống thoải mái trong vòng 30 năm nữa nhờ quỹ tiết kiệm hưu trí của mình, vui lòng nhập '30'. Nói cách khác, tuổi thọ dự kiến của bạn trong trường hợp này là 60 + 30 = 90 (tuổi)."></span>
                   <div class="validation"></div>
                 </div>
 
               <div class="form-group">
-              <input value = "" name="annualSaving" class="form-control" id="annualSaving" placeholder="Khoản tiết kiệm về hưu hàng năm tính theo phần trăm thu nhập (%)" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <input value = "" type="number" name="annualSaving" class="form-control" id="annualSaving" placeholder="Khoản tiết kiệm về hưu hàng năm tính theo phần trăm thu nhập (%)" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
               <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Phần trăm thu nhập hàng năm sẽ được đóng góp vào quỹ tiết kiệm hưu trí của bạn mỗi năm. Nếu thu nhập hàng năm của bạn là 180 triệu VNĐ và tỷ lệ đóng góp hàng năm của bạn là 8%, vui lòng nhập '8'. Như vậy, mức đóng góp hàng năm bằng 180 x 8% = 14.4 triệu VNĐ."></span>
               <div class="validation"></div>
             </div>
@@ -1069,22 +1058,22 @@ components.findScreen = `
             })
             </script>
             <div class="form-group">
-              <input value = "" class="form-control" name="retirementPay" id="retirementPay" placeholder="Thu nhập yêu cầu khi về hưu (%)" data-rule="email" data-msg="Please enter a valid email" />
+              <input value = "" type="number" class="form-control" name="retirementPay" id="retirementPay" placeholder="Thu nhập yêu cầu khi về hưu (%)" data-rule="email" data-msg="Please enter a valid email" required/>
               <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ lệ phần trăm thu nhập hộ gia đình sau khi nghỉ hưu mà bạn nghĩ rằng bạn sẽ cần để trang trải các chi phí của mình khi nghỉ hưu. Số tiền này dựa trên thu nhập hộ gia đình trong năm làm việc cuối cùng của bạn (năm ngay trước khi bạn nghỉ hưu). Giả sử bạn dự định về hưu ở tuổi 60, thu nhập năm bạn 59 tuổi là 210 triệu VNĐ, và bạn tin rằng tỷ lệ này là 60%, vui lòng nhập '60'. Khi đó, số tiền mà bạn cần để chi tiêu vào năm 60 tuổi bằng 210 x 60% = 126 triệu VNĐ."></span>
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <input value = "" class="form-control" name="rateBefore" id="rateBefore" placeholder="Lợi suất ước tính trước khi về hưu (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input value = ""  type="number" class="form-control" name="rateBefore" id="rateBefore" placeholder="Lợi suất ước tính trước khi về hưu (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
               <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ suất lợi nhuận kỳ vọng hàng năm trên quỹ tiết kiệm hưu trí của bạn trước khi nghỉ hưu. Lưu ý rằng tỷ lệ này có xu hướng giảm theo thời gian. Nếu bạn kỳ vọng tỷ suất trên là 7%, vui lòng nhập '7'.".></span>
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <input value = "" class="form-control" name="rateAfter" id="rateAfter" placeholder="Lợi suất ước tính trong quá trình về hưu (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input value = "" type="number" class="form-control" name="rateAfter" id="rateAfter" placeholder="Lợi suất ước tính trong quá trình về hưu (%)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
               <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Tỷ suất lợi nhuận kỳ vọng hàng năm trên quỹ tiết kiệm hưu trí của bạn sau khi nghỉ hưu. Lưu ý rằng tỷ lệ này có xu hướng giảm theo thời gian. Nếu bạn kỳ vọng tỷ suất trên là 4%, vui lòng nhập '4'."></span>
               <div class="validation"></div>
             </div>
             <div class="form-group">
-              <input value = "" class="form-control" name="pension" id="pension" placeholder="Lương hưu và thu nhập sau về hưu khác (triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input value = "" type="number" class="form-control" name="pension" id="pension" placeholder="Lương hưu và thu nhập sau về hưu khác (triệu VNĐ)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
               <span class="fa fa-info-circle errspan" data-toggle="tooltip" data-placement="top" title="Thu nhập dự kiến từ lương hưu hoặc các nguồn khác. Nếu bạn dự đoán mức lương hưu của mình là 2 triệu VNĐ mỗi tháng hay 24 triệu VNĐ mỗi năm, vui lòng nhập '24'."></span>
               <div class="validation"></div>
             </div>
@@ -1095,79 +1084,14 @@ components.findScreen = `
             </div>
             </div>
             <br><br>
-              <div id="submit_btn" class="text-center"><button type="submit" title="Send Message">TÍNH TOÁN KẾ HOẠCH VỀ HƯU</button></div>
+              <div id="submit_btn" class="text-center"><button type ="submit">TÍNH TOÁN KẾ HOẠCH VỀ HƯU</button></div>
             </form>
           </div>
         </div>
         <div id ="resultForm">
         
           <div class ="row">
-          <main id="introduction">
-          <!--==========================
-            Features Section
-          ============================-->
-          <section id="about">
-              <div class="container" style="padding-top: 30px;">
-                <h2 style = "color: #333333;font-weight: 650;text-align: center;">Lập kế hoạch về hưu cùng active ageing vietnam</h2>
-                <img src="../public/image/retire-plan.jpeg" width="100%"/>
-                <h4 class="title mt-4">
-                    Bạn đang tìm kiếm một kế hoạch về hưu mà không biết bắt đầu như thế nào? Ngay đây chúng tôi sẽ giúp bạn. Thiết lập tầm nhìn kế hoạch về hưu của cá nhân bạn chỉ bằng việc trả lời một số câu hỏi. Bắt đầu thôi!
-                  </h4>
-                <div class="row feature-item mt-5 wow fadeInUp">
-                    <h4 class="title" style = "color: #333333;font-weight: 650;">Bước 1: Truy cập website Active Ageing Vietnam (http://activeageingvietnam.com/ ) và chọn tab “Lập kế hoạch về hưu”.</h4>
-                    <img src="../public/image/step1.jpg" class="img-fluid rounded" alt="">
-                </div>
-                <div class="row feature-item mt-5 wow fadeInUp">
-                    <h4 class="title" style = "color: #333333;font-weight: 650;">Bước 2: Điền các thông tin vào bảng hỏi, lưu ý đơn vị của các câu hỏi. Bạn có thể rê chuột vào nút "i" để đọc phần giải thích câu hỏi.</h4>
-                    <img src="../public/image/step2.jpg" class="img-fluid rounded" alt="">
-                </div>
-                <div class="row feature-item mt-5 wow fadeInUp">
-                    <h4 class="title" style = "color: #333333;font-weight: 650;">Bước 3: Xem kết quả phân tích.</h4>
-                    <img src="../public/image/step3.jpg" class="img-fluid rounded" alt="">
-                </div>
-                <div class="row feature-item mt-5 wow fadeInUp">
-                    <h4 class="title" style = "color: #333333;font-weight: 650;">Bước 4: Xem đề xuất nếu kế hoạch chưa hợp lí. Đăng ký trở thành hội viên của Active Ageing Vietnam để nhận thêm thông tin hơn về các tính năng khác.</h4>
-                    <img src="../public/image/step4.jpg" class="img-fluid rounded" alt="">
-                </div>
-
-                <div class="row feature-item mt-5 pt-5" style = "padding-top: 1rem! important; ">
-                  <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-                    <img src="../public/image/example.jpg" class="img-fluid rounded" alt="">
-                  </div>
-        
-                  <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" style = "text-align: justify;">
-                    <!-- <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4> -->
-                    <h4 class="title" style = "color: #333333;font-weight: 650;">Trước hết, để giúp bạn dễ thao tác, chúng tôi đã đặt ra bài toán:</h4>
-                    <p style ="color : #232323">
-                        “Ông Nguyễn Văn X hiện đang 45 tuổi, thu nhập trung bình 15 triệu VNĐ/ tháng (180 triệu VNĐ/năm). Ông dự kiến thu nhập của mình sẽ tăng 2% hàng năm cho đến khi ông nghỉ hưu ở tuổi 60. Để chuẩn bị cho tương lai, ông đã tích góp được 700 triệu VNĐ riêng cho “Quỹ Tiết kiệm Về hưu” của mình (Quỹ tiết kiệm về hưu là một Quỹ tiết kiệm riêng, tách biệt khỏi các khoản tiết kiệm khác như: Tiết kiệm mua xe, Tiết kiệm cho con,...). 
-                   </p>
-                   <p>
-                    Hàng năm, ông dự kiến trích 8% trên tổng thu nhập để đóng góp thêm vào Quỹ Tiết kiệm Về hưu. Khoản đóng góp cuối cùng xảy ra vào năm ông 59 tuổi. Kể từ sau năm này, ông không có thêm thu nhập nào do ông không có lương hưu. Khoản tiền từ Quỹ Tiết kiệm Về hưu sẽ được sử dụng để đầu tư bằng nhiều hình thức khác nhau (gửi tiết kiệm, đầu tư vàng, ngoại tệ, các tài sản tài chính khác,...) và ông dự kiến sẽ thu được lợi tức (lãi suất) hàng năm là 6.5% (trước khi về hưu) và 4.5% (sau khi về hưu). Ông hy vọng mình sẽ thọ đến 90 tuổi và vẫn chủ động về tài chính.”
-                   </p>
-                  </div>
-                  
-                </div>
-
-                <div class="row feature-item mt-5">
-                    <!-- <img src="../public/image/make_plan.jpeg" class="img-fluid rounded" alt=""> -->
-                    <!-- <h4 class="title" style="color: #333333;font-weight: 650;">Lập kế hoạch tài chính để nghỉ hưu an nhàn</h4> -->
-                    <p style="color : #232323">
-                        Từ những dữ liệu trên, Active Ageing Vietnam đã giúp ông X tính toán kế hoạch về hưu của ông và đề xuất được kết quả như 4 hình minh hoạ.
-                    </p>
-                    <p>
-                        Active Ageing Vienam xin trân trọng cảm ơn các bạn đã quan tâm, ủng hộ và trải nghiệm sản phẩm đầu tiên của chúng tôi!
-                    </p>
-              </div>
-              
-            <!-- </section>#feature -->
-          <!--==========================
-            Services Section
-          ============================-->
-          <!-- <section id="services" class="section-bg"> -->
-              
-            </section><!-- #services -->
-        
-        </main>
+          
       
             <div class="col-md-2">
             </div>    
@@ -1952,13 +1876,13 @@ components.happyRetire = `
     </section>
     </main>
 `
-components.news =`
+components.events =`
 <main id="main">
 <section id="about" class="section-bg">
       <div class="container justify-content-center align-self-center">
 
         <header class="section-header" style="margin-top: 13%;">
-          <h3>Tin tức</h3>
+          <h3>Sự kiện</h3>
           
         </header>
 

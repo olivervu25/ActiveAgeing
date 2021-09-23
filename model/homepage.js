@@ -1,10 +1,42 @@
 console.log('homepage.js');
+$('.title a').on('click', function (e){
+  e.preventDefault();
+})
 $('#learn_more_about').on('click',function(){
     view.setActiveScreen('aboutScreen');
     NavigationActive(`.about-nav`);
 })
 $('#makeplan').on('click', function (){
   view.setActiveScreen('findScreen')
+})
+$('.make-plan').on('click', function (){
+  view.setActiveScreen('findScreen');
+  document.getElementById('app').scrollIntoView();
+})
+
+$('.information').on('click',function(){
+  view.setActiveScreen('scholarshipScreen');
+  // renderInformationData('news')
+  JsScholarship();
+  // $.getScript('public/js/FAQs.js');
+  NavigationActive(`.${this.className}`);
+  document.getElementById('app').scrollIntoView();
+});
+$('.events-link').on('click',function(){
+  view.setActiveScreen('events');
+  renderInformationData('events');
+  // renderInformationData('news')
+  // $.getScript('public/js/FAQs.js');
+  document.getElementById('app').scrollIntoView();
+});
+
+$('.regist-link').on('click',function(event){
+  event.preventDefault();
+  view.setActiveScreen('studentLifeScreen');
+  JsPorfolio();
+  document.getElementById('app').scrollIntoView();
+  $.getScript( "model/sign_up.js");
+  NavigationActive(`.${this.className}`);
 })
 $('#callToAction').on('click', function(){
     view.setActiveScreen('studentLifeScreen');
@@ -60,10 +92,10 @@ $('.register-webinar').on('click', function (event) {
   
   
     // jQuery counterUp (used in Whu Us section)
-    $('[data-toggle="counter-up"]').counterUp({
-      delay: 10,
-      time: 1000
-    });
+    // $('[data-toggle="counter-up"]').counterUp({
+    //   delay: 10,
+    //   time: 1000
+    // });
   
     // Porfolio isotope and filter
     $(window).on('load', function () {
@@ -79,12 +111,12 @@ $('.register-webinar').on('click', function (event) {
     });
   
     // Testimonials carousel (uses the Owl Carousel library)
-    $(".testimonials-carousel").owlCarousel({
-      autoplay: true,
-      dots: true,
-      loop: true,
-      items: 1
-    });
+    // $(".testimonials-carousel").owlCarousel({
+    //   autoplay: true,
+    //   dots: true,
+    //   loop: true,
+    //   items: 1
+    // });
   
     // Clients carousel (uses the Owl Carousel library)
     $(".clients-carousel").owlCarousel({

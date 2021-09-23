@@ -38,10 +38,10 @@ view.setActiveScreen = (screenName) => {
 }
 card = function (data) { 
   var item = `<div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s" style="visibility: visible; animation-duration: 1.4s; animation-delay: 0.1s; animation-name: bounceInUp;">
-            <a href="${data.href}">
+            <a href="${data.href}" target="_blank">
             <div class="box" style="padding: 0;">
               <div class="image" style="background: #e6fdfc;"><img width="100%" src="${data.imgSrc}"></div>
-              <div style="padding: 5px 30px"><h4 class="title"><a href="${data.href}">${data.title}</a></h4></div>
+              <div style="padding: 5px 30px"><h4 class="title"><a href="${data.href}" target="_blank">${data.title}</a></h4></div>
             </div>
             </a>
           </div>`;
@@ -112,7 +112,7 @@ renderInformationData= function (type){
       }
     ]
 
-    if (type == 'news')
+    if (type == 'events')
       data = [
         {
           'title' : 'Đi tìm hạnh phúc thời covid-19: an toàn tài chính và sức khoẻ tinh thần',
